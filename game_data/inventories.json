@@ -1,0 +1,306 @@
+{
+  "917357763292700732": {
+    "user_id": 917357763292700732,
+    "currency": 2600,
+    "last_daily": 0,
+    "units": [
+      {
+        "id": "p917357763292700732_unit_002_85335",
+        "name": "Recruit Guard",
+        "role": "tank",
+        "rarity": "common",
+        "max_health": 150,
+        "damage": 20,
+        "armor": 25,
+        "position": 1
+      },
+      {
+        "id": "p917357763292700732_unit_003_17556",
+        "name": "Militia Soldier",
+        "role": "warrior",
+        "rarity": "common",
+        "max_health": 100,
+        "damage": 30,
+        "armor": 10,
+        "position": 1,
+        "critical_chance": 10
+      },
+      {
+        "id": "p917357763292700732_unit_003_72838",
+        "name": "Militia Soldier",
+        "role": "warrior",
+        "rarity": "common",
+        "max_health": 100,
+        "damage": 30,
+        "armor": 10,
+        "position": 1,
+        "critical_chance": 10
+      },
+      {
+        "id": "p917357763292700732_unit_006_62233",
+        "name": "Veteran Swordsman",
+        "role": "warrior",
+        "rarity": "rare",
+        "max_health": 120,
+        "damage": 36,
+        "armor": 12,
+        "position": 1,
+        "critical_chance": 12
+      },
+      {
+        "id": "p917357763292700732_unit_011_24423",
+        "name": "Immortal Guardian",
+        "role": "tank",
+        "rarity": "legendary",
+        "max_health": 300,
+        "damage": 40,
+        "armor": 50,
+        "position": 1
+      },
+      {
+        "id": "p917357763292700732_unit_002_41725",
+        "name": "Recruit Guard",
+        "role": "tank",
+        "rarity": "common",
+        "max_health": 150,
+        "damage": 20,
+        "armor": 25,
+        "position": 1
+      },
+      {
+        "id": "p917357763292700732_unit_005_78121",
+        "name": "Royal Guard",
+        "role": "tank",
+        "rarity": "rare",
+        "max_health": 180,
+        "damage": 24,
+        "armor": 30,
+        "position": 1
+      },
+      {
+        "id": "p917357763292700732_unit_001_23131",
+        "name": "Apprentice Mage",
+        "role": "mage",
+        "rarity": "common",
+        "max_health": 80,
+        "damage": 40,
+        "armor": 5,
+        "position": 1,
+        "spell_power": 15
+      },
+      {
+        "id": "p917357763292700732_unit_004_73193",
+        "name": "Battle Mage",
+        "role": "mage",
+        "rarity": "rare",
+        "max_health": 96,
+        "damage": 48,
+        "armor": 6,
+        "position": 2,
+        "spell_power": 18
+      },
+      {
+        "id": "p917357763292700732_unit_001_76903",
+        "name": "Apprentice Mage",
+        "role": "mage",
+        "rarity": "common",
+        "max_health": 80,
+        "damage": 40,
+        "armor": 5,
+        "position": 2,
+        "spell_power": 15
+      },
+      {
+        "id": "p917357763292700732_unit_005_23255",
+        "name": "Royal Guard",
+        "role": "tank",
+        "rarity": "rare",
+        "max_health": 180,
+        "damage": 24,
+        "armor": 30,
+        "position": 1
+      }
+    ],
+    "weapons": []
+  },
+  "1007475425821335654": {
+    "user_id": 1007475425821335654,
+    "currency": 99325,
+    "last_daily": 0,
+    "units": [
+      {
+        "id": "p1007475425821335654_unit_002_31020",
+        "name": "Recruit Guard",
+        "role": "tank",
+        "rarity": "common",
+        "max_health": 150,
+        "damage": 20,
+        "armor": 25,
+        "position": 1
+      },
+      {
+        "id": "p1007475425821335654_unit_002_41718",
+        "name": "Recruit Guard",
+        "role": "tank",
+        "rarity": "common",
+        "max_health": 150,
+        "damage": 20,
+        "armor": 25,
+        "position": 1
+      },
+      {
+        "id": "p1007475425821335654_unit_003_34835",
+        "name": "Militia Soldier",
+        "role": "warrior",
+        "rarity": "common",
+        "max_health": 100,
+        "damage": 40,
+        "armor": 10,
+        "position": 1,
+        "critical_chance": 15
+      },
+      {
+        "id": "p1007475425821335654_unit_005_82493",
+        "name": "Royal Guard",
+        "role": "tank",
+        "rarity": "rare",
+        "max_health": 180,
+        "damage": 24,
+        "armor": 30,
+        "position": 1
+      },
+      {
+        "id": "p1007475425821335654_unit_003_30167",
+        "name": "Militia Soldier",
+        "role": "warrior",
+        "rarity": "common",
+        "max_health": 100,
+        "damage": 30,
+        "armor": 10,
+        "position": 2,
+        "critical_chance": 10
+      },
+      {
+        "id": "p1007475425821335654_unit_002_96086",
+        "name": "Recruit Guard",
+        "role": "tank",
+        "rarity": "common",
+        "max_health": 150,
+        "damage": 20,
+        "armor": 25,
+        "position": 1
+      },
+      {
+        "id": "p1007475425821335654_unit_001_35319",
+        "name": "Apprentice Mage",
+        "role": "mage",
+        "rarity": "common",
+        "max_health": 80,
+        "damage": 40,
+        "armor": 5,
+        "position": 2,
+        "spell_power": 15
+      },
+      {
+        "id": "p1007475425821335654_unit_001_81739",
+        "name": "Apprentice Mage",
+        "role": "mage",
+        "rarity": "common",
+        "max_health": 80,
+        "damage": 40,
+        "armor": 5,
+        "position": 2,
+        "spell_power": 15
+      },
+      {
+        "id": "p1007475425821335654_unit_002_29740",
+        "name": "Recruit Guard",
+        "role": "tank",
+        "rarity": "common",
+        "max_health": 150,
+        "damage": 20,
+        "armor": 25,
+        "position": 1
+      }
+    ],
+    "weapons": [
+      {
+        "id": "p1007475425821335654_wpn_025_6217",
+        "name": "Plain Claymore",
+        "type": "sword",
+        "rarity": "common",
+        "stats": {
+          "damage": 10,
+          "critical_chance": 5
+        },
+        "equipped_by": "p1007475425821335654_unit_003_34835"
+      },
+      {
+        "id": "p1007475425821335654_wpn_002_8446",
+        "name": "Crude Tome",
+        "type": "book",
+        "rarity": "common",
+        "stats": {
+          "spell_power": 20,
+          "health": 10
+        },
+        "equipped_by": null
+      },
+      {
+        "id": "p1007475425821335654_wpn_003_8590",
+        "name": "Superior Tome",
+        "type": "book",
+        "rarity": "epic",
+        "stats": {
+          "spell_power": 30,
+          "health": 15
+        },
+        "equipped_by": null
+      },
+      {
+        "id": "p1007475425821335654_wpn_004_4652",
+        "name": "Crude Rapier",
+        "type": "sword",
+        "rarity": "common",
+        "stats": {
+          "damage": 10,
+          "critical_chance": 5
+        },
+        "equipped_by": null
+      },
+      {
+        "id": "p1007475425821335654_wpn_005_7658",
+        "name": "Standard Tome",
+        "type": "book",
+        "rarity": "common",
+        "stats": {
+          "spell_power": 20,
+          "health": 10
+        },
+        "equipped_by": null
+      },
+      {
+        "id": "p1007475425821335654_wpn_007_2448",
+        "name": "Reliable Warhammer",
+        "type": "mace",
+        "rarity": "rare",
+        "stats": {
+          "damage": 18,
+          "armor": 3
+        },
+        "equipped_by": null
+      },
+      {
+        "id": "p1007475425821335654_wpn_008_8764",
+        "name": "Reliable Mail",
+        "type": "armor",
+        "rarity": "rare",
+        "stats": {
+          "health": 48,
+          "armor": 12
+        },
+        "equipped_by": null
+      }
+    ]
+  }
+}

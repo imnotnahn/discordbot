@@ -120,7 +120,7 @@ class GeminiChatCog(commands.Cog):
                 self.processing_messages.discard(message.id)
     
     @commands.hybrid_command(
-        name="clear_chat",
+        name="chatai_clear",
         description="Clear your chat history with the AI"
     )
     async def clear_chat(self, ctx: commands.Context):
@@ -128,7 +128,7 @@ class GeminiChatCog(commands.Cog):
         await ctx.send("Your chat history has been cleared! We can start a fresh conversation.")
 
     @commands.hybrid_command(
-        name="gemini_help",
+        name="chatai_help",
         description="Get help with using the Gemini AI chat feature"
     )
     async def gemini_help(self, ctx: commands.Context):

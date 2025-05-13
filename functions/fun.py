@@ -32,7 +32,7 @@ class FunCog(commands.Cog):
         self.bot = bot
         
     @commands.hybrid_command(
-        name="isgay",
+        name="fun_isgay",
         description="Check your fucking GAYYYYYY"
     )
     async def compatibility(self, ctx, name: discord.Member):

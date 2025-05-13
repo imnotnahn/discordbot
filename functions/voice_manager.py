@@ -167,7 +167,7 @@ class VoiceChannelManager(commands.Cog):
     # --- Channel Management Commands ---
     
     @commands.hybrid_command(
-        name="kick",
+        name="voice_kick",
         description="Kick a user from your voice channel"
     )
     async def kick_user(self, ctx: commands.Context, user: discord.Member):
@@ -197,7 +197,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while trying to kick the user.")
     
     @commands.hybrid_command(
-        name="limit",
+        name="voice_limit",
         description="Set a user limit for your voice channel"
     )
     async def set_limit(self, ctx: commands.Context, limit: int):
@@ -227,7 +227,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while setting the user limit.")
     
     @commands.hybrid_command(
-        name="hide",
+        name="voice_hide",
         description="Hide your voice channel from the server"
     )
     async def hide_channel(self, ctx: commands.Context):
@@ -257,7 +257,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while hiding the channel.")
     
     @commands.hybrid_command(
-        name="show",
+        name="voice_show",
         description="Make your voice channel visible to everyone"
     )
     async def show_channel(self, ctx: commands.Context):
@@ -282,7 +282,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while making the channel visible.")
     
     @commands.hybrid_command(
-        name="public",
+        name="voice_public",
         description="Make your voice channel open to everyone"
     )
     async def public_channel(self, ctx: commands.Context):
@@ -307,7 +307,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while making the channel public.")
     
     @commands.hybrid_command(
-        name="private",
+        name="voice_private",
         description="Make your voice channel private"
     )
     async def private_channel(self, ctx: commands.Context):
@@ -332,7 +332,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while making the channel private.")
     
     @commands.hybrid_command(
-        name="rename",
+        name="voice_rename",
         description="Rename your voice channel"
     )
     async def rename_channel(self, ctx: commands.Context, *, new_name: str):
@@ -359,7 +359,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while renaming the channel.")
     
     @commands.hybrid_command(
-        name="add_owner",
+        name="voice_addowner",
         description="Add a co-owner to your voice channel"
     )
     async def add_owner(self, ctx: commands.Context, user: discord.Member):
@@ -403,7 +403,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while adding the co-owner.")
     
     @commands.hybrid_command(
-        name="remove_owner",
+        name="voice_removeowner",
         description="Remove a co-owner from your voice channel"
     )
     async def remove_owner(self, ctx: commands.Context, user: discord.Member):
@@ -436,7 +436,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while removing the co-owner.")
     
     @commands.hybrid_command(
-        name="lock",
+        name="voice_lock",
         description="Lock your voice channel to prevent new users from joining"
     )
     async def lock_channel(self, ctx: commands.Context):
@@ -466,7 +466,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while locking the channel.")
     
     @commands.hybrid_command(
-        name="unlock",
+        name="voice_unlock",
         description="Unlock your voice channel to allow users to join"
     )
     async def unlock_channel(self, ctx: commands.Context):
@@ -491,7 +491,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while unlocking the channel.")
     
     @commands.hybrid_command(
-        name="transfer",
+        name="voice_transfer",
         description="Transfer ownership of your voice channel"
     )
     async def transfer_ownership(self, ctx: commands.Context, new_owner: discord.Member):
@@ -528,7 +528,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while transferring ownership.")
     
     @commands.hybrid_command(
-        name="mute_all",
+        name="voice_muteall",
         description="Mute all users in your voice channel except you and co-owners"
     )
     async def mute_all(self, ctx: commands.Context):
@@ -562,7 +562,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while muting members.")
     
     @commands.hybrid_command(
-        name="unmute_all",
+        name="voice_unmuteall",
         description="Unmute all users in your voice channel"
     )
     async def unmute_all(self, ctx: commands.Context):
@@ -591,7 +591,7 @@ class VoiceChannelManager(commands.Cog):
             await ctx.send("An error occurred while unmuting members.")
     
     @commands.hybrid_command(
-        name="claim",
+        name="voice_claim",
         description="Claim ownership of a voice channel if the owner has left"
     )
     async def claim_channel(self, ctx: commands.Context):

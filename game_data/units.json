@@ -1,0 +1,130 @@
+[
+  {
+    "id": "unit_001",
+    "name": "Apprentice Mage",
+    "role": "mage",
+    "rarity": "common",
+    "max_health": 80,
+    "damage": 40,
+    "armor": 5,
+    "position": 1,
+    "spell_power": 15
+  },
+  {
+    "id": "unit_002",
+    "name": "Recruit Guard",
+    "role": "tank",
+    "rarity": "common",
+    "max_health": 150,
+    "damage": 20,
+    "armor": 25,
+    "position": 1
+  },
+  {
+    "id": "unit_003",
+    "name": "Militia Soldier",
+    "role": "warrior",
+    "rarity": "common",
+    "max_health": 100,
+    "damage": 30,
+    "armor": 10,
+    "position": 1,
+    "critical_chance": 10
+  },
+  {
+    "id": "unit_004",
+    "name": "Battle Mage",
+    "role": "mage",
+    "rarity": "rare",
+    "max_health": 96,
+    "damage": 48,
+    "armor": 6,
+    "position": 1,
+    "spell_power": 18
+  },
+  {
+    "id": "unit_005",
+    "name": "Royal Guard",
+    "role": "tank",
+    "rarity": "rare",
+    "max_health": 180,
+    "damage": 24,
+    "armor": 30,
+    "position": 1
+  },
+  {
+    "id": "unit_006",
+    "name": "Veteran Swordsman",
+    "role": "warrior",
+    "rarity": "rare",
+    "max_health": 120,
+    "damage": 36,
+    "armor": 12,
+    "position": 1,
+    "critical_chance": 12
+  },
+  {
+    "id": "unit_007",
+    "name": "Archmage",
+    "role": "mage",
+    "rarity": "epic",
+    "max_health": 120,
+    "damage": 60,
+    "armor": 7,
+    "position": 1,
+    "spell_power": 22
+  },
+  {
+    "id": "unit_008",
+    "name": "Steel Defender",
+    "role": "tank",
+    "rarity": "epic",
+    "max_health": 225,
+    "damage": 30,
+    "armor": 37,
+    "position": 1
+  },
+  {
+    "id": "unit_009",
+    "name": "Elite Blademaster",
+    "role": "warrior",
+    "rarity": "epic",
+    "max_health": 150,
+    "damage": 45,
+    "armor": 15,
+    "position": 1,
+    "critical_chance": 15
+  },
+  {
+    "id": "unit_010",
+    "name": "Grand Sorcerer",
+    "role": "mage",
+    "rarity": "legendary",
+    "max_health": 160,
+    "damage": 80,
+    "armor": 10,
+    "position": 1,
+    "spell_power": 30
+  },
+  {
+    "id": "unit_011",
+    "name": "Immortal Guardian",
+    "role": "tank",
+    "rarity": "legendary",
+    "max_health": 300,
+    "damage": 40,
+    "armor": 50,
+    "position": 1
+  },
+  {
+    "id": "unit_012",
+    "name": "Legendary Champion",
+    "role": "warrior",
+    "rarity": "legendary",
+    "max_health": 200,
+    "damage": 60,
+    "armor": 20,
+    "position": 1,
+    "critical_chance": 20
+  }
+]

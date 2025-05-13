@@ -383,7 +383,7 @@ class CoTuongCog(commands.Cog):
         self.active_games = {}
 
     @commands.hybrid_command(
-        name="cotuong",
+        name="cotuong_play",
         description="Start a Co Tuong game with another player")
     async def cotuong(self, ctx, player1: discord.Member, player2: discord.Member):
         if player1.bot or player2.bot:
@@ -430,7 +430,7 @@ class CoTuongCog(commands.Cog):
         await ctx.send(f"```\n{board_text}\n```")
 
     @commands.hybrid_command(
-        name="move",
+        name="cotuong_move",
         description="Make a move in an active Co Tuong game")
     async def move(self, ctx, piece_name: str, from_x: int, from_y: int, to_x: int, to_y: int):
         player_game = None
@@ -496,7 +496,7 @@ class CoTuongCog(commands.Cog):
             del self.active_games[game_id]
 
     @commands.hybrid_command(
-        name="resign_cotuong",
+        name="cotuong_resign",
         description="Resign from your current Co Tuong game",
         aliases=["ct_resign"]
     )

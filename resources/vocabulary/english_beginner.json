@@ -1,0 +1,533 @@
+[
+  {
+    "word": "buy",
+    "pronunciation": "/baɪ/",
+    "part_of_speech": "verb",
+    "meaning": "mua",
+    "example": "I want to buy a new car.",
+    "example_pronunciation": "/aɪ wɒnt tə baɪ ə njuː kɑːr/",
+    "example_translation": "Tôi muốn mua một chiếc xe mới."
+  },
+  {
+    "word": "sell",
+    "pronunciation": "/sɛl/",
+    "part_of_speech": "verb",
+    "meaning": "bán",
+    "example": "He sells computers.",
+    "example_pronunciation": "/hi sɛlz kəmˈpjuːtərz/",
+    "example_translation": "Anh ấy bán máy tính."
+  },
+  {
+    "word": "price",
+    "pronunciation": "/praɪs/",
+    "part_of_speech": "noun",
+    "meaning": "giá",
+    "example": "The price of the book is $10.",
+    "example_pronunciation": "/ðə praɪs ɒv ðə bʊk ɪz tɛn dɒlərz/",
+    "example_translation": "Giá của cuốn sách là 10 đô la."
+  },
+  {
+    "word": "market",
+    "pronunciation": "/ˈmɑːrkɪt/",
+    "part_of_speech": "noun",
+    "meaning": "thị trường",
+    "example": "The market is very competitive.",
+    "example_pronunciation": "/ðə ˈmɑːrkɪt ɪz ˈvɛri kəmˈpɛtɪtɪv/",
+    "example_translation": "Thị trường rất cạnh tranh."
+  },
+  {
+    "word": "customer",
+    "pronunciation": "/ˈkʌstəmər/",
+    "part_of_speech": "noun",
+    "meaning": "khách hàng",
+    "example": "The customer is always right.",
+    "example_pronunciation": "/ðə ˈkʌstəmər ɪz ˈɔːlweɪz raɪt/",
+    "example_translation": "Khách hàng luôn đúng."
+  },
+  {
+    "word": "product",
+    "pronunciation": "/ˈprɒdʌkt/",
+    "part_of_speech": "noun",
+    "meaning": "sản phẩm",
+    "example": "This is a high-quality product.",
+    "example_pronunciation": "/ðɪs ɪz ə haɪ-ˈkwɒlɪti ˈprɒdʌkt/",
+    "example_translation": "Đây là một sản phẩm chất lượng cao."
+  },
+  {
+    "word": "service",
+    "pronunciation": "/ˈsɜːrvɪs/",
+    "part_of_speech": "noun",
+    "meaning": "dịch vụ",
+    "example": "The service at this restaurant is excellent.",
+    "example_pronunciation": "/ðə ˈsɜːrvɪs æt ðɪs ˈrɛstərɒnt ɪz ˈɛksələnt/",
+    "example_translation": "Dịch vụ ở nhà hàng này rất tuyệt vời."
+  },
+  {
+    "word": "company",
+    "pronunciation": "/ˈkʌmpəni/",
+    "part_of_speech": "noun",
+    "meaning": "công ty",
+    "example": "He works for a large company.",
+    "example_pronunciation": "/hi wɜːrks fɔːr ə lɑːrdʒ ˈkʌmpəni/",
+    "example_translation": "Anh ấy làm việc cho một công ty lớn."
+  },
+  {
+    "word": "business",
+    "pronunciation": "/ˈbɪznəs/",
+    "part_of_speech": "noun",
+    "meaning": "kinh doanh",
+    "example": "She started her own business.",
+    "example_pronunciation": "/ʃi ˈstɑːrtɪd hɜːr oʊn ˈbɪznəs/",
+    "example_translation": "Cô ấy bắt đầu kinh doanh riêng."
+  },
+  {
+    "word": "trade",
+    "pronunciation": "/treɪd/",
+    "part_of_speech": "noun",
+    "meaning": "thương mại",
+    "example": "International trade is important.",
+    "example_pronunciation": "/ˌɪntərˈnæʃənl treɪd ɪz ɪmˈpɔːrtnt/",
+    "example_translation": "Thương mại quốc tế rất quan trọng."
+  },
+  {
+    "word": "import",
+    "pronunciation": "/ˈɪmpɔːrt/",
+    "part_of_speech": "verb",
+    "meaning": "nhập khẩu",
+    "example": "We import goods from China.",
+    "example_pronunciation": "/wi ˈɪmpɔːrt gʊdz frɒm ˈtʃaɪnə/",
+    "example_translation": "Chúng tôi nhập khẩu hàng hóa từ Trung Quốc."
+  },
+  {
+    "word": "export",
+    "pronunciation": "/ˈɛkspɔːrt/",
+    "part_of_speech": "verb",
+    "meaning": "xuất khẩu",
+    "example": "They export cars to Europe.",
+    "example_pronunciation": "/ðeɪ ˈɛkspɔːrts kɑːrz tu ˈjʊrəp/",
+    "example_translation": "Họ xuất khẩu ô tô sang châu Âu."
+  },
+  {
+    "word": "retail",
+    "pronunciation": "/ˈriːteɪl/",
+    "part_of_speech": "noun",
+    "meaning": "bán lẻ",
+    "example": "She works in retail.",
+    "example_pronunciation": "/ʃi wɜːrks ɪn ˈriːteɪl/",
+    "example_translation": "Cô ấy làm việc trong ngành bán lẻ."
+  },
+  {
+    "word": "wholesale",
+    "pronunciation": "/ˈhoʊlseɪl/",
+    "part_of_speech": "noun",
+    "meaning": "bán buôn",
+    "example": "They buy goods at wholesale prices.",
+    "example_pronunciation": "/ðeɪ baɪ gʊdz æt ˈhoʊlseɪl ˈpraɪsɪz/",
+    "example_translation": "Họ mua hàng với giá bán buôn."
+  },
+  {
+    "word": "profit",
+    "pronunciation": "/ˈprɒfɪt/",
+    "part_of_speech": "noun",
+    "meaning": "lợi nhuận",
+    "example": "The company made a profit.",
+    "example_pronunciation": "/ðə ˈkʌmpəni meɪd ə ˈprɒfɪt/",
+    "example_translation": "Công ty đã có lợi nhuận."
+  },
+  {
+    "word": "loss",
+    "pronunciation": "/lɒs/",
+    "part_of_speech": "noun",
+    "meaning": "lỗ",
+    "example": "The business suffered a loss.",
+    "example_pronunciation": "/ðə ˈbɪznəs ˈsʌfərd ə lɒs/",
+    "example_translation": "Doanh nghiệp bị lỗ."
+  },
+  {
+    "word": "revenue",
+    "pronunciation": "/ˈrɛvənjuː/",
+    "part_of_speech": "noun",
+    "meaning": "doanh thu",
+    "example": "The revenue increased this year.",
+    "example_pronunciation": "/ðə ˈrɛvənjuː ɪnˈkriːst ðɪs jɪr/",
+    "example_translation": "Doanh thu tăng lên trong năm nay."
+  },
+  {
+    "word": "cost",
+    "pronunciation": "/kɒst/",
+    "part_of_speech": "noun",
+    "meaning": "chi phí",
+    "example": "The cost of the project is high.",
+    "example_pronunciation": "/ðə kɒst ɒv ðə ˈprɒdʒɛkt ɪz haɪ/",
+    "example_translation": "Chi phí của dự án cao."
+  },
+  {
+    "word": "budget",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "part_of_speech": "noun",
+    "meaning": "ngân sách",
+    "example": "We have a small budget.",
+    "example_pronunciation": "/wi hæv ə smɔːl ˈbʌdʒɪt/",
+    "example_translation": "Chúng ta có một ngân sách nhỏ."
+  },
+  {
+    "word": "investment",
+    "pronunciation": "/ɪnˈvɛstmənt/",
+    "part_of_speech": "noun",
+    "meaning": "đầu tư",
+    "example": "He made an investment in the company.",
+    "example_pronunciation": "/hi meɪd ən ɪnˈvɛstmənt ɪn ðə ˈkʌmpəni/",
+    "example_translation": "Anh ấy đã đầu tư vào công ty."
+  },
+  {
+    "word": "economy",
+    "pronunciation": "/ɪˈkɒnəmi/",
+    "part_of_speech": "noun",
+    "meaning": "kinh tế",
+    "example": "The economy is strong.",
+    "example_pronunciation": "/ði ɪˈkɒnəmi ɪz strɒŋ/",
+    "example_translation": "Nền kinh tế vững mạnh."
+  },
+  {
+    "word": "growth",
+    "pronunciation": "/groʊθ/",
+    "part_of_speech": "noun",
+    "meaning": "tăng trưởng",
+    "example": "The company saw growth last year.",
+    "example_pronunciation": "/ðə ˈkʌmpəni sɔː groʊθ lɑːst jɪr/",
+    "example_translation": "Công ty có tăng trưởng vào năm ngoái."
+  },
+  {
+    "word": "inflation",
+    "pronunciation": "/ɪnˈfleɪʃən/",
+    "part_of_speech": "noun",
+    "meaning": "lạm phát",
+    "example": "Inflation affects prices.",
+    "example_pronunciation": "/ɪnˈfleɪʃən əˈfɛkts ˈpraɪsɪz/",
+    "example_translation": "Lạm phát ảnh hưởng đến giá cả."
+  },
+  {
+    "word": "deflation",
+    "pronunciation": "/dɪˈfleɪʃən/",
+    "part_of_speech": "noun",
+    "meaning": "giảm phát",
+    "example": "Deflation lowers prices.",
+    "example_pronunciation": "/dɪˈfleɪʃən ˈloʊərz ˈpraɪsɪz/",
+    "example_translation": "Giảm phát làm giảm giá cả."
+  },
+  {
+    "word": "recession",
+    "pronunciation": "/rɪˈsɛʃən/",
+    "part_of_speech": "noun",
+    "meaning": "suy thoái",
+    "example": "The recession hit the economy hard.",
+    "example_pronunciation": "/ðə rɪˈsɛʃən hɪt ði ɪˈkɒnəmi hɑːrd/",
+    "example_translation": "Suy thoái ảnh hưởng nặng nề đến nền kinh tế."
+  },
+  {
+    "word": "depression",
+    "pronunciation": "/dɪˈprɛʃən/",
+    "part_of_speech": "noun",
+    "meaning": "khủng hoảng",
+    "example": "The depression lasted for years.",
+    "example_pronunciation": "/ðə dɪˈprɛʃən ˈlæstɪd fɔːr jɪrz/",
+    "example_translation": "Cuộc khủng hoảng kéo dài nhiều năm."
+  },
+  {
+    "word": "unemployment",
+    "pronunciation": "/ˌʌnɪmˈplɔɪmənt/",
+    "part_of_speech": "noun",
+    "meaning": "thất nghiệp",
+    "example": "Unemployment is a big problem.",
+    "example_pronunciation": "/ˌʌnɪmˈplɔɪmənt ɪz ə bɪg ˈprɒbləm/",
+    "example_translation": "Thất nghiệp là một vấn đề lớn."
+  },
+  {
+    "word": "employment",
+    "pronunciation": "/ɪmˈplɔɪmənt/",
+    "part_of_speech": "noun",
+    "meaning": "việc làm",
+    "example": "Employment rates are improving.",
+    "example_pronunciation": "/ɪmˈplɔɪmənt reɪts ɑːr ɪmˈpruːvɪŋ/",
+    "example_translation": "Tỷ lệ việc làm đang được cải thiện."
+  },
+  {
+    "word": "GDP",
+    "pronunciation": "/ˌdʒiː diː ˈpiː/",
+    "part_of_speech": "noun",
+    "meaning": "GDP (Tổng sản phẩm quốc nội)",
+    "example": "The GDP grew by 3%.",
+    "example_pronunciation": "/ðə ˌdʒiː diː ˈpiː gruː baɪ θriː pərˈsɛnt/",
+    "example_translation": "GDP tăng 3%."
+  },
+  {
+    "word": "GNP",
+    "pronunciation": "/ˌdʒiː ɛn ˈpiː/",
+    "part_of_speech": "noun",
+    "meaning": "GNP (Tổng sản phẩm quốc gia)",
+    "example": "GNP measures national income.",
+    "example_pronunciation": "/ˌdʒiː ɛn ˈpiː ˈmɛʒərz ˈnæʃənl ˈɪnkʌm/",
+    "example_translation": "GNP đo lường thu nhập quốc gia."
+  },
+  {
+    "word": "interest rate",
+    "pronunciation": "/ˈɪntrəst reɪt/",
+    "part_of_speech": "noun",
+    "meaning": "lãi suất",
+    "example": "The interest rate is low.",
+    "example_pronunciation": "/ðə ˈɪntrəst reɪt ɪz loʊ/",
+    "example_translation": "Lãi suất thấp."
+  },
+  {
+    "word": "exchange rate",
+    "pronunciation": "/ɪksˈtʃeɪndʒ reɪt/",
+    "part_of_speech": "noun",
+    "meaning": "tỷ giá hối đoái",
+    "example": "The exchange rate changes daily.",
+    "example_pronunciation": "/ðə ɪksˈtʃeɪndʒ reɪt ˈtʃeɪndʒɪz ˈdeɪli/",
+    "example_translation": "Tỷ giá hối đoái thay đổi hàng ngày."
+  },
+  {
+    "word": "supply",
+    "pronunciation": "/səˈplaɪ/",
+    "part_of_speech": "noun",
+    "meaning": "cung",
+    "example": "The supply of food is low.",
+    "example_pronunciation": "/ðə səˈplaɪ ɒv fuːd ɪz loʊ/",
+    "example_translation": "Cung thực phẩm thấp."
+  },
+  {
+    "word": "demand",
+    "pronunciation": "/dɪˈmænd/",
+    "part_of_speech": "noun",
+    "meaning": "cầu",
+    "example": "Demand for phones is high.",
+    "example_pronunciation": "/dɪˈmænd fɔːr foʊnz ɪz haɪ/",
+    "example_translation": "Nhu cầu về điện thoại cao."
+  },
+  {
+    "word": "competition",
+    "pronunciation": "/ˌkɒmpɪˈtɪʃən/",
+    "part_of_speech": "noun",
+    "meaning": "cạnh tranh",
+    "example": "Competition keeps prices low.",
+    "example_pronunciation": "/ˌkɒmpɪˈtɪʃən kiːps ˈpraɪsɪz loʊ/",
+    "example_translation": "Cạnh tranh giữ giá thấp."
+  },
+  {
+    "word": "monopoly",
+    "pronunciation": "/məˈnɒpəli/",
+    "part_of_speech": "noun",
+    "meaning": "độc quyền",
+    "example": "They have a monopoly in the market.",
+    "example_pronunciation": "/ðeɪ hæv ə məˈnɒpəli ɪn ðə ˈmɑːrkɪt/",
+    "example_translation": "Họ có độc quyền trên thị trường."
+  },
+  {
+    "word": "oligopoly",
+    "pronunciation": "/ˌɒlɪˈgɒpəli/",
+    "part_of_speech": "noun",
+    "meaning": "độc quyền nhóm",
+    "example": "An oligopoly controls this industry.",
+    "example_pronunciation": "/ən ˌɒlɪˈgɒpəli kənˈtroʊlz ðɪs ˈɪndəstri/",
+    "example_translation": "Một nhóm độc quyền kiểm soát ngành này."
+  },
+  {
+    "word": "fiscal policy",
+    "pronunciation": "/ˈfɪskəl ˈpɒlɪsi/",
+    "part_of_speech": "noun",
+    "meaning": "chính sách tài khóa",
+    "example": "Fiscal policy affects taxes.",
+    "example_pronunciation": "/ˈfɪskəl ˈpɒlɪsi əˈfɛkts ˈtæksɪz/",
+    "example_translation": "Chính sách tài khóa ảnh hưởng đến thuế."
+  },
+  {
+    "word": "monetary policy",
+    "pronunciation": "/ˈmʌnɪtəri ˈpɒlɪsi/",
+    "part_of_speech": "noun",
+    "meaning": "chính sách tiền tệ",
+    "example": "Monetary policy controls money supply.",
+    "example_pronunciation": "/ˈmʌnɪtəri ˈpɒlɪsi kənˈtroʊlz ˈmʌni səˈplaɪ/",
+    "example_translation": "Chính sách tiền tệ kiểm soát cung tiền."
+  },
+  {
+    "word": "computer",
+    "pronunciation": "/kəmˈpjuːtər/",
+    "part_of_speech": "noun",
+    "meaning": "máy tính",
+    "example": "I use a computer every day.",
+    "example_pronunciation": "/aɪ juːz ə kəmˈpjuːtər ˈɛvri deɪ/",
+    "example_translation": "Tôi sử dụng máy tính hàng ngày."
+  },
+  {
+    "word": "internet",
+    "pronunciation": "/ˈɪntərˌnɛt/",
+    "part_of_speech": "noun",
+    "meaning": "internet",
+    "example": "The internet connects people.",
+    "example_pronunciation": "/ði ˈɪntərˌnɛt kəˈnɛkts ˈpiːpl/",
+    "example_translation": "Internet kết nối mọi người."
+  },
+  {
+    "word": "software",
+    "pronunciation": "/ˈsɒftwɛər/",
+    "part_of_speech": "noun",
+    "meaning": "phần mềm",
+    "example": "This software is easy to use.",
+    "example_pronunciation": "/ðɪs ˈsɒftwɛər ɪz ˈiːzi tu juːz/",
+    "example_translation": "Phần mềm này dễ sử dụng."
+  },
+  {
+    "word": "hardware",
+    "pronunciation": "/ˈhɑːrdwɛər/",
+    "part_of_speech": "noun",
+    "meaning": "phần cứng",
+    "example": "The hardware is expensive.",
+    "example_pronunciation": "/ðə ˈhɑːrdwɛər ɪz ɪksˈpɛnsɪv/",
+    "example_translation": "Phần cứng đắt tiền."
+  },
+  {
+    "word": "network",
+    "pronunciation": "/ˈnɛtwɜːrk/",
+    "part_of_speech": "noun",
+    "meaning": "mạng",
+    "example": "The network is fast.",
+    "example_pronunciation": "/ðə ˈnɛtwɜːrk ɪz fæst/",
+    "example_translation": "Mạng rất nhanh."
+  },
+  {
+    "word": "database",
+    "pronunciation": "/ˈdeɪtəˌbeɪs/",
+    "part_of_speech": "noun",
+    "meaning": "cơ sở dữ liệu",
+    "example": "The database stores information.",
+    "example_pronunciation": "/ðə ˈdeɪtəˌbeɪs stɔːrz ˌɪnfərˈmeɪʃən/",
+    "example_translation": "Cơ sở dữ liệu lưu trữ thông tin."
+  },
+  {
+    "word": "server",
+    "pronunciation": "/ˈsɜːrvər/",
+    "part_of_speech": "noun",
+    "meaning": "máy chủ",
+    "example": "The server is working well.",
+    "example_pronunciation": "/ðə ˈsɜːrvər ɪz ˈwɜːrkɪŋ wɛl/",
+    "example_translation": "Máy chủ hoạt động tốt."
+  },
+  {
+    "word": "client",
+    "pronunciation": "/ˈklaɪənt/",
+    "part_of_speech": "noun",
+    "meaning": "máy khách",
+    "example": "The client sent a request.",
+    "example_pronunciation": "/ðə ˈklaɪənt sɛnt ə rɪˈkwɛst/",
+    "example_translation": "Máy khách gửi một yêu cầu."
+  },
+  {
+    "word": "programming",
+    "pronunciation": "/ˈproʊgræmɪŋ/",
+    "part_of_speech": "noun",
+    "meaning": "lập trình",
+    "example": "Programming is fun.",
+    "example_pronunciation": "/ˈproʊgræmɪŋ ɪz fʌn/",
+    "example_translation": "Lập trình rất thú vị."
+  },
+  {
+    "word": "coding",
+    "pronunciation": "/ˈkoʊdɪŋ/",
+    "part_of_speech": "noun",
+    "meaning": "viết mã",
+    "example": "She enjoys coding.",
+    "example_pronunciation": "/ʃi ɪnˈdʒɔɪz ˈkoʊdɪŋ/",
+    "example_translation": "Cô ấy thích viết mã."
+  },
+  {
+    "word": "algorithm",
+    "pronunciation": "/ˈælgərɪðəm/",
+    "part_of_speech": "noun",
+    "meaning": "thuật toán",
+    "example": "The algorithm is simple.",
+    "example_pronunciation": "/ði ˈælgərɪðəm ɪz ˈsɪmpl/",
+    "example_translation": "Thuật toán rất đơn giản."
+  },
+  {
+    "word": "data",
+    "pronunciation": "/ˈdeɪtə/",
+    "part_of_speech": "noun",
+    "meaning": "dữ liệu",
+    "example": "The data is important.",
+    "example_pronunciation": "/ðə ˈdeɪtə ɪz ɪmˈpɔːrtnt/",
+    "example_translation": "Dữ liệu rất quan trọng."
+  },
+  {
+    "word": "information",
+    "pronunciation": "/ˌɪnfərˈmeɪʃən/",
+    "part_of_speech": "noun",
+    "meaning": "thông tin",
+    "example": "We need more information.",
+    "example_pronunciation": "/wi niːd mɔːr ˌɪnfərˈmeɪʃən/",
+    "example_translation": "Chúng ta cần thêm thông tin."
+  },
+  {
+    "word": "technology",
+    "pronunciation": "/tɛkˈnɒlədʒi/",
+    "part_of_speech": "noun",
+    "meaning": "công nghệ",
+    "example": "Technology helps us work.",
+    "example_pronunciation": "/tɛkˈnɒlədʒi hɛlps ʌs wɜːrk/",
+    "example_translation": "Công nghệ giúp chúng ta làm việc."
+  },
+  {
+    "word": "digital",
+    "pronunciation": "/ˈdɪdʒɪtəl/",
+    "part_of_speech": "adjective",
+    "meaning": "kỹ thuật số",
+    "example": "This is a digital clock.",
+    "example_pronunciation": "/ðɪs ɪz ə ˈdɪdʒɪtəl klɒk/",
+    "example_translation": "Đây là một chiếc đồng hồ kỹ thuật số."
+  },
+  {
+    "word": "online",
+    "pronunciation": "/ˈɒnlaɪn/",
+    "part_of_speech": "adjective",
+    "meaning": "trực tuyến",
+    "example": "I study online.",
+    "example_pronunciation": "/aɪ ˈstʌdi ˈɒnlaɪn/",
+    "example_translation": "Tôi học trực tuyến."
+  },
+  {
+    "word": "offline",
+    "pronunciation": "/ˈɒfˌlaɪn/",
+    "part_of_speech": "adjective",
+    "meaning": "ngoại tuyến",
+    "example": "The game is offline now.",
+    "example_pronunciation": "/ðə geɪm ɪz ˈɒfˌlaɪn naʊ/",
+    "example_translation": "Trò chơi hiện đang ngoại tuyến."
+  },
+  {
+    "word": "website",
+    "pronunciation": "/ˈwɛbˌsaɪt/",
+    "part_of_speech": "noun",
+    "meaning": "trang web",
+    "example": "This website is useful.",
+    "example_pronunciation": "/ðɪs ˈwɛbˌsaɪt ɪz ˈjuːsfəl/",
+    "example_translation": "Trang web này hữu ích."
+  },
+  {
+    "word": "email",
+    "pronunciation": "/ˈiːmeɪl/",
+    "part_of_speech": "noun",
+    "meaning": "thư điện tử",
+    "example": "Send me an email.",
+    "example_pronunciation": "/sɛnd mi ən ˈiːmeɪl/",
+    "example_translation": "Gửi cho tôi một thư điện tử."
+  },
+  {
+    "word": "social media",
+    "pronunciation": "/ˈsoʊʃəl ˈmiːdiə/",
+    "part_of_speech": "noun",
+    "meaning": "mạng xã hội",
+    "example": "I use social media daily.",
+    "example_pronunciation": "/aɪ juːz ˈsoʊʃəl ˈmiːdiə ˈdeɪli/",
+    "example_translation": "Tôi sử dụng mạng xã hội hàng ngày."
+  }
+]

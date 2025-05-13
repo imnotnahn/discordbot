@@ -187,7 +187,7 @@ class GoCog(commands.Cog):
         self.active_games: Dict[str, CoVayGame] = {}
 
     @commands.hybrid_command(
-        name="covay",
+        name="covay_play",
         description="Start a Go (Cờ vây) game with another player"
     )
     async def covay(self, ctx: commands.Context, player1: discord.Member, player2: discord.Member, size: int):
@@ -238,7 +238,7 @@ class GoCog(commands.Cog):
         await ctx.send(f"```\n{board_text}\n```")
 
     @commands.hybrid_command(
-        name="play",
+        name="covay_move",
         description="Place a stone in an active Go game"
     )
     async def play(self, ctx: commands.Context, x: int, y: int):
@@ -272,7 +272,7 @@ class GoCog(commands.Cog):
             await ctx.send(f"It's now {player_game.current_player.mention}'s turn ({current_player}).")
 
     @commands.hybrid_command(
-        name="pass",
+        name="covay_pass",
         description="Pass your turn in an active Go game"
     )
     async def pass_turn(self, ctx: commands.Context):
@@ -300,7 +300,7 @@ class GoCog(commands.Cog):
             await ctx.send(f"It's now {player_game.current_player.mention}'s turn ({current_player}).")
 
     @commands.hybrid_command(
-        name="resign_covay",
+        name="covay_resign",
         description="Resign from your current Go game",
         aliases=["go_resign"]
     )
