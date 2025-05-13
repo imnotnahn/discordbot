@@ -38,7 +38,15 @@ Interact with AI models through the bot:
 ### Fun Commands
 Entertaining commands for server engagement:
 
+- **Gay Meter** - A humorous command to measure someone's "gayness" on a scale.
 
+### Tactical Game
+A tactical RPG-style battle system:
+
+- **Weapon Management** - Create, upgrade and manage weapons for battles.
+- **Battle System** - Engage in tactical turn-based battles.
+- **Inventory System** - Manage items and equipment.
+- **Unit Management** - Create and upgrade battle units.
 
 ## Technologies Used
 
@@ -106,6 +114,25 @@ python main.py
 - `/covay_move [x] [y]` - Place a stone in Go
 - `/covay_pass` - Pass your turn in Go
 - `/covay_resign` - Resign from the current Go game
+
+### Tactical Game Commands
+- `/tactic_weapon create [name] [type] [rarity]` - Create a new weapon
+- `/tactic_weapon list` - List all your weapons
+- `/tactic_weapon info [weapon_id]` - Show detailed information about a weapon
+- `/tactic_weapon upgrade [weapon_id]` - Upgrade a weapon
+- `/tactic_weapon rename [weapon_id] [new_name]` - Rename a weapon
+- `/tactic_weapon delete [weapon_id]` - Delete a weapon
+
+- `/tactic_battle start @opponent` - Start a battle with another player
+- `/tactic_battle attack [skill_id]` - Use an attack skill in battle
+- `/tactic_battle defend [skill_id]` - Use a defensive skill in battle
+- `/tactic_battle special [skill_id]` - Use a special skill in battle
+- `/tactic_battle surrender` - Surrender the current battle
+- `/tactic_battle status` - Show the current battle status
+
+- `/tactic_inventory` - Show your inventory
+- `/tactic_inventory use [item_id]` - Use an item from your inventory
+- `/tactic_equip [weapon_id]` - Equip a weapon
 
 ### Voice Commands
 - `/voice_kick @user` - Kick a user from your voice channel
