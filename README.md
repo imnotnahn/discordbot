@@ -76,15 +76,24 @@ pip install -r requirements.txt
 ```
 
 ### Step 3: Configure the Bot
-Create or edit the `config.json` file:
+Create a `config.json` file based on the provided template:
+```bash
+cp config.template.json config.json
+```
+
+Then edit the `config.json` file with your own API keys and tokens:
 ```json
 {
   "prefix": "!",
   "token": "YOUR_DISCORD_BOT_TOKEN",
   "clientId": "YOUR_DISCORD_CLIENT_ID",
+  "spotifyClientId": "YOUR_SPOTIFY_CLIENT_ID",
+  "spotifyClientSecret": "YOUR_SPOTIFY_CLIENT_SECRET",
   "geminiApiKey": "YOUR_GEMINI_API_KEY"
 }
 ```
+
+> **Note**: The `config.json` file contains sensitive information and is already in the `.gitignore` file. Make sure not to commit this file to any public repository.
 
 ### Step 4: Set Up Resources
 Ensure the following directories exist:

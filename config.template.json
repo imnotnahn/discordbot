@@ -1,0 +1,8 @@
+{
+  "prefix": "!",
+  "token": "YOUR_DISCORD_BOT_TOKEN",
+  "clientId": "YOUR_DISCORD_CLIENT_ID",
+  "spotifyClientId": "YOUR_SPOTIFY_CLIENT_ID",
+  "spotifyClientSecret": "YOUR_SPOTIFY_CLIENT_SECRET",
+  "geminiApiKey": "YOUR_GEMINI_API_KEY"
+} 
