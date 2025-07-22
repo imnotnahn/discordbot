@@ -6,737 +6,449 @@ from typing import Dict, List, Set, Optional, Union
 
 logger = logging.getLogger('discord_bot')
 
-# Constant for the creation channel name
-CREATE_CHANNEL_NAME = "tạo phòng"
-
 class VoiceChannelManager(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        # Store channel info: {channel_id: {owner_id: id, co_owners: set(), created_at: timestamp}}
         self.voice_channels: Dict[int, Dict] = {}
-        # Start background task to check empty channels
-        self.check_empty_channels.start()
+        
+        self.config = bot.config.get('voice_manager', {})
+        self.create_channel_name = self.config.get('create_channel_name', 'tạo phòng')
+        self.auto_cleanup = self.config.get('auto_cleanup', True)
+        self.cleanup_delay = self.config.get('cleanup_delay_seconds', 5)
+        
+        if self.auto_cleanup:
+            self.check_empty_channels.start()
+        
+        logger.info(f"🔊 Voice Manager initialized - Create channel: '{self.create_channel_name}'")
     
     def cog_unload(self):
-        # Stop background tasks when cog is unloaded
-        self.check_empty_channels.cancel()
+        """Clean up when cog is unloaded"""
+        if hasattr(self, 'check_empty_channels'):
+            self.check_empty_channels.cancel()
     
     @commands.Cog.listener()
     async def on_voice_state_update(self, member: discord.Member, before: discord.VoiceState, after: discord.VoiceState):
         """Handle voice state changes for auto-creation and cleanup"""
-        # Handle channel creation when joining the "create channel"
-        if after.channel and after.channel.name.lower() == CREATE_CHANNEL_NAME:
-            await self.create_voice_channel(member)
-            return
+        try:
+            if after.channel and after.channel.name.lower() == self.create_channel_name.lower():
+                await self.create_voice_channel(member)
+                return
             
-        # Handle user leaving a managed channel
-        if before.channel and before.channel.id in self.voice_channels:
-            # Wait a moment to see if the channel is empty
-            await asyncio.sleep(0.5)
-            await self.check_channel_empty(before.channel)
+            if before.channel and before.channel.id in self.voice_channels:
+                await asyncio.sleep(self.cleanup_delay)
+                await self.check_channel_empty(before.channel)
+        
+        except Exception as e:
+            logger.error(f"Error in voice state update handler: {e}")
     
     async def create_voice_channel(self, member: discord.Member):
-        """Create a new voice channel and move the member there"""
+        """Create a private voice channel for the user"""
         try:
-            # Get or create the voice category
-            category_name = "Kênh thoại"
-            category = discord.utils.get(member.guild.categories, name=category_name)
+            guild = member.guild
+            category = None
             
-            # If category doesn't exist, create it
-            if not category:
-                category = await self.setup_voice_category(member.guild)
-                if not category:
-                    # If we couldn't create the category, use the same category as the create channel
-                    create_channel = discord.utils.get(member.guild.voice_channels, name=CREATE_CHANNEL_NAME)
-                    category = create_channel.category if create_channel else None
+            for channel in guild.channels:
+                if channel.name.lower() == self.create_channel_name.lower():
+                    category = channel.category
+                    break
             
-            # Create channel name based on the member's name
-            channel_name = f"{member.display_name}'s Channel"
+            channel_name = f"🔊 {member.display_name}'s Room"
             
-            # Create the new channel
-            new_channel = await member.guild.create_voice_channel(
-                name=channel_name,
-                category=category,
-                reason=f"Auto-created for {member.display_name}"
-            )
-            
-            # Update permissions for the owner
-            await new_channel.set_permissions(member, 
-                connect=True, 
-                speak=True,
-                stream=True,
-                priority_speaker=True,
-                use_voice_activation=True,
-                manage_channels=True
-            )
-            
-            # Move the member to the new channel
-            await member.move_to(new_channel)
-            
-            # Register the channel
-            self.voice_channels[new_channel.id] = {
-                "owner_id": member.id,
-                "co_owners": set(),
-                "created_at": discord.utils.utcnow(),
-                "guild_id": member.guild.id
+            overwrites = {
+                guild.default_role: discord.PermissionOverwrite(connect=True, speak=True),
+                member: discord.PermissionOverwrite(
+                    manage_channels=True,
+                    manage_permissions=True,
+                    move_members=True,
+                    mute_members=True,
+                    deafen_members=True,
+                    priority_speaker=True
+                )
             }
             
-            # Send a welcome message to the user's DM
+            new_channel = await guild.create_voice_channel(
+                name=channel_name,
+                category=category,
+                overwrites=overwrites,
+                reason=f"Auto-created voice room for {member.display_name}"
+            )
+            
+            self.voice_channels[new_channel.id] = {
+                'owner_id': member.id,
+                'co_owners': set(),
+                'created_at': discord.utils.utcnow()
+            }
+            
+            await member.move_to(new_channel)
+            
+            # Send a welcome message
+            embed = discord.Embed(
+                title="🎉 Voice Room Created!",
+                description=f"**{member.display_name}** created a private voice room!",
+                color=discord.Color.green()
+            )
+            
+            embed.add_field(
+                name="🛡️ Your Permissions",
+                value=(
+                    "• **Full control** over this channel\n"
+                    "• **Move, mute, deafen** other users\n"
+                    "• **Manage permissions** for specific users\n"
+                    "• **Rename** the channel\n"
+                    "• **Add co-owners** with `/voice_add_owner`"
+                ),
+                inline=False
+            )
+            
+            embed.add_field(
+                name="🔧 Useful Commands",
+                value=(
+                    "• `/voice_rename <name>` - Rename your channel\n"
+                    "• `/voice_limit <number>` - Set user limit (0 = unlimited)\n"
+                    "• `/voice_add_owner @user` - Add co-owner\n"
+                    "• `/voice_remove_owner @user` - Remove co-owner\n"
+                    "• `/voice_lock` - Lock channel (only you can join)\n"
+                    "• `/voice_unlock` - Unlock channel"
+                ),
+                inline=False
+            )
+            
+            embed.set_footer(text="🗑️ Channel will be deleted when empty")
+            
+            # Try to send to the user's DM first, then to the channel
             try:
-                embed = discord.Embed(
-                    title="🎉 Voice Channel Created!",
-                    description=f"You've created a new voice channel: **{channel_name}**",
-                    color=discord.Color.green()
-                )
-                embed.add_field(
-                    name="Available Commands",
-                    value=(
-                        "`/kick` - Remove users\n"
-                        "`/limit` - Set user limit\n"
-                        "`/hide` - Make channel private\n"
-                        "`/show` - Make channel visible\n"
-                        "`/public` - Open to everyone\n"
-                        "`/private` - Require permissions\n"
-                        "`/rename` - Change channel name\n"
-                        "`/add_owner` - Add co-owner\n"
-                        "`/lock` - Prevent joining\n"
-                        "`/unlock` - Allow joining"
-                    ),
-                    inline=False
-                )
                 await member.send(embed=embed)
             except discord.Forbidden:
-                # If user has DMs closed, ignore
-                pass
-                
-            logger.info(f"Created voice channel {new_channel.name} ({new_channel.id}) for {member.display_name}")
+                # If DM fails, send to the voice channel's text equivalent or guild
+                text_channels = [ch for ch in guild.text_channels if ch.category == category]
+                if text_channels:
+                    await text_channels[0].send(f"{member.mention}", embed=embed, delete_after=60)
             
+            logger.info(f"Created voice channel '{channel_name}' for {member.display_name}")
+        
         except Exception as e:
-            logger.error(f"Error creating voice channel: {e}")
+            logger.error(f"Error creating voice channel for {member.display_name}: {e}")
+            try:
+                await member.send(f"❌ Failed to create voice room: {str(e)}")
+            except:
+                pass
     
     async def check_channel_empty(self, channel: discord.VoiceChannel):
-        """Check if a channel is empty and delete if needed"""
-        if channel.id not in self.voice_channels:
-            return
+        """Check if a managed channel is empty and delete if so"""
+        try:
+            if channel.id not in self.voice_channels:
+                return
             
-        if len(channel.members) == 0:
-            try:
-                await channel.delete(reason="Auto-deleted empty voice channel")
-                # Remove from tracking
+            if len(channel.members) == 0:
+                await channel.delete(reason="Voice room empty - auto cleanup")
                 del self.voice_channels[channel.id]
-                logger.info(f"Deleted empty voice channel: {channel.name} ({channel.id})")
-            except Exception as e:
-                logger.error(f"Failed to delete empty channel {channel.id}: {e}")
+                logger.info(f"Deleted empty voice channel: {channel.name}")
+        
+        except discord.NotFound:
+            # Channel already deleted
+            if channel.id in self.voice_channels:
+                del self.voice_channels[channel.id]
+        except Exception as e:
+            logger.error(f"Error checking empty channel {channel.name}: {e}")
     
     @tasks.loop(minutes=5)
     async def check_empty_channels(self):
-        """Periodically check and clean up empty voice channels"""
-        for channel_id in list(self.voice_channels.keys()):
-            channel_data = self.voice_channels[channel_id]
-            guild = self.bot.get_guild(channel_data["guild_id"])
-            if not guild:
-                continue
-                
-            channel = guild.get_channel(channel_id)
-            if not channel:
-                # Channel no longer exists, remove from tracking
-                del self.voice_channels[channel_id]
-                continue
-                
-            if len(channel.members) == 0:
-                try:
-                    await channel.delete(reason="Auto-deleted empty voice channel")
+        """Periodic task to clean up empty channels"""
+        try:
+            channels_to_remove = []
+            
+            for channel_id in list(self.voice_channels.keys()):
+                channel = self.bot.get_channel(channel_id)
+                if channel is None:
+                    # Channel doesn't exist anymore
+                    channels_to_remove.append(channel_id)
+                elif len(channel.members) == 0:
+                    # Channel is empty
+                    try:
+                        await channel.delete(reason="Periodic cleanup - empty voice room")
+                        channels_to_remove.append(channel_id)
+                        logger.info(f"Periodic cleanup: deleted {channel.name}")
+                    except Exception as e:
+                        logger.error(f"Error deleting channel {channel.name}: {e}")
+            
+            # Remove from tracking
+            for channel_id in channels_to_remove:
+                if channel_id in self.voice_channels:
                     del self.voice_channels[channel_id]
-                    logger.info(f"Periodic cleanup: Deleted empty channel {channel.name} ({channel_id})")
-                except Exception as e:
-                    logger.error(f"Failed to delete empty channel {channel_id}: {e}")
+        
+        except Exception as e:
+            logger.error(f"Error in periodic channel cleanup: {e}")
     
     @check_empty_channels.before_loop
     async def before_check_empty_channels(self):
-        """Wait until bot is ready before starting the task"""
+        """Wait for bot to be ready before starting the loop"""
         await self.bot.wait_until_ready()
     
-    def is_channel_owner(self, channel_id: int, user_id: int) -> bool:
-        """Check if a user is the owner or co-owner of a channel"""
+    def is_channel_owner_or_admin(self, channel_id: int, user: discord.Member) -> bool:
+        """Check if user is channel owner, co-owner, or admin"""
+        if user.guild_permissions.administrator:
+            return True
+        
         if channel_id not in self.voice_channels:
             return False
-            
-        channel_data = self.voice_channels[channel_id]
-        return user_id == channel_data["owner_id"] or user_id in channel_data["co_owners"]
+        
+        channel_info = self.voice_channels[channel_id]
+        return (user.id == channel_info['owner_id'] or 
+                user.id in channel_info.get('co_owners', set()))
     
-    # --- Channel Management Commands ---
-    
-    @commands.hybrid_command(
-        name="voice_kick",
-        description="Kick a user from your voice channel"
-    )
-    async def kick_user(self, ctx: commands.Context, user: discord.Member):
-        """Kick a user from your voice channel"""
+    @commands.hybrid_command(name="voice_rename", description="Rename your voice channel")
+    async def rename_voice_channel(self, ctx: commands.Context, *, new_name: str):
+        """Rename a voice channel"""
         if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
+            return await ctx.send("❌ You must be in a voice channel to use this command.")
+        
         channel = ctx.author.voice.channel
         
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
-        if user not in channel.members:
-            return await ctx.send(f"{user.display_name} is not in this voice channel.")
-            
+        if not self.is_channel_owner_or_admin(channel.id, ctx.author):
+            return await ctx.send("❌ You don't have permission to rename this channel.")
+        
+        if len(new_name) > 50:
+            return await ctx.send("❌ Channel name must be 50 characters or less.")
+        
         try:
-            # Disconnect the user from voice
-            await user.move_to(None)
-            await ctx.send(f"Kicked {user.mention} from the voice channel.")
-        except discord.Forbidden:
-            await ctx.send("I don't have permission to disconnect that user.")
-        except Exception as e:
-            logger.error(f"Error kicking user: {e}")
-            await ctx.send("An error occurred while trying to kick the user.")
-    
-    @commands.hybrid_command(
-        name="voice_limit",
-        description="Set a user limit for your voice channel"
-    )
-    async def set_limit(self, ctx: commands.Context, limit: int):
-        """Set a user limit for the voice channel"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
+            old_name = channel.name
+            await channel.edit(name=new_name, reason=f"Renamed by {ctx.author}")
             
+            embed = discord.Embed(
+                title="✅ Channel Renamed",
+                description=f"**{old_name}** → **{new_name}**",
+                color=discord.Color.green()
+            )
+            await ctx.send(embed=embed)
+            
+        except Exception as e:
+            await ctx.send(f"❌ Failed to rename channel: {str(e)}")
+    
+    @commands.hybrid_command(name="voice_limit", description="Set user limit for your voice channel")
+    async def set_voice_limit(self, ctx: commands.Context, limit: int):
+        """Set user limit for a voice channel"""
+        if not ctx.author.voice or not ctx.author.voice.channel:
+            return await ctx.send("❌ You must be in a voice channel to use this command.")
+        
         channel = ctx.author.voice.channel
         
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
+        if not self.is_channel_owner_or_admin(channel.id, ctx.author):
+            return await ctx.send("❌ You don't have permission to modify this channel.")
+        
         if limit < 0 or limit > 99:
-            return await ctx.send("User limit must be between 0 and 99 (0 means no limit).")
-            
-        try:
-            await channel.edit(user_limit=limit)
-            if limit == 0:
-                await ctx.send("User limit removed from the channel.")
-            else:
-                await ctx.send(f"User limit set to {limit}.")
-        except Exception as e:
-            logger.error(f"Error setting user limit: {e}")
-            await ctx.send("An error occurred while setting the user limit.")
-    
-    @commands.hybrid_command(
-        name="voice_hide",
-        description="Hide your voice channel from the server"
-    )
-    async def hide_channel(self, ctx: commands.Context):
-        """Hide the voice channel from everyone except current members"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
-        channel = ctx.author.voice.channel
+            return await ctx.send("❌ User limit must be between 0 (unlimited) and 99.")
         
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
         try:
-            # Hide the channel from @everyone
-            await channel.set_permissions(ctx.guild.default_role, view_channel=False, connect=False)
+            await channel.edit(user_limit=limit, reason=f"Limit set by {ctx.author}")
             
-            # Ensure current members can still see and connect
-            for member in channel.members:
-                await channel.set_permissions(member, view_channel=True, connect=True)
-                
-            await ctx.send("Voice channel is now hidden from others.")
-        except Exception as e:
-            logger.error(f"Error hiding channel: {e}")
-            await ctx.send("An error occurred while hiding the channel.")
-    
-    @commands.hybrid_command(
-        name="voice_show",
-        description="Make your voice channel visible to everyone"
-    )
-    async def show_channel(self, ctx: commands.Context):
-        """Make the voice channel visible to everyone"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
+            limit_text = f"{limit} users" if limit > 0 else "unlimited"
             
-        channel = ctx.author.voice.channel
-        
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
-        try:
-            # Make the channel visible to everyone
-            await channel.set_permissions(ctx.guild.default_role, view_channel=True)
-            await ctx.send("Voice channel is now visible to everyone.")
-        except Exception as e:
-            logger.error(f"Error showing channel: {e}")
-            await ctx.send("An error occurred while making the channel visible.")
-    
-    @commands.hybrid_command(
-        name="voice_public",
-        description="Make your voice channel open to everyone"
-    )
-    async def public_channel(self, ctx: commands.Context):
-        """Make the voice channel public for everyone to join"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
-        channel = ctx.author.voice.channel
-        
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
-        try:
-            # Make the channel public
-            await channel.set_permissions(ctx.guild.default_role, view_channel=True, connect=True)
-            await ctx.send("Voice channel is now public. Anyone can join.")
-        except Exception as e:
-            logger.error(f"Error making channel public: {e}")
-            await ctx.send("An error occurred while making the channel public.")
-    
-    @commands.hybrid_command(
-        name="voice_private",
-        description="Make your voice channel private"
-    )
-    async def private_channel(self, ctx: commands.Context):
-        """Make the voice channel private (visible but requiring permission to join)"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
-        channel = ctx.author.voice.channel
-        
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
-        try:
-            # Make the channel private (visible but not joinable)
-            await channel.set_permissions(ctx.guild.default_role, view_channel=True, connect=False)
-            await ctx.send("Voice channel is now private. Only users with permission can join.")
-        except Exception as e:
-            logger.error(f"Error making channel private: {e}")
-            await ctx.send("An error occurred while making the channel private.")
-    
-    @commands.hybrid_command(
-        name="voice_rename",
-        description="Rename your voice channel"
-    )
-    async def rename_channel(self, ctx: commands.Context, *, new_name: str):
-        """Rename the voice channel"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
-        channel = ctx.author.voice.channel
-        
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
-        if len(new_name) > 100:
-            return await ctx.send("Channel name must be 100 characters or less.")
-            
-        try:
-            await channel.edit(name=new_name)
-            await ctx.send(f"Channel renamed to: **{new_name}**")
-        except Exception as e:
-            logger.error(f"Error renaming channel: {e}")
-            await ctx.send("An error occurred while renaming the channel.")
-    
-    @commands.hybrid_command(
-        name="voice_addowner",
-        description="Add a co-owner to your voice channel"
-    )
-    async def add_owner(self, ctx: commands.Context, user: discord.Member):
-        """Add another user as co-owner of the channel"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
-        channel = ctx.author.voice.channel
-        
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
-        if user.id == ctx.author.id:
-            return await ctx.send("You're already the owner of this channel.")
-            
-        # Add to co-owners
-        channel_data = self.voice_channels[channel.id]
-        if user.id in channel_data["co_owners"]:
-            return await ctx.send(f"{user.display_name} is already a co-owner of this channel.")
-            
-        try:
-            # Add to co-owners list
-            channel_data["co_owners"].add(user.id)
-            
-            # Update permissions
-            await channel.set_permissions(user, 
-                connect=True, 
-                speak=True, 
-                stream=True,
-                priority_speaker=True,
-                use_voice_activation=True,
-                manage_channels=True
+            embed = discord.Embed(
+                title="✅ User Limit Updated",
+                description=f"Channel limit set to **{limit_text}**",
+                color=discord.Color.green()
             )
+            await ctx.send(embed=embed)
             
-            await ctx.send(f"{user.mention} is now a co-owner of this channel.")
         except Exception as e:
-            logger.error(f"Error adding co-owner: {e}")
-            await ctx.send("An error occurred while adding the co-owner.")
+            await ctx.send(f"❌ Failed to set user limit: {str(e)}")
     
-    @commands.hybrid_command(
-        name="voice_removeowner",
-        description="Remove a co-owner from your voice channel"
-    )
-    async def remove_owner(self, ctx: commands.Context, user: discord.Member):
-        """Remove a co-owner from the channel"""
+    @commands.hybrid_command(name="voice_add_owner", description="Add a co-owner to your voice channel")
+    async def add_voice_owner(self, ctx: commands.Context, user: discord.Member):
+        """Add a co-owner to a voice channel"""
         if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
+            return await ctx.send("❌ You must be in a voice channel to use this command.")
+        
         channel = ctx.author.voice.channel
         
         if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        channel_data = self.voice_channels[channel.id]
-        if ctx.author.id != channel_data["owner_id"]:
-            return await ctx.send("Only the main owner can remove co-owners.")
-            
-        if user.id not in channel_data["co_owners"]:
-            return await ctx.send(f"{user.display_name} is not a co-owner of this channel.")
-            
-        try:
-            # Remove from co-owners list
-            channel_data["co_owners"].remove(user.id)
-            
-            # Reset permissions to default member
-            await channel.set_permissions(user, overwrite=None)
-            
-            await ctx.send(f"{user.mention} is no longer a co-owner of this channel.")
-        except Exception as e:
-            logger.error(f"Error removing co-owner: {e}")
-            await ctx.send("An error occurred while removing the co-owner.")
-    
-    @commands.hybrid_command(
-        name="voice_lock",
-        description="Lock your voice channel to prevent new users from joining"
-    )
-    async def lock_channel(self, ctx: commands.Context):
-        """Lock the channel to prevent new users from joining"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
-        channel = ctx.author.voice.channel
+            return await ctx.send("❌ This is not a managed voice channel.")
         
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
-        try:
-            # Lock the channel - everyone except current members can't join
-            await channel.set_permissions(ctx.guild.default_role, connect=False)
-            
-            # Ensure current members can still connect if they disconnect
-            for member in channel.members:
-                await channel.set_permissions(member, connect=True)
-                
-            await ctx.send("Voice channel is now locked. No new users can join.")
-        except Exception as e:
-            logger.error(f"Error locking channel: {e}")
-            await ctx.send("An error occurred while locking the channel.")
-    
-    @commands.hybrid_command(
-        name="voice_unlock",
-        description="Unlock your voice channel to allow users to join"
-    )
-    async def unlock_channel(self, ctx: commands.Context):
-        """Unlock the channel to allow users to join again"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
-        channel = ctx.author.voice.channel
+        if ctx.author.id != self.voice_channels[channel.id]['owner_id'] and not ctx.author.guild_permissions.administrator:
+            return await ctx.send("❌ Only the channel owner can add co-owners.")
         
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
-        try:
-            # Unlock the channel
-            await channel.set_permissions(ctx.guild.default_role, connect=True)
-            await ctx.send("Voice channel is now unlocked. Users can join again.")
-        except Exception as e:
-            logger.error(f"Error unlocking channel: {e}")
-            await ctx.send("An error occurred while unlocking the channel.")
-    
-    @commands.hybrid_command(
-        name="voice_transfer",
-        description="Transfer ownership of your voice channel"
-    )
-    async def transfer_ownership(self, ctx: commands.Context, new_owner: discord.Member):
-        """Transfer ownership of the channel to another user"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
-        channel = ctx.author.voice.channel
+        if user.id == self.voice_channels[channel.id]['owner_id']:
+            return await ctx.send("❌ That user is already the channel owner.")
         
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        channel_data = self.voice_channels[channel.id]
-        if ctx.author.id != channel_data["owner_id"]:
-            return await ctx.send("Only the main owner can transfer ownership.")
-            
-        if new_owner not in channel.members:
-            return await ctx.send(f"{new_owner.display_name} must be in the voice channel.")
-            
-        try:
-            # Make current owner a co-owner
-            channel_data["co_owners"].add(ctx.author.id)
-            
-            # Remove new owner from co-owners if they were there
-            if new_owner.id in channel_data["co_owners"]:
-                channel_data["co_owners"].remove(new_owner.id)
-                
-            # Set new owner
-            channel_data["owner_id"] = new_owner.id
-            
-            await ctx.send(f"Ownership transferred to {new_owner.mention}.")
-        except Exception as e:
-            logger.error(f"Error transferring ownership: {e}")
-            await ctx.send("An error occurred while transferring ownership.")
-    
-    @commands.hybrid_command(
-        name="voice_muteall",
-        description="Mute all users in your voice channel except you and co-owners"
-    )
-    async def mute_all(self, ctx: commands.Context):
-        """Server mute all users except owners"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
-        channel = ctx.author.voice.channel
+        if ctx.interaction:
+            await ctx.defer()
         
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
-        channel_data = self.voice_channels[channel.id]
+        self.voice_channels[channel.id]['co_owners'].add(user.id)
+        overwrites = channel.overwrites_for(user)
+        overwrites.manage_channels = True
+        overwrites.manage_permissions = True
+        overwrites.move_members = True
+        overwrites.mute_members = True
+        overwrites.deafen_members = True
         
         try:
-            muted_count = 0
-            for member in channel.members:
-                # Don't mute the owner or co-owners
-                if member.id == channel_data["owner_id"] or member.id in channel_data["co_owners"]:
-                    continue
-                    
-                await member.edit(mute=True)
-                muted_count += 1
-                
-            await ctx.send(f"Muted {muted_count} members in the voice channel.")
-        except Exception as e:
-            logger.error(f"Error muting members: {e}")
-            await ctx.send("An error occurred while muting members.")
-    
-    @commands.hybrid_command(
-        name="voice_unmuteall",
-        description="Unmute all users in your voice channel"
-    )
-    async def unmute_all(self, ctx: commands.Context):
-        """Unmute all users in the channel"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
+            await channel.set_permissions(user, overwrite=overwrites, reason=f"Co-owner added by {ctx.author}")
             
-        channel = ctx.author.voice.channel
-        
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        if not self.is_channel_owner(channel.id, ctx.author.id):
-            return await ctx.send("Only the channel owner can use this command.")
-            
-        try:
-            unmuted_count = 0
-            for member in channel.members:
-                if member.voice.mute:
-                    await member.edit(mute=False)
-                    unmuted_count += 1
-                    
-            await ctx.send(f"Unmuted {unmuted_count} members in the voice channel.")
-        except Exception as e:
-            logger.error(f"Error unmuting members: {e}")
-            await ctx.send("An error occurred while unmuting members.")
-    
-    @commands.hybrid_command(
-        name="voice_claim",
-        description="Claim ownership of a voice channel if the owner has left"
-    )
-    async def claim_channel(self, ctx: commands.Context):
-        """Claim ownership of a voice channel if the owner has left"""
-        if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
-        channel = ctx.author.voice.channel
-        
-        if channel.id not in self.voice_channels:
-            return await ctx.send("This command only works in custom voice channels.")
-            
-        channel_data = self.voice_channels[channel.id]
-        owner_id = channel_data["owner_id"]
-        
-        # Check if current owner is in the channel
-        owner_in_channel = False
-        for member in channel.members:
-            if member.id == owner_id:
-                owner_in_channel = True
-                break
-                
-        if owner_in_channel:
-            return await ctx.send("The channel owner is still in the channel. You cannot claim ownership.")
-            
-        # Transfer ownership to the claimer
-        try:
-            # Remove from co-owners if they were there
-            if ctx.author.id in channel_data["co_owners"]:
-                channel_data["co_owners"].remove(ctx.author.id)
-                
-            # Set new owner
-            channel_data["owner_id"] = ctx.author.id
-            
-            # Update permissions
-            await channel.set_permissions(ctx.author, 
-                connect=True, 
-                speak=True, 
-                stream=True,
-                priority_speaker=True,
-                use_voice_activation=True,
-                manage_channels=True
+            embed = discord.Embed(
+                title="✅ Co-Owner Added",
+                description=f"**{user.display_name}** is now a co-owner of this channel",
+                color=discord.Color.green()
             )
+            await ctx.send(embed=embed)
             
-            await ctx.send(f"{ctx.author.mention} is now the owner of this channel.")
         except Exception as e:
-            logger.error(f"Error claiming ownership: {e}")
-            await ctx.send("An error occurred while claiming ownership.")
+            await ctx.send(f"❌ Failed to add co-owner: {str(e)}")
     
-    @commands.hybrid_command(
-        name="voice_info",
-        description="Show information about the current voice channel"
-    )
+    @commands.hybrid_command(name="voice_remove_owner", description="Remove a co-owner from your voice channel")
+    async def remove_voice_owner(self, ctx: commands.Context, user: discord.Member):
+        """Remove a co-owner from a voice channel"""
+        if not ctx.author.voice or not ctx.author.voice.channel:
+            return await ctx.send("❌ You must be in a voice channel to use this command.")
+        
+        channel = ctx.author.voice.channel
+        
+        if channel.id not in self.voice_channels:
+            return await ctx.send("❌ This is not a managed voice channel.")
+        
+        if ctx.author.id != self.voice_channels[channel.id]['owner_id'] and not ctx.author.guild_permissions.administrator:
+            return await ctx.send("❌ Only the channel owner can remove co-owners.")
+        
+        if user.id not in self.voice_channels[channel.id]['co_owners']:
+            return await ctx.send("❌ That user is not a co-owner of this channel.")
+        
+        if ctx.interaction:
+            await ctx.defer()
+        
+        self.voice_channels[channel.id]['co_owners'].remove(user.id)
+        overwrites = channel.overwrites_for(user)
+        overwrites.manage_channels = None
+        overwrites.manage_permissions = None
+        overwrites.move_members = None
+        overwrites.mute_members = None
+        overwrites.deafen_members = None
+        
+        try:
+            await channel.set_permissions(user, overwrite=overwrites, reason=f"Co-owner removed by {ctx.author}")
+            
+            embed = discord.Embed(
+                title="✅ Co-Owner Removed",
+                description=f"**{user.display_name}** is no longer a co-owner of this channel",
+                color=discord.Color.orange()
+            )
+            await ctx.send(embed=embed)
+            
+        except Exception as e:
+            await ctx.send(f"❌ Failed to remove co-owner: {str(e)}")
+    
+    @commands.hybrid_command(name="voice_lock", description="Lock your voice channel")
+    async def lock_voice_channel(self, ctx: commands.Context):
+        """Lock a voice channel"""
+        if not ctx.author.voice or not ctx.author.voice.channel:
+            return await ctx.send("❌ You must be in a voice channel to use this command.")
+        
+        channel = ctx.author.voice.channel
+        
+        if not self.is_channel_owner_or_admin(channel.id, ctx.author):
+            return await ctx.send("❌ You don't have permission to lock this channel.")
+        
+        try:
+            overwrites = channel.overwrites_for(ctx.guild.default_role)
+            overwrites.connect = False
+            await channel.set_permissions(ctx.guild.default_role, overwrite=overwrites, reason=f"Locked by {ctx.author}")
+            
+            embed = discord.Embed(
+                title="🔒 Channel Locked",
+                description="This voice channel is now locked. Only current members can stay.",
+                color=discord.Color.red()
+            )
+            await ctx.send(embed=embed)
+            
+        except Exception as e:
+            await ctx.send(f"❌ Failed to lock channel: {str(e)}")
+    
+    @commands.hybrid_command(name="voice_unlock", description="Unlock your voice channel")
+    async def unlock_voice_channel(self, ctx: commands.Context):
+        """Unlock a voice channel"""
+        if not ctx.author.voice or not ctx.author.voice.channel:
+            return await ctx.send("❌ You must be in a voice channel to use this command.")
+        
+        channel = ctx.author.voice.channel
+        
+        if not self.is_channel_owner_or_admin(channel.id, ctx.author):
+            return await ctx.send("❌ You don't have permission to unlock this channel.")
+        
+        try:
+            overwrites = channel.overwrites_for(ctx.guild.default_role)
+            overwrites.connect = True
+            await channel.set_permissions(ctx.guild.default_role, overwrite=overwrites, reason=f"Unlocked by {ctx.author}")
+            
+            embed = discord.Embed(
+                title="🔓 Channel Unlocked",
+                description="This voice channel is now unlocked. Anyone can join!",
+                color=discord.Color.green()
+            )
+            await ctx.send(embed=embed)
+            
+        except Exception as e:
+            await ctx.send(f"❌ Failed to unlock channel: {str(e)}")
+    
+    @commands.hybrid_command(name="voice_info", description="Show information about the current voice channel")
     async def voice_info(self, ctx: commands.Context):
-        """Display information about the current voice channel"""
+        """Show information about a voice channel"""
         if not ctx.author.voice or not ctx.author.voice.channel:
-            return await ctx.send("You must be in a voice channel to use this command.")
-            
+            return await ctx.send("❌ You must be in a voice channel to use this command.")
+        
         channel = ctx.author.voice.channel
         
         if channel.id not in self.voice_channels:
-            return await ctx.send("This is not a managed voice channel.")
-            
-        channel_data = self.voice_channels[channel.id]
+            return await ctx.send("❌ This is not a managed voice channel.")
         
-        # Get owner and co-owners
-        owner = ctx.guild.get_member(channel_data["owner_id"])
-        co_owners = []
-        for co_owner_id in channel_data["co_owners"]:
-            member = ctx.guild.get_member(co_owner_id)
-            if member:
-                co_owners.append(member.mention)
-                
-        created_at = discord.utils.format_dt(channel_data["created_at"], style='R')
+        channel_info = self.voice_channels[channel.id]
+        owner = ctx.guild.get_member(channel_info['owner_id'])
         
         embed = discord.Embed(
-            title=f"Voice Channel: {channel.name}",
+            title=f"🔊 {channel.name}",
             color=discord.Color.blue()
         )
         
-        embed.add_field(name="Owner", value=owner.mention if owner else "Unknown", inline=False)
+        embed.add_field(
+            name="👑 Owner",
+            value=owner.display_name if owner else "Unknown",
+            inline=True
+        )
+        
+        embed.add_field(
+            name="👥 Members",
+            value=f"{len(channel.members)}/{channel.user_limit or '∞'}",
+            inline=True
+        )
+        
+        embed.add_field(
+            name="🕐 Created",
+            value=f"<t:{int(channel_info['created_at'].timestamp())}:R>",
+            inline=True
+        )
+        
+        co_owners = []
+        for user_id in channel_info.get('co_owners', set()):
+            user = ctx.guild.get_member(user_id)
+            if user:
+                co_owners.append(user.display_name)
         
         if co_owners:
-            embed.add_field(name="Co-owners", value=", ".join(co_owners), inline=False)
-        else:
-            embed.add_field(name="Co-owners", value="None", inline=False)
-            
-        embed.add_field(name="Created", value=created_at, inline=True)
-        embed.add_field(name="User Limit", value=str(channel.user_limit) if channel.user_limit else "None", inline=True)
-        embed.add_field(name="Members", value=str(len(channel.members)), inline=True)
+            embed.add_field(
+                name="🤝 Co-Owners",
+                value="\n".join(co_owners) if co_owners else "None",
+                inline=False
+            )
+        
+        default_perms = channel.overwrites_for(ctx.guild.default_role)
+        locked_status = "🔒 Locked" if default_perms.connect == False else "🔓 Unlocked"
+        
+        embed.add_field(
+            name="🛡️ Status",
+            value=locked_status,
+            inline=True
+        )
         
         await ctx.send(embed=embed)
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        """Set up voice categories and create channels in all guilds when bot starts"""
-        for guild in self.bot.guilds:
-            await self.setup_voice_category(guild)
-        logger.info("Voice categories and creation channels have been set up")
-    
-    async def setup_voice_category(self, guild: discord.Guild):
-        """Create the voice category and 'create channel' if they don't exist"""
-        # Check if the category exists
-        category_name = "Kênh thoại"
-        category = discord.utils.get(guild.categories, name=category_name)
-        
-        # If category doesn't exist, create it
-        if not category:
-            try:
-                category = await guild.create_category(
-                    name=category_name,
-                    reason="Setting up voice channel management"
-                )
-                logger.info(f"Created voice category '{category_name}' in {guild.name}")
-            except Exception as e:
-                logger.error(f"Failed to create voice category in {guild.name}: {e}")
-                return None
-        
-        # Check if the creation channel exists in the category
-        creation_channel = discord.utils.get(
-            category.voice_channels, 
-            name=CREATE_CHANNEL_NAME
-        )
-        
-        # If creation channel doesn't exist, create it
-        if not creation_channel:
-            try:
-                creation_channel = await guild.create_voice_channel(
-                    name=CREATE_CHANNEL_NAME,
-                    category=category,
-                    reason="Setting up voice channel creation system"
-                )
-                logger.info(f"Created voice channel '{CREATE_CHANNEL_NAME}' in {guild.name}")
-            except Exception as e:
-                logger.error(f"Failed to create voice channel in {guild.name}: {e}")
-        
-        return category
-    
-    @commands.Cog.listener()
-    async def on_guild_join(self, guild: discord.Guild):
-        """Set up voice category when the bot joins a new guild"""
-        await self.setup_voice_category(guild)
-        logger.info(f"Set up voice category in newly joined guild: {guild.name}")
-
 async def setup(bot: commands.Bot):
-    from discord.ext import tasks
+    """Setup function for the cog"""
     await bot.add_cog(VoiceChannelManager(bot))
-    logger.info("Voice Channel Manager cog loaded successfully")
+    logger.info("Voice Manager module loaded")

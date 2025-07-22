@@ -38,7 +38,6 @@ class GeminiAI:
                 self.client.models.generate_content,
                 model="gemini-2.0-flash-thinking-exp-01-21",  
                 contents=chat_history + [{"role": "user", "parts": [{"text": prompt}]}],
-                #stream=False
             )
             
             text_response = response.text
@@ -58,13 +57,27 @@ class GeminiAI:
 
 class GeminiChatCog(commands.Cog):
     
-    def __init__(self, bot: commands.Bot, api_key: str):
+    def __init__(self, bot: commands.Bot):
         self.bot = bot
-        self.gemini_ai = GeminiAI(api_key)
-        self.processing_messages = set() 
+        self.gemini_ai = None
+        self.processing_messages = set()
+        
+        # Get API key from bot config (handle both old and new format)
+        api_key = (getattr(bot, 'gemini_api_key', None) or 
+                   bot.config.get('gemini_api_key') or 
+                   bot.config.get('geminiApiKey'))
+        
+        if api_key:
+            self.gemini_ai = GeminiAI(api_key)
+            logger.info("✅ Gemini AI initialized successfully")
+        else:
+            logger.warning("⚠️ No Gemini API key found - AI chat disabled")
         
     @commands.Cog.listener()
     async def on_message(self, message: discord.Message):
+        if not self.gemini_ai:  # AI not initialized
+            return
+            
         if message.author.bot:
             return
             
@@ -124,14 +137,41 @@ class GeminiChatCog(commands.Cog):
         description="Clear your chat history with the AI"
     )
     async def clear_chat(self, ctx: commands.Context):
+        """Clear chat history"""
+        if not self.gemini_ai:
+            return await ctx.send("❌ AI chat is not available (no API key configured)")
+            
         self.gemini_ai.clear_history(ctx.author.id)
-        await ctx.send("Your chat history has been cleared! We can start a fresh conversation.")
+        
+        embed = discord.Embed(
+            title="🧹 Chat History Cleared",
+            description="✅ Your chat history has been cleared! We can start a fresh conversation.",
+            color=discord.Color.green()
+        )
+        
+        await ctx.send(embed=embed)
 
     @commands.hybrid_command(
         name="chatai_help",
         description="Get help with using the Gemini AI chat feature"
     )
     async def gemini_help(self, ctx: commands.Context):
+        """Show AI chat help"""
+        if not self.gemini_ai:
+            embed = discord.Embed(
+                title="❌ AI Chat Unavailable",
+                description="AI chat is currently disabled because no Gemini API key is configured.",
+                color=discord.Color.red()
+            )
+            
+            embed.add_field(
+                name="How to Enable",
+                value="Ask an administrator to add a `gemini_api_key` to the bot configuration.",
+                inline=False
+            )
+            
+            return await ctx.send(embed=embed)
+        
         embed = discord.Embed(
             title="🤖 Gemini AI Chat Help",
             description="Chat with Google's Gemini AI through this bot!",
@@ -139,57 +179,46 @@ class GeminiChatCog(commands.Cog):
         )
         
         embed.add_field(
-            name="How to Chat",
+            name="💬 How to Chat",
             value=(
                 "• **Mention the bot**: `@BotName your question here`\n"
                 "• **Reply to bot messages**: Just reply to any of the bot's messages\n"
+                "• **Natural conversation**: The AI remembers context from your recent messages"
             ),
             inline=False
         )
         
         embed.add_field(
-            name="Available Commands",
+            name="🔧 Available Commands",
             value=(
-                "• `/clear_chat` - Reset your conversation history with the AI\n"
-                "• `/gemini_help` - Show this help message\n"
+                "• `/chatai_clear` - Reset your conversation history with the AI\n"
+                "• `/chatai_help` - Show this help message\n"
             ),
             inline=False
         )
         
         embed.add_field(
-            name="Tips",
+            name="💡 Pro Tips",
             value=(
-                "• The bot remembers your conversation context\n"
+                "• The bot remembers your last 10 messages for context\n"
                 "• For best results, ask clear and specific questions\n"
-                "• The bot handles one conversation per user\n"
+                "• Each user has their own separate conversation history\n"
+                "• The AI can help with coding, explanations, creative writing, and more!"
             ),
             inline=False
         )
+        
+        embed.add_field(
+            name="⚡ AI Model",
+            value="Using **Gemini 2.0 Flash Thinking** - Google's latest reasoning model",
+            inline=False
+        )
+        
+        embed.set_footer(text="AI responses are generated by Google Gemini and may not always be accurate")
         
         await ctx.send(embed=embed)
-        
 
 async def setup(bot: commands.Bot):
-    import json
-    import os
-    
-    try:
-        gemini_api_key = os.environ.get('GEMINI_API_KEY')
-        
-        if not gemini_api_key:
-            try:
-                with open('./config.json', 'r') as f:
-                    config = json.load(f)
-                    gemini_api_key = config.get('geminiApiKey')
-            except FileNotFoundError:
-                logger.error("Config file not found")
-                
-        if not gemini_api_key:
-            logger.error("Gemini API key not found in environment or config.json")
-            return await bot.add_cog(commands.Cog(name="GeminiChatError"))
-            
-        await bot.add_cog(GeminiChatCog(bot, gemini_api_key))
-        logger.info("Gemini Chat cog loaded successfully")
-        
-    except Exception as e:
-        logger.error(f"Failed to load Gemini Chat cog: {e}")
+    """Setup function for the cog"""
+    await bot.add_cog(GeminiChatCog(bot))
+    logger.info("Gemini Chat module loaded")

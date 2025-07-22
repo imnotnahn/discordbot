@@ -1,0 +1,4798 @@
+{
+  "data": [
+    {
+      "word": "あげる",
+      "hiragana": "あげる",
+      "romaji": "ageru",
+      "meaning": "cho, tặng",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "あそこ",
+      "hiragana": "あそこ",
+      "romaji": "asoko",
+      "meaning": "ở đằng kia, chỗ kia",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "あなた",
+      "hiragana": "あなた",
+      "romaji": "anata",
+      "meaning": "bạn",
+      "jlpt_level": 5,
+      "category": "đại từ"
+    },
+    {
+      "word": "アパート",
+      "hiragana": "あぱーと",
+      "romaji": "apaーto",
+      "meaning": "căn hộ",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "いい",
+      "hiragana": "いい",
+      "romaji": "ii",
+      "meaning": "tốt",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "いつも",
+      "hiragana": "いつも",
+      "romaji": "itsumo",
+      "meaning": "luôn luôn, thường xuyên",
+      "jlpt_level": 5,
+      "category": "phó từ chỉ tần suất"
+    },
+    {
+      "word": "インターホン",
+      "hiragana": "いんたあほん",
+      "romaji": "intaahon",
+      "meaning": "chuông cửa có hình, chuông hình",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "エレガント",
+      "hiragana": "えれがんと",
+      "romaji": "ereganto",
+      "meaning": "thanh lịch",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "エレベータ",
+      "hiragana": "えれべーた",
+      "romaji": "erebeーta",
+      "meaning": "thang máy",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "エンジニア",
+      "hiragana": "えんじにあ",
+      "romaji": "enjinia",
+      "meaning": "kỹ sư",
+      "jlpt_level": 5,
+      "category": "nghề nghiệp"
+    },
+    {
+      "word": "オープン",
+      "hiragana": "おーぷん",
+      "romaji": "oopun",
+      "meaning": "khai trương (một cửa hàng mới, sân golf, đường băng, v.v.)",
+      "jlpt_level": 5,
+      "category": "sự kiện"
+    },
+    {
+      "word": "オレンジ",
+      "hiragana": "おれんじ",
+      "romaji": "orenji",
+      "meaning": "quả cam, màu cam",
+      "jlpt_level": 5,
+      "category": "đồ vật, màu sắc"
+    },
+    {
+      "word": "オンライン",
+      "hiragana": "おんらいん",
+      "romaji": "onrain",
+      "meaning": "trực tuyến",
+      "jlpt_level": 5,
+      "category": "công nghệ"
+    },
+    {
+      "word": "お兄さん",
+      "hiragana": "おにいさん",
+      "romaji": "oniisan",
+      "meaning": "anh trai",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "お姉さん",
+      "hiragana": "おねえさん",
+      "romaji": "oneesan",
+      "meaning": "chị gái",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "お巡りさん",
+      "hiragana": "おまわりさん",
+      "romaji": "omawarisan",
+      "meaning": "cảnh sát",
+      "jlpt_level": 5,
+      "category": "người"
+    },
+    {
+      "word": "お弁当",
+      "hiragana": "おべんとう",
+      "romaji": "obentou",
+      "meaning": "hộp cơm trưa của Nhật",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "お手洗い",
+      "hiragana": "おてあらい",
+      "romaji": "otearai",
+      "meaning": "nhà vệ sinh",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "お母さん",
+      "hiragana": "おかあさん",
+      "romaji": "okaasan",
+      "meaning": "mẹ",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "お父さん",
+      "hiragana": "おとうさん",
+      "romaji": "otousan",
+      "meaning": "bố, cha",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "お皿",
+      "hiragana": "おさら",
+      "romaji": "osara",
+      "meaning": "đĩa, bát",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "お祖母さん",
+      "hiragana": "おばあさん",
+      "romaji": "obaasan",
+      "meaning": "bà",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "お腹",
+      "hiragana": "おなか",
+      "romaji": "onaka",
+      "meaning": "bụng",
+      "jlpt_level": 5,
+      "category": "cơ thể"
+    },
+    {
+      "word": "お茶",
+      "hiragana": "おちゃ",
+      "romaji": "ocha",
+      "meaning": "trà",
+      "jlpt_level": 5,
+      "category": "đồ uống"
+    },
+    {
+      "word": "お菓子",
+      "hiragana": "おかし",
+      "romaji": "okashi",
+      "meaning": "kẹo, bánh ngọt",
+      "jlpt_level": 5,
+      "category": "đồ ăn"
+    },
+    {
+      "word": "お金",
+      "hiragana": "おかね",
+      "romaji": "okane",
+      "meaning": "tiền",
+      "jlpt_level": 5,
+      "category": "kinh tế"
+    },
+    {
+      "word": "お風呂",
+      "hiragana": "おふろ",
+      "romaji": "ofuro",
+      "meaning": "bồn tắm",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "カーペット",
+      "hiragana": "かーぺっと",
+      "romaji": "kaapetto",
+      "meaning": "thảm",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "ガイド",
+      "hiragana": "がいど",
+      "romaji": "gaido",
+      "meaning": "hướng dẫn viên, người dẫn đường, người chỉ đạo, sự hướng dẫn, sự dẫn dắt",
+      "jlpt_level": 5,
+      "category": "nghề nghiệp/hoạt động"
+    },
+    {
+      "word": "ガイドブック",
+      "hiragana": "がいどぶっく",
+      "romaji": "gaidobukku",
+      "meaning": "sách hướng dẫn",
+      "jlpt_level": 5,
+      "category": "vật dụng"
+    },
+    {
+      "word": "カクテル",
+      "hiragana": "かくてる",
+      "romaji": "kakuteru",
+      "meaning": "cốc-tail",
+      "jlpt_level": 5,
+      "category": "đồ uống"
+    },
+    {
+      "word": "カット",
+      "hiragana": "かっと",
+      "romaji": "katto",
+      "meaning": "cắt, sự cắt",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "カテゴリ",
+      "hiragana": "かてごり",
+      "romaji": "kategori",
+      "meaning": "thể loại",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "カムバック",
+      "hiragana": "かむばっく",
+      "romaji": "kamubakku",
+      "meaning": "quay trở lại",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "カメラ",
+      "hiragana": "かめら",
+      "romaji": "kamera",
+      "meaning": "máy ảnh",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "カメラマン",
+      "hiragana": "かめらまん",
+      "romaji": "kameraman",
+      "meaning": "nhiếp ảnh gia",
+      "jlpt_level": 5,
+      "category": "nghề nghiệp"
+    },
+    {
+      "word": "カルテ",
+      "hiragana": "かるて",
+      "romaji": "karute",
+      "meaning": "bệnh án, hồ sơ lâm sàng",
+      "jlpt_level": 5,
+      "category": "y tế"
+    },
+    {
+      "word": "ガレージ",
+      "hiragana": "がれーじ",
+      "romaji": "gareeji",
+      "meaning": "ga ra",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "カンニング",
+      "hiragana": "かんにんぐ",
+      "romaji": "kanningu",
+      "meaning": "gian lận (trong một kỳ thi), quỵt nợ",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "ギター",
+      "hiragana": "ぎたー",
+      "romaji": "gitaー",
+      "meaning": "đàn ghi ta",
+      "jlpt_level": 5,
+      "category": "nhạc cụ"
+    },
+    {
+      "word": "キャッチ",
+      "hiragana": "きゃっち",
+      "romaji": "kyatchi",
+      "meaning": "bắt, bắt lấy, thu được (ví dụ: thông tin), nhận (ví dụ: truyền radio hoặc cuộc gọi điện thoại)",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "キャリア",
+      "hiragana": "きゃりあ",
+      "romaji": "kyaria",
+      "meaning": "sự nghiệp, nghề nghiệp",
+      "jlpt_level": 5,
+      "category": "công việc"
+    },
+    {
+      "word": "キロ",
+      "hiragana": "きろ",
+      "romaji": "kiro",
+      "meaning": "ki-lô-gam",
+      "jlpt_level": 5,
+      "category": "đơn vị đo lường"
+    },
+    {
+      "word": "クイズ",
+      "hiragana": "くいず",
+      "romaji": "kuizu",
+      "meaning": "đố vui",
+      "jlpt_level": 5,
+      "category": "giải trí"
+    },
+    {
+      "word": "クラス",
+      "hiragana": "くらす",
+      "romaji": "kurasu",
+      "meaning": "lớp học",
+      "jlpt_level": 5,
+      "category": "giáo dục"
+    },
+    {
+      "word": "クラブ",
+      "hiragana": "くらぶ",
+      "romaji": "kurabu",
+      "meaning": "câu lạc bộ",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "グラフ",
+      "hiragana": "ぐらふ",
+      "romaji": "gurafu",
+      "meaning": "biểu đồ, đồ thị, sơ đồ",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "グラム",
+      "hiragana": "ぐらむ",
+      "romaji": "guramu",
+      "meaning": "gram",
+      "jlpt_level": 5,
+      "category": "đơn vị đo lường"
+    },
+    {
+      "word": "グレー",
+      "hiragana": "ぐれー",
+      "romaji": "guree",
+      "meaning": "màu xám",
+      "jlpt_level": 5,
+      "category": "màu sắc"
+    },
+    {
+      "word": "クレーン",
+      "hiragana": "くれーん",
+      "romaji": "kureen",
+      "meaning": "cần cẩu",
+      "jlpt_level": 5,
+      "category": "máy móc"
+    },
+    {
+      "word": "ゲスト",
+      "hiragana": "げすと",
+      "romaji": "gesuto",
+      "meaning": "khách",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "コート",
+      "hiragana": "こーと",
+      "romaji": "koーto",
+      "meaning": "áo khoác",
+      "jlpt_level": 5,
+      "category": "quần áo"
+    },
+    {
+      "word": "コーナー",
+      "hiragana": "こーなー",
+      "romaji": "koonaa",
+      "meaning": "góc, đoạn cong, chỗ rẽ",
+      "jlpt_level": 5,
+      "category": "địa điểm/địa hình"
+    },
+    {
+      "word": "コーヒー",
+      "hiragana": "こーひー",
+      "romaji": "koーhiー",
+      "meaning": "cà phê",
+      "jlpt_level": 5,
+      "category": "đồ uống"
+    },
+    {
+      "word": "ここ",
+      "hiragana": "ここ",
+      "romaji": "koko",
+      "meaning": "ở đây",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "コップ",
+      "hiragana": "こっぷ",
+      "romaji": "koppu",
+      "meaning": "cốc",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "コマーシャル",
+      "hiragana": "こまーしゃる",
+      "romaji": "komaasharu",
+      "meaning": "quảng cáo (trên TV hoặc radio)",
+      "jlpt_level": 5,
+      "category": "truyền thông"
+    },
+    {
+      "word": "コミュニケーション",
+      "hiragana": "コミュニケーション",
+      "romaji": "komyunikeeshon",
+      "meaning": "giao tiếp",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "コメント",
+      "hiragana": "こめんと",
+      "romaji": "komento",
+      "meaning": "bình luận",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "コンタクト",
+      "hiragana": "こんたくと",
+      "romaji": "kontakuto",
+      "meaning": "liên lạc",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "コンテスト",
+      "hiragana": "こんてすと",
+      "romaji": "kontesuto",
+      "meaning": "cuộc thi",
+      "jlpt_level": 5,
+      "category": "sự kiện"
+    },
+    {
+      "word": "コントラスト",
+      "hiragana": "こんとらすと",
+      "romaji": "kontorasuto",
+      "meaning": "đối lập",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "コントロール",
+      "hiragana": "こんとろーる",
+      "romaji": "kontorooru",
+      "meaning": "kiểm soát",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "コンパス",
+      "hiragana": "こんぱす",
+      "romaji": "konpasu",
+      "meaning": "compa, dụng cụ vẽ đường tròn",
+      "jlpt_level": 5,
+      "category": "dụng cụ học tập"
+    },
+    {
+      "word": "ご飯",
+      "hiragana": "ごはん",
+      "romaji": "gohan",
+      "meaning": "cơm nấu chín, bữa ăn",
+      "jlpt_level": 5,
+      "category": "thức ăn"
+    },
+    {
+      "word": "サイクル",
+      "hiragana": "さいくる",
+      "romaji": "saikuru",
+      "meaning": "chu kỳ",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "サイズ",
+      "hiragana": "サイズ",
+      "romaji": "saizu",
+      "meaning": "kích cỡ",
+      "jlpt_level": 5,
+      "category": "đặc điểm"
+    },
+    {
+      "word": "サボる",
+      "hiragana": "さぼる",
+      "romaji": "saboru",
+      "meaning": "trốn học, lười biếng, trốn việc, trốn lớp, trốn học, trốn đi chơi",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "さん",
+      "hiragana": "さん",
+      "romaji": "san",
+      "meaning": "Ông, Bà, Cô, Chị, -san",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "サンキュー",
+      "hiragana": "さんきゅう",
+      "romaji": "sankyuu",
+      "meaning": "cảm ơn, cám ơn",
+      "jlpt_level": 5,
+      "category": "lời cảm ơn"
+    },
+    {
+      "word": "サンタクロース",
+      "hiragana": "さんたくろーす",
+      "romaji": "santakuroosu",
+      "meaning": "Ông già Noel",
+      "jlpt_level": 5,
+      "category": "nhân vật"
+    },
+    {
+      "word": "シート",
+      "hiragana": "シート",
+      "romaji": "shiito",
+      "meaning": "ghế",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "システム",
+      "hiragana": "しすてむ",
+      "romaji": "shisutemu",
+      "meaning": "hệ thống",
+      "jlpt_level": 5,
+      "category": "công nghệ"
+    },
+    {
+      "word": "シック",
+      "hiragana": "しっく",
+      "romaji": "shikku",
+      "meaning": "sành điệu, thời trang, thông minh",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "シナリオ",
+      "hiragana": "しなりお",
+      "romaji": "shinario",
+      "meaning": "kịch bản, kịch bản phim",
+      "jlpt_level": 5,
+      "category": "văn học và nghệ thuật"
+    },
+    {
+      "word": "ジャズ",
+      "hiragana": "じゃず",
+      "romaji": "jazu",
+      "meaning": "nhạc jazz",
+      "jlpt_level": 5,
+      "category": "âm nhạc"
+    },
+    {
+      "word": "シャツ",
+      "hiragana": "しゃつ",
+      "romaji": "shatsu",
+      "meaning": "áo sơ mi",
+      "jlpt_level": 5,
+      "category": "quần áo"
+    },
+    {
+      "word": "シャワー",
+      "hiragana": "しゃわー",
+      "romaji": "shawaー",
+      "meaning": "vòi hoa sen",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "ジャンパー",
+      "hiragana": "じゃんぱー",
+      "romaji": "janpaa",
+      "meaning": "áo khoác ngắn, áo blouson, áo gió, áo jumper",
+      "jlpt_level": 5,
+      "category": "quần áo"
+    },
+    {
+      "word": "ジャンプ",
+      "hiragana": "じゃんぷ",
+      "romaji": "janpu",
+      "meaning": "nhảy",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "ジャンボ",
+      "hiragana": "じゃんぼ",
+      "romaji": "janbo",
+      "meaning": "cỡ lớn, khổng lồ",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "ジャンル",
+      "hiragana": "じゃんる",
+      "romaji": "janru",
+      "meaning": "thể loại, loại, kiểu",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "ショー",
+      "hiragana": "しょう",
+      "romaji": "shoo",
+      "meaning": "buổi biểu diễn, chương trình",
+      "jlpt_level": 5,
+      "category": "sự kiện"
+    },
+    {
+      "word": "ショック",
+      "hiragana": "しょっく",
+      "romaji": "shokku",
+      "meaning": "sốc (về mặt cảm xúc)",
+      "jlpt_level": 5,
+      "category": "cảm xúc"
+    },
+    {
+      "word": "スカート",
+      "hiragana": "すかーと",
+      "romaji": "sukaーto",
+      "meaning": "váy",
+      "jlpt_level": 5,
+      "category": "quần áo"
+    },
+    {
+      "word": "スタジオ",
+      "hiragana": "すたじお",
+      "romaji": "sutajio",
+      "meaning": "studio",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "スチーム",
+      "hiragana": "すちーむ",
+      "romaji": "suchiimu",
+      "meaning": "hơi nước",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "ストーブ",
+      "hiragana": "すとーぶ",
+      "romaji": "sutoーbu",
+      "meaning": "lò sưởi, bếp lò",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "ストライキ",
+      "hiragana": "すとらいき",
+      "romaji": "sutoraiki",
+      "meaning": "đình công",
+      "jlpt_level": 5,
+      "category": "xã hội"
+    },
+    {
+      "word": "ストレス",
+      "hiragana": "すとれす",
+      "romaji": "sutoresu",
+      "meaning": "căng thẳng",
+      "jlpt_level": 5,
+      "category": "trạng thái tâm lý"
+    },
+    {
+      "word": "ストロー",
+      "hiragana": "すとろー",
+      "romaji": "sutoroo",
+      "meaning": "ống hút",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "ストロボ",
+      "hiragana": "すとろぼ",
+      "romaji": "sutorobo",
+      "meaning": "đèn nhấp nháy, đèn stroboscopic",
+      "jlpt_level": 5,
+      "category": "vật dụng"
+    },
+    {
+      "word": "スピード",
+      "hiragana": "すぴーど",
+      "romaji": "supiido",
+      "meaning": "tốc độ",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "スプーン",
+      "hiragana": "すぷーん",
+      "romaji": "supuーn",
+      "meaning": "cái thìa",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "スポーツ",
+      "hiragana": "すぽーつ",
+      "romaji": "supoーtsu",
+      "meaning": "thể thao",
+      "jlpt_level": 5,
+      "category": "hoạt động"
+    },
+    {
+      "word": "スポーツカー",
+      "hiragana": "すぽーつかー",
+      "romaji": "supootsukaa",
+      "meaning": "xe thể thao",
+      "jlpt_level": 5,
+      "category": "phương tiện"
+    },
+    {
+      "word": "ズボン",
+      "hiragana": "ずぼん",
+      "romaji": "zubon",
+      "meaning": "quần dài, quần tây",
+      "jlpt_level": 5,
+      "category": "quần áo"
+    },
+    {
+      "word": "スリッパ",
+      "hiragana": "すりっぱ",
+      "romaji": "surippa",
+      "meaning": "dép lê",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "セーター",
+      "hiragana": "せーたー",
+      "romaji": "seーtaー",
+      "meaning": "áo len, áo len chui đầu",
+      "jlpt_level": 5,
+      "category": "quần áo"
+    },
+    {
+      "word": "セール",
+      "hiragana": "せーる",
+      "romaji": "seeru",
+      "meaning": "giảm giá",
+      "jlpt_level": 5,
+      "category": "kinh tế"
+    },
+    {
+      "word": "セクション",
+      "hiragana": "せくしょん",
+      "romaji": "sekushon",
+      "meaning": "phần",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "ゼリー",
+      "hiragana": "ぜりー",
+      "romaji": "zerii",
+      "meaning": "thạch, thạch rau câu, món tráng miệng làm từ gelatin",
+      "jlpt_level": 5,
+      "category": "đồ ăn"
+    },
+    {
+      "word": "セレモニー",
+      "hiragana": "せれもにー",
+      "romaji": "seremonii",
+      "meaning": "lễ nghi",
+      "jlpt_level": 5,
+      "category": "sự kiện"
+    },
+    {
+      "word": "ゼロ",
+      "hiragana": "ぜろ",
+      "romaji": "zero",
+      "meaning": "số không, không",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "センス",
+      "hiragana": "せんす",
+      "romaji": "sensu",
+      "meaning": "gu (trong thời trang, âm nhạc, v.v.), cảm giác (ví dụ: về khiếu hài hước), tài năng",
+      "jlpt_level": 5,
+      "category": "trừu tượng"
+    },
+    {
+      "word": "ソース",
+      "hiragana": "そうす",
+      "romaji": "soosu",
+      "meaning": "nguồn (thông tin)",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "ソックス",
+      "hiragana": "そっくす",
+      "romaji": "sokkusu",
+      "meaning": "vớ",
+      "jlpt_level": 5,
+      "category": "đồ dùng cá nhân"
+    },
+    {
+      "word": "ソロ",
+      "hiragana": "そろ",
+      "romaji": "soro",
+      "meaning": "đơn độc",
+      "jlpt_level": 5,
+      "category": "trạng thái"
+    },
+    {
+      "word": "タイトル",
+      "hiragana": "たいとる",
+      "romaji": "taitoru",
+      "meaning": "tiêu đề",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "タイマー",
+      "hiragana": "たいまー",
+      "romaji": "taimaa",
+      "meaning": "bộ hẹn giờ, công tắc hẹn giờ",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "タイミング",
+      "hiragana": "たいみんぐ",
+      "romaji": "taimingu",
+      "meaning": "thời điểm",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "タイム",
+      "hiragana": "たいむ",
+      "romaji": "taimu",
+      "meaning": "thời gian (để làm gì đó)",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "タイムリー",
+      "hiragana": "たいむりー",
+      "romaji": "taimurii",
+      "meaning": "kịp thời, đúng lúc",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "タイヤ",
+      "hiragana": "たいあ",
+      "romaji": "taiya",
+      "meaning": "lốp xe",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "タイル",
+      "hiragana": "たいる",
+      "romaji": "tairu",
+      "meaning": "ngói",
+      "jlpt_level": 5,
+      "category": "vật dụng"
+    },
+    {
+      "word": "ダウン",
+      "hiragana": "だうん",
+      "romaji": "daun",
+      "meaning": "rơi, giảm, giảm xuống, đi xuống",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "タクシー",
+      "hiragana": "たくしー",
+      "romaji": "takushī",
+      "meaning": "xe taxi",
+      "jlpt_level": 5,
+      "category": "phương tiện giao thông"
+    },
+    {
+      "word": "ダブる",
+      "hiragana": "だぶる",
+      "romaji": "daburu",
+      "meaning": "bị trùng lặp, bị lặp lại",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "タレント",
+      "hiragana": "たれんと",
+      "romaji": "tarento",
+      "meaning": "người giải trí (trên TV hoặc radio), người nổi tiếng trên truyền hình, người nổi tiếng trên đài phát thanh",
+      "jlpt_level": 5,
+      "category": "nghề nghiệp"
+    },
+    {
+      "word": "タワー",
+      "hiragana": "たわー",
+      "romaji": "tawaa",
+      "meaning": "tháp",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "ダンプ",
+      "hiragana": "だんぷ",
+      "romaji": "danpu",
+      "meaning": "xe ben",
+      "jlpt_level": 5,
+      "category": "phương tiện"
+    },
+    {
+      "word": "チームワーク",
+      "hiragana": "ちーむわーく",
+      "romaji": "chiimuwaaku",
+      "meaning": "tinh thần đồng đội",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "チェンジ",
+      "hiragana": "ちぇんじ",
+      "romaji": "chenji",
+      "meaning": "thay đổi",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "チャイム",
+      "hiragana": "ちゃいむ",
+      "romaji": "chaimu",
+      "meaning": "chuông, chuông cửa",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "チャネル",
+      "hiragana": "ちゃねる",
+      "romaji": "chaneru",
+      "meaning": "kênh",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "ちょうど",
+      "hiragana": "ちょうど",
+      "romaji": "choudo",
+      "meaning": "chính xác, đúng, vừa vặn",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "ちょっと",
+      "hiragana": "ちょっと",
+      "romaji": "chotto",
+      "meaning": "một chút",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "データ",
+      "hiragana": "でーた",
+      "romaji": "deeta",
+      "meaning": "dữ liệu",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "テープ",
+      "hiragana": "てーぷ",
+      "romaji": "teーpu",
+      "meaning": "băng dính",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "テーブル",
+      "hiragana": "てーぶる",
+      "romaji": "teburu",
+      "meaning": "cái bàn",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "テープレコーダー",
+      "hiragana": "てーぷれこーだー",
+      "romaji": "teーpurekoーdaー",
+      "meaning": "máy ghi âm",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "ティッシュペーパー",
+      "hiragana": "てぃっしゅぺーぱー",
+      "romaji": "tisshupeepaa",
+      "meaning": "giấy ăn, khăn giấy",
+      "jlpt_level": 5,
+      "category": "đồ dùng"
+    },
+    {
+      "word": "デザート",
+      "hiragana": "でざーと",
+      "romaji": "dezaato",
+      "meaning": "món tráng miệng",
+      "jlpt_level": 5,
+      "category": "thức ăn"
+    },
+    {
+      "word": "デザイン",
+      "hiragana": "でざいん",
+      "romaji": "dezain",
+      "meaning": "thiết kế",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "テスト",
+      "hiragana": "てすと",
+      "romaji": "tesuto",
+      "meaning": "kiểm tra",
+      "jlpt_level": 5,
+      "category": "giáo dục"
+    },
+    {
+      "word": "デッサン",
+      "hiragana": "でっさん",
+      "romaji": "dessan",
+      "meaning": "phác thảo",
+      "jlpt_level": 5,
+      "category": "nghệ thuật"
+    },
+    {
+      "word": "デパート",
+      "hiragana": "でぱーと",
+      "romaji": "depaーto",
+      "meaning": "cửa hàng bách hóa",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "テレックス",
+      "hiragana": "てれっくす",
+      "romaji": "terekkusu",
+      "meaning": "máy điện báo, máy telex",
+      "jlpt_level": 5,
+      "category": "thiết bị"
+    },
+    {
+      "word": "テレビ",
+      "hiragana": "てれび",
+      "romaji": "terebi",
+      "meaning": "tivi",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "トーン",
+      "hiragana": "とーん",
+      "romaji": "toon",
+      "meaning": "giai điệu",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "ドア",
+      "hiragana": "どあ",
+      "romaji": "doa",
+      "meaning": "cửa",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "トイレ",
+      "hiragana": "といれ",
+      "romaji": "toire",
+      "meaning": "nhà vệ sinh",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "どう",
+      "hiragana": "どう",
+      "romaji": "dou",
+      "meaning": "như thế nào, bằng cách nào, thế nào",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "どうして",
+      "hiragana": "どうして",
+      "romaji": "doushite",
+      "meaning": "tại sao, vì lý do gì",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "どうぞ",
+      "hiragana": "どうぞ",
+      "romaji": "douzo",
+      "meaning": "xin mời, làm ơn",
+      "jlpt_level": 5,
+      "category": "lịch sự"
+    },
+    {
+      "word": "どうも",
+      "hiragana": "どうも",
+      "romaji": "doumo",
+      "meaning": "cảm ơn",
+      "jlpt_level": 5,
+      "category": "lịch sự"
+    },
+    {
+      "word": "どこ",
+      "hiragana": "どこ",
+      "romaji": "doko",
+      "meaning": "ở đâu",
+      "jlpt_level": 5,
+      "category": "đại từ chỉ nơi chốn"
+    },
+    {
+      "word": "どちら",
+      "hiragana": "どちら",
+      "romaji": "dochira",
+      "meaning": "cái nào",
+      "jlpt_level": 5,
+      "category": "đại từ nghi vấn"
+    },
+    {
+      "word": "とても",
+      "hiragana": "とても",
+      "romaji": "totemo",
+      "meaning": "rất, vô cùng",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "ドライ",
+      "hiragana": "どらい",
+      "romaji": "dorai",
+      "meaning": "khô",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "ドライクリーニング",
+      "hiragana": "どらいくりいにんぐ",
+      "romaji": "doraikuriiningu",
+      "meaning": "giặt khô",
+      "jlpt_level": 5,
+      "category": "dịch vụ"
+    },
+    {
+      "word": "ドライバー",
+      "hiragana": "どらいばー",
+      "romaji": "doraibaa",
+      "meaning": "người lái xe",
+      "jlpt_level": 5,
+      "category": "nghề nghiệp"
+    },
+    {
+      "word": "ドライブイン",
+      "hiragana": "どらいぶいん",
+      "romaji": "doraibuin",
+      "meaning": "dịch vụ mà khách hàng có thể sử dụng mà không cần rời khỏi xe (ngân hàng, rạp chiếu phim, v.v.)",
+      "jlpt_level": 5,
+      "category": "địa điểm/dịch vụ"
+    },
+    {
+      "word": "トラブル",
+      "hiragana": "とらぶる",
+      "romaji": "toraburu",
+      "meaning": "rắc rối, khó khăn, vấn đề, cãi vã, xung đột, tranh chấp, đấu tranh",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "ドリル",
+      "hiragana": "どりる",
+      "romaji": "doriru",
+      "meaning": "mũi khoan, máy khoan",
+      "jlpt_level": 5,
+      "category": "công cụ"
+    },
+    {
+      "word": "ナイター",
+      "hiragana": "ないたー",
+      "romaji": "naitaa",
+      "meaning": "trận đấu dưới đèn (ví dụ: bóng chày), trận đêm",
+      "jlpt_level": 5,
+      "category": "thể thao"
+    },
+    {
+      "word": "ナプキン",
+      "hiragana": "なぷきん",
+      "romaji": "napukin",
+      "meaning": "khăn ăn",
+      "jlpt_level": 5,
+      "category": "đồ dùng"
+    },
+    {
+      "word": "なる",
+      "hiragana": "なる",
+      "romaji": "naru",
+      "meaning": "trở thành",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "パーティー",
+      "hiragana": "ぱーてぃー",
+      "romaji": "paーteiー",
+      "meaning": "bữa tiệc",
+      "jlpt_level": 5,
+      "category": "sự kiện"
+    },
+    {
+      "word": "バス",
+      "hiragana": "ばす",
+      "romaji": "basu",
+      "meaning": "xe buýt",
+      "jlpt_level": 5,
+      "category": "phương tiện giao thông"
+    },
+    {
+      "word": "プール",
+      "hiragana": "ぷーる",
+      "romaji": "puーru",
+      "meaning": "bể bơi",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "フェリー",
+      "hiragana": "ふぇりー",
+      "romaji": "ferii",
+      "meaning": "phà",
+      "jlpt_level": 5,
+      "category": "phương tiện giao thông"
+    },
+    {
+      "word": "フォーク",
+      "hiragana": "ふぉーく",
+      "romaji": "foーku",
+      "meaning": "cái nĩa",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "ベッド",
+      "hiragana": "べっど",
+      "romaji": "beddo",
+      "meaning": "giường",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "ペット",
+      "hiragana": "ぺっと",
+      "romaji": "petto",
+      "meaning": "thú cưng",
+      "jlpt_level": 5,
+      "category": "động vật"
+    },
+    {
+      "word": "ペン",
+      "hiragana": "ぺん",
+      "romaji": "pen",
+      "meaning": "bút",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "ポケット",
+      "hiragana": "ぽけっと",
+      "romaji": "poketto",
+      "meaning": "túi nhỏ",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "ホテル",
+      "hiragana": "ほてる",
+      "romaji": "hoteru",
+      "meaning": "khách sạn",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "また",
+      "hiragana": "また",
+      "romaji": "mata",
+      "meaning": "lại, cũng",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "まだ",
+      "hiragana": "まだ",
+      "romaji": "mada",
+      "meaning": "vẫn, chưa",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "やる",
+      "hiragana": "やる",
+      "romaji": "yaru",
+      "meaning": "làm",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "ゆっくり",
+      "hiragana": "ゆっくり",
+      "romaji": "yukkuri",
+      "meaning": "một cách chậm rãi, thoải mái",
+      "jlpt_level": 5,
+      "category": "phó từ"
+    },
+    {
+      "word": "一",
+      "hiragana": "いち",
+      "romaji": "ichi",
+      "meaning": "một",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "一つ",
+      "hiragana": "ひとつ",
+      "romaji": "hitotsu",
+      "meaning": "một",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "一人",
+      "hiragana": "ひとり",
+      "romaji": "hitori",
+      "meaning": "một người, một mình",
+      "jlpt_level": 5,
+      "category": "con số"
+    },
+    {
+      "word": "一日",
+      "hiragana": "いちにち",
+      "romaji": "ichinichi",
+      "meaning": "một ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "一昨年",
+      "hiragana": "おととし",
+      "romaji": "ototoshi",
+      "meaning": "năm kia",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "一昨日",
+      "hiragana": "おととい",
+      "romaji": "ototoi",
+      "meaning": "ngày kia",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "一番",
+      "hiragana": "いちばん",
+      "romaji": "ichiban",
+      "meaning": "số một, đầu tiên, vị trí đầu tiên",
+      "jlpt_level": 5,
+      "category": "thứ hạng"
+    },
+    {
+      "word": "一緒",
+      "hiragana": "いっしょ",
+      "romaji": "issho",
+      "meaning": "cùng nhau",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "七",
+      "hiragana": "しち",
+      "romaji": "shichi",
+      "meaning": "bảy",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "七日",
+      "hiragana": "なのか",
+      "romaji": "nanoka",
+      "meaning": "ngày thứ bảy của tháng, bảy ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "万",
+      "hiragana": "まん",
+      "romaji": "man",
+      "meaning": "mười nghìn",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "三",
+      "hiragana": "さん",
+      "romaji": "san",
+      "meaning": "ba",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "上",
+      "hiragana": "うえ",
+      "romaji": "ue",
+      "meaning": "người có cấp bậc cao, chính phủ",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "上手",
+      "hiragana": "じょうず",
+      "romaji": "jouzu",
+      "meaning": "khéo léo, tài giỏi",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "上着",
+      "hiragana": "うわぎ",
+      "romaji": "uwagi",
+      "meaning": "áo khoác, áo vét",
+      "jlpt_level": 5,
+      "category": "quần áo"
+    },
+    {
+      "word": "下",
+      "hiragana": "した",
+      "romaji": "shita",
+      "meaning": "bên dưới, xuống, dưới",
+      "jlpt_level": 5,
+      "category": "trạng từ chỉ vị trí"
+    },
+    {
+      "word": "下手",
+      "hiragana": "へた",
+      "romaji": "heta",
+      "meaning": "vụng về",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "不味い",
+      "hiragana": "まずい",
+      "romaji": "mazui",
+      "meaning": "không ngon, khó ăn",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "両親",
+      "hiragana": "りょうしん",
+      "romaji": "ryoushin",
+      "meaning": "cha mẹ, cả cha và mẹ",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "並ぶ",
+      "hiragana": "ならぶ",
+      "romaji": "narabu",
+      "meaning": "xếp hàng",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "並べる",
+      "hiragana": "ならべる",
+      "romaji": "naraberu",
+      "meaning": "xếp hàng",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "丸い",
+      "hiragana": "まるい",
+      "romaji": "marui",
+      "meaning": "tròn, hình tròn",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "乗る",
+      "hiragana": "のる",
+      "romaji": "noru",
+      "meaning": "lên (xe, tàu, máy bay, v.v.)",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "九",
+      "hiragana": "きゅう",
+      "romaji": "kyuu",
+      "meaning": "chín",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "九日",
+      "hiragana": "ここのか",
+      "romaji": "kokonoka",
+      "meaning": "ngày mùng 9, chín ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "二",
+      "hiragana": "に",
+      "romaji": "ni",
+      "meaning": "hai",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "二人",
+      "hiragana": "ふたり",
+      "romaji": "futari",
+      "meaning": "hai người, một cặp",
+      "jlpt_level": 5,
+      "category": "con số"
+    },
+    {
+      "word": "二十日",
+      "hiragana": "はつか",
+      "romaji": "hatsuka",
+      "meaning": "ngày thứ hai mươi của tháng, hai mươi ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "二十歳",
+      "hiragana": "はたち",
+      "romaji": "hatachi",
+      "meaning": "hai mươi tuổi",
+      "jlpt_level": 5,
+      "category": "tuổi tác"
+    },
+    {
+      "word": "二日",
+      "hiragana": "ふつか",
+      "romaji": "futsuka",
+      "meaning": "ngày mùng hai, hai ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "五",
+      "hiragana": "ご",
+      "romaji": "go",
+      "meaning": "năm",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "五つ",
+      "hiragana": "いつつ",
+      "romaji": "itsutsu",
+      "meaning": "năm",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "五日",
+      "hiragana": "いつか",
+      "romaji": "itsuka",
+      "meaning": "ngày mùng năm, năm ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "交差点",
+      "hiragana": "こうさてん",
+      "romaji": "kousaten",
+      "meaning": "ngã tư, giao lộ",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "交番",
+      "hiragana": "こうばん",
+      "romaji": "kouban",
+      "meaning": "trạm cảnh sát",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "人",
+      "hiragana": "ひと",
+      "romaji": "hito",
+      "meaning": "người",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "今",
+      "hiragana": "いま",
+      "romaji": "ima",
+      "meaning": "bây giờ, thời điểm hiện tại",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "今年",
+      "hiragana": "ことし",
+      "romaji": "kotoshi",
+      "meaning": "năm nay",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "今日",
+      "hiragana": "きょう",
+      "romaji": "kyou",
+      "meaning": "hôm nay, những ngày này, gần đây",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "今晩",
+      "hiragana": "こんばん",
+      "romaji": "konban",
+      "meaning": "tối nay",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "今朝",
+      "hiragana": "けさ",
+      "romaji": "kesa",
+      "meaning": "sáng nay",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "今週",
+      "hiragana": "こんしゅう",
+      "romaji": "konshuu",
+      "meaning": "tuần này",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "仕事",
+      "hiragana": "しごと",
+      "romaji": "shigoto",
+      "meaning": "công việc",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "他",
+      "hiragana": "ほか",
+      "romaji": "hoka",
+      "meaning": "khác, phần còn lại",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "休み",
+      "hiragana": "やすみ",
+      "romaji": "yasumi",
+      "meaning": "nghỉ ngơi, giờ giải lao",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "休む",
+      "hiragana": "やすむ",
+      "romaji": "yasumu",
+      "meaning": "nghỉ ngơi, vắng mặt",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "会う",
+      "hiragana": "あう",
+      "romaji": "au",
+      "meaning": "gặp",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "会社",
+      "hiragana": "かいしゃ",
+      "romaji": "kaisha",
+      "meaning": "công ty, tập đoàn",
+      "jlpt_level": 5,
+      "category": "kinh doanh"
+    },
+    {
+      "word": "伯母さん",
+      "hiragana": "おばさん",
+      "romaji": "obasan",
+      "meaning": "cô, dì, thím",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "低い",
+      "hiragana": "ひくい",
+      "romaji": "hikui",
+      "meaning": "thấp",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "住む",
+      "hiragana": "すむ",
+      "romaji": "sumu",
+      "meaning": "sống, cư trú",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "体",
+      "hiragana": "からだ",
+      "romaji": "karada",
+      "meaning": "cơ thể, thân thể",
+      "jlpt_level": 5,
+      "category": "cơ thể người"
+    },
+    {
+      "word": "何",
+      "hiragana": "なに",
+      "romaji": "nani",
+      "meaning": "cái gì",
+      "jlpt_level": 5,
+      "category": "đại từ nghi vấn"
+    },
+    {
+      "word": "作る",
+      "hiragana": "つくる",
+      "romaji": "tsukuru",
+      "meaning": "làm, sản xuất",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "作文",
+      "hiragana": "さくぶん",
+      "romaji": "sakubun",
+      "meaning": "bài viết",
+      "jlpt_level": 5,
+      "category": "giáo dục"
+    },
+    {
+      "word": "使う",
+      "hiragana": "つかう",
+      "romaji": "tsukau",
+      "meaning": "sử dụng, tận dụng",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "便利",
+      "hiragana": "べんり",
+      "romaji": "benri",
+      "meaning": "tiện lợi, thuận tiện",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "借りる",
+      "hiragana": "かりる",
+      "romaji": "kariru",
+      "meaning": "mượn",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "側",
+      "hiragana": "そば",
+      "romaji": "soba",
+      "meaning": "gần, bên cạnh",
+      "jlpt_level": 5,
+      "category": "vị trí"
+    },
+    {
+      "word": "傘",
+      "hiragana": "かさ",
+      "romaji": "kasa",
+      "meaning": "cái ô",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "働く",
+      "hiragana": "はたらく",
+      "romaji": "hataraku",
+      "meaning": "làm việc",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "元気",
+      "hiragana": "げんき",
+      "romaji": "genki",
+      "meaning": "tràn đầy năng lượng, đầy sinh lực",
+      "jlpt_level": 5,
+      "category": "tính cách"
+    },
+    {
+      "word": "兄",
+      "hiragana": "あに",
+      "romaji": "ani",
+      "meaning": "anh trai",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "兄弟",
+      "hiragana": "きょうだい",
+      "romaji": "kyoudai",
+      "meaning": "anh chị em, anh em",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "先",
+      "hiragana": "さき",
+      "romaji": "saki",
+      "meaning": "trước, trước đây, cũ",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "先月",
+      "hiragana": "せんげつ",
+      "romaji": "sengetsu",
+      "meaning": "tháng trước",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "先生",
+      "hiragana": "せんせい",
+      "romaji": "sensei",
+      "meaning": "giáo viên, thầy, bác sĩ",
+      "jlpt_level": 5,
+      "category": "người"
+    },
+    {
+      "word": "先週",
+      "hiragana": "せんしゅう",
+      "romaji": "senshuu",
+      "meaning": "tuần trước",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "入る",
+      "hiragana": "はいる",
+      "romaji": "hairu",
+      "meaning": "đi vào, bước vào",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "入れる",
+      "hiragana": "いれる",
+      "romaji": "ireru",
+      "meaning": "đặt vào, cho vào",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "入口",
+      "hiragana": "いりぐち",
+      "romaji": "iriguchi",
+      "meaning": "lối vào, cổng",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "全部",
+      "hiragana": "ぜんぶ",
+      "romaji": "zenbu",
+      "meaning": "tất cả, toàn bộ, toàn thể",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "八",
+      "hiragana": "はち",
+      "romaji": "hachi",
+      "meaning": "số tám",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "八日",
+      "hiragana": "ようか",
+      "romaji": "youka",
+      "meaning": "ngày mùng tám, tám ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "六",
+      "hiragana": "ろく",
+      "romaji": "roku",
+      "meaning": "sáu",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "六日",
+      "hiragana": "むいか",
+      "romaji": "muika",
+      "meaning": "ngày mùng sáu, sáu ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "再来年",
+      "hiragana": "さらいねん",
+      "romaji": "sarainen",
+      "meaning": "năm sau nữa",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "写真",
+      "hiragana": "しゃしん",
+      "romaji": "shashin",
+      "meaning": "ảnh chụp, ảnh, bức tranh",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "冬",
+      "hiragana": "ふゆ",
+      "romaji": "fuyu",
+      "meaning": "mùa đông",
+      "jlpt_level": 5,
+      "category": "thời tiết"
+    },
+    {
+      "word": "冷たい",
+      "hiragana": "つめたい",
+      "romaji": "tsumetai",
+      "meaning": "lạnh",
+      "jlpt_level": 5,
+      "category": "tính chất"
+    },
+    {
+      "word": "冷蔵庫",
+      "hiragana": "れいぞうこ",
+      "romaji": "reizouko",
+      "meaning": "tủ lạnh",
+      "jlpt_level": 5,
+      "category": "đồ dùng gia đình"
+    },
+    {
+      "word": "出かける",
+      "hiragana": "でかける",
+      "romaji": "dekakeru",
+      "meaning": "đi ra ngoài",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "出す",
+      "hiragana": "だす",
+      "romaji": "dasu",
+      "meaning": "lấy ra",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "出る",
+      "hiragana": "でる",
+      "romaji": "deru",
+      "meaning": "rời đi, ra ngoài",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "出口",
+      "hiragana": "でぐち",
+      "romaji": "deguchi",
+      "meaning": "lối ra, cổng ra",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "分かる",
+      "hiragana": "わかる",
+      "romaji": "wakaru",
+      "meaning": "hiểu, thấu hiểu",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "切る",
+      "hiragana": "きる",
+      "romaji": "kiru",
+      "meaning": "cắt",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "切手",
+      "hiragana": "きって",
+      "romaji": "kitte",
+      "meaning": "con tem",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "切符",
+      "hiragana": "きっぷ",
+      "romaji": "kippu",
+      "meaning": "vé",
+      "jlpt_level": 5,
+      "category": "vật dụng"
+    },
+    {
+      "word": "初めて",
+      "hiragana": "はじめて",
+      "romaji": "hajimete",
+      "meaning": "lần đầu tiên",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "前",
+      "hiragana": "まえ",
+      "romaji": "mae",
+      "meaning": "phía trước, trước, trước đó",
+      "jlpt_level": 5,
+      "category": "trạng từ chỉ vị trí"
+    },
+    {
+      "word": "勉強",
+      "hiragana": "べんきょう",
+      "romaji": "benkyou",
+      "meaning": "học tập, sự chăm chỉ",
+      "jlpt_level": 5,
+      "category": "hoạt động, tính cách"
+    },
+    {
+      "word": "動物",
+      "hiragana": "どうぶつ",
+      "romaji": "doubutsu",
+      "meaning": "động vật",
+      "jlpt_level": 5,
+      "category": "sinh vật"
+    },
+    {
+      "word": "勤める",
+      "hiragana": "つとめる",
+      "romaji": "tsutomeru",
+      "meaning": "làm việc",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "北",
+      "hiragana": "きた",
+      "romaji": "kita",
+      "meaning": "phương bắc",
+      "jlpt_level": 5,
+      "category": "phương hướng"
+    },
+    {
+      "word": "十日",
+      "hiragana": "とおか",
+      "romaji": "tooka",
+      "meaning": "ngày mùng 10, mười ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "千",
+      "hiragana": "せん",
+      "romaji": "sen",
+      "meaning": "nghìn",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "午前",
+      "hiragana": "ごぜん",
+      "romaji": "gozen",
+      "meaning": "buổi sáng, a.m.",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "午後",
+      "hiragana": "ごご",
+      "romaji": "gogo",
+      "meaning": "buổi chiều, chiều",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "半分",
+      "hiragana": "はんぶん",
+      "romaji": "hanbun",
+      "meaning": "một nửa",
+      "jlpt_level": 5,
+      "category": "từ vựng"
+    },
+    {
+      "word": "南",
+      "hiragana": "みなみ",
+      "romaji": "minami",
+      "meaning": "phương nam",
+      "jlpt_level": 5,
+      "category": "phương hướng"
+    },
+    {
+      "word": "危ない",
+      "hiragana": "あぶない",
+      "romaji": "abunai",
+      "meaning": "nguy hiểm, rủi ro",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "卵",
+      "hiragana": "たまご",
+      "romaji": "tamago",
+      "meaning": "trứng",
+      "jlpt_level": 5,
+      "category": "thực phẩm"
+    },
+    {
+      "word": "厚い",
+      "hiragana": "あつい",
+      "romaji": "atsui",
+      "meaning": "dày",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "去年",
+      "hiragana": "きょねん",
+      "romaji": "kyonen",
+      "meaning": "năm ngoái",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "友達",
+      "hiragana": "ともだち",
+      "romaji": "tomodachi",
+      "meaning": "bạn bè, đồng hành",
+      "jlpt_level": 5,
+      "category": "con người"
+    },
+    {
+      "word": "取る",
+      "hiragana": "とる",
+      "romaji": "toru",
+      "meaning": "lấy, nhặt",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "口",
+      "hiragana": "くち",
+      "romaji": "kuchi",
+      "meaning": "miệng, lỗ mở, hố",
+      "jlpt_level": 5,
+      "category": "cơ thể người"
+    },
+    {
+      "word": "古い",
+      "hiragana": "ふるい",
+      "romaji": "furui",
+      "meaning": "cũ",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "可愛い",
+      "hiragana": "かわいい",
+      "romaji": "kawaii",
+      "meaning": "đáng yêu, dễ thương",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "台所",
+      "hiragana": "だいどころ",
+      "romaji": "daidokoro",
+      "meaning": "nhà bếp",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "右",
+      "hiragana": "みぎ",
+      "romaji": "migi",
+      "meaning": "bên phải, phía tay phải",
+      "jlpt_level": 5,
+      "category": "phương hướng"
+    },
+    {
+      "word": "同じ",
+      "hiragana": "おなじ",
+      "romaji": "onaji",
+      "meaning": "giống nhau, giống hệt",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "名前",
+      "hiragana": "なまえ",
+      "romaji": "namae",
+      "meaning": "tên, tên đầy đủ",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "向こう",
+      "hiragana": "むこう",
+      "romaji": "mukou",
+      "meaning": "bên kia, phía bên kia",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "吸う",
+      "hiragana": "すう",
+      "romaji": "suu",
+      "meaning": "hút, hít vào",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "吹く",
+      "hiragana": "ふく",
+      "romaji": "fuku",
+      "meaning": "thổi",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "呼ぶ",
+      "hiragana": "よぶ",
+      "romaji": "yobu",
+      "meaning": "gọi, kêu gọi",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "咲く",
+      "hiragana": "さく",
+      "romaji": "saku",
+      "meaning": "nở hoa",
+      "jlpt_level": 5,
+      "category": "thiên nhiên"
+    },
+    {
+      "word": "問題",
+      "hiragana": "もんだい",
+      "romaji": "mondai",
+      "meaning": "câu hỏi, vấn đề",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "喫茶店",
+      "hiragana": "きっさてん",
+      "romaji": "kissaten",
+      "meaning": "quán cà phê",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "四",
+      "hiragana": "し",
+      "romaji": "shi",
+      "meaning": "bốn",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "四日",
+      "hiragana": "よっか",
+      "romaji": "yokka",
+      "meaning": "ngày mùng bốn, bốn ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "困る",
+      "hiragana": "こまる",
+      "romaji": "komaru",
+      "meaning": "gặp rắc rối, lo lắng",
+      "jlpt_level": 5,
+      "category": "trạng thái cảm xúc"
+    },
+    {
+      "word": "図書館",
+      "hiragana": "としょかん",
+      "romaji": "toshokan",
+      "meaning": "thư viện",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "国",
+      "hiragana": "くに",
+      "romaji": "kuni",
+      "meaning": "quốc gia, bang, vùng",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "土曜日",
+      "hiragana": "どようび",
+      "romaji": "doyoubi",
+      "meaning": "Thứ Bảy",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "地下鉄",
+      "hiragana": "ちかてつ",
+      "romaji": "chikatetsu",
+      "meaning": "tàu điện ngầm",
+      "jlpt_level": 5,
+      "category": "phương tiện giao thông"
+    },
+    {
+      "word": "地図",
+      "hiragana": "ちず",
+      "romaji": "chizu",
+      "meaning": "bản đồ",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "塩",
+      "hiragana": "しお",
+      "romaji": "shio",
+      "meaning": "muối",
+      "jlpt_level": 5,
+      "category": "thực phẩm"
+    },
+    {
+      "word": "声",
+      "hiragana": "こえ",
+      "romaji": "koe",
+      "meaning": "giọng nói",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "売る",
+      "hiragana": "うる",
+      "romaji": "uru",
+      "meaning": "bán",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "夏",
+      "hiragana": "なつ",
+      "romaji": "natsu",
+      "meaning": "mùa hè",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "外",
+      "hiragana": "そと",
+      "romaji": "soto",
+      "meaning": "bên ngoài, ngoại thất",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "外国",
+      "hiragana": "がいこく",
+      "romaji": "gaikoku",
+      "meaning": "nước ngoài",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "外国人",
+      "hiragana": "がいこくじん",
+      "romaji": "gaikokujin",
+      "meaning": "người nước ngoài",
+      "jlpt_level": 5,
+      "category": "con người"
+    },
+    {
+      "word": "多い",
+      "hiragana": "おおい",
+      "romaji": "ooi",
+      "meaning": "nhiều",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "多分",
+      "hiragana": "たぶん",
+      "romaji": "tabun",
+      "meaning": "có lẽ, có thể",
+      "jlpt_level": 5,
+      "category": "phó từ"
+    },
+    {
+      "word": "夜",
+      "hiragana": "よる",
+      "romaji": "yoru",
+      "meaning": "buổi tối, đêm",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "大きい",
+      "hiragana": "おおきい",
+      "romaji": "ookii",
+      "meaning": "to lớn, rộng lớn, lớn",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "大丈夫",
+      "hiragana": "だいじょうぶ",
+      "romaji": "daijoubu",
+      "meaning": "an toàn, ổn, không sao",
+      "jlpt_level": 5,
+      "category": "tình trạng"
+    },
+    {
+      "word": "大人",
+      "hiragana": "おとな",
+      "romaji": "otona",
+      "meaning": "người lớn",
+      "jlpt_level": 5,
+      "category": "con người"
+    },
+    {
+      "word": "大使館",
+      "hiragana": "たいしかん",
+      "romaji": "taishikan",
+      "meaning": "đại sứ quán",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "大切",
+      "hiragana": "たいせつ",
+      "romaji": "taisetsu",
+      "meaning": "quan trọng, cần thiết",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "大勢",
+      "hiragana": "おおぜい",
+      "romaji": "oozei",
+      "meaning": "đông người, đám đông, nhiều người",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "大変",
+      "hiragana": "たいへん",
+      "romaji": "taihen",
+      "meaning": "rất, vô cùng, to lớn",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "大学",
+      "hiragana": "だいがく",
+      "romaji": "daigaku",
+      "meaning": "trường đại học",
+      "jlpt_level": 5,
+      "category": "giáo dục"
+    },
+    {
+      "word": "天気",
+      "hiragana": "てんき",
+      "romaji": "tenki",
+      "meaning": "thời tiết",
+      "jlpt_level": 5,
+      "category": "thiên nhiên"
+    },
+    {
+      "word": "奇麗",
+      "hiragana": "きれい",
+      "romaji": "kirei",
+      "meaning": "xinh đẹp, đáng yêu, đẹp",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "奥さん",
+      "hiragana": "おくさん",
+      "romaji": "okusan",
+      "meaning": "vợ, vợ của bạn, vợ của anh ấy",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "女",
+      "hiragana": "おんな",
+      "romaji": "onna",
+      "meaning": "nữ, phụ nữ",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "女の子",
+      "hiragana": "おんなのこ",
+      "romaji": "onnanoko",
+      "meaning": "bé gái",
+      "jlpt_level": 5,
+      "category": "con người"
+    },
+    {
+      "word": "好き",
+      "hiragana": "すき",
+      "romaji": "suki",
+      "meaning": "thích, sự yêu mến, tình yêu",
+      "jlpt_level": 5,
+      "category": "tình cảm"
+    },
+    {
+      "word": "妹",
+      "hiragana": "いもうと",
+      "romaji": "imouto",
+      "meaning": "em gái",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "姉",
+      "hiragana": "あね",
+      "romaji": "ane",
+      "meaning": "chị gái",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "始まる",
+      "hiragana": "はじまる",
+      "romaji": "hajimaru",
+      "meaning": "bắt đầu",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "始め",
+      "hiragana": "はじめ",
+      "romaji": "hajime",
+      "meaning": "sự bắt đầu, khởi đầu",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "嫌",
+      "hiragana": "いや",
+      "romaji": "iya",
+      "meaning": "khó chịu, ghét",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "嫌い",
+      "hiragana": "きらい",
+      "romaji": "kirai",
+      "meaning": "ghét, không thích",
+      "jlpt_level": 5,
+      "category": "cảm xúc"
+    },
+    {
+      "word": "子供",
+      "hiragana": "こども",
+      "romaji": "kodomo",
+      "meaning": "trẻ em, trẻ con",
+      "jlpt_level": 5,
+      "category": "con người"
+    },
+    {
+      "word": "字引",
+      "hiragana": "じびき",
+      "romaji": "jibiki",
+      "meaning": "từ điển",
+      "jlpt_level": 5,
+      "category": "vật dụng học tập"
+    },
+    {
+      "word": "学校",
+      "hiragana": "がっこう",
+      "romaji": "gakkou",
+      "meaning": "trường học",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "学生",
+      "hiragana": "がくせい",
+      "romaji": "gakusei",
+      "meaning": "học sinh",
+      "jlpt_level": 5,
+      "category": "con người"
+    },
+    {
+      "word": "安い",
+      "hiragana": "やすい",
+      "romaji": "yasui",
+      "meaning": "rẻ, không đắt",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "家",
+      "hiragana": "いえ",
+      "romaji": "ie",
+      "meaning": "nhà, nơi cư trú",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "家庭",
+      "hiragana": "かてい",
+      "romaji": "katei",
+      "meaning": "gia đình, hộ gia đình",
+      "jlpt_level": 5,
+      "category": "địa điểm, mối quan hệ"
+    },
+    {
+      "word": "家族",
+      "hiragana": "かぞく",
+      "romaji": "kazoku",
+      "meaning": "gia đình, các thành viên trong gia đình",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "宿題",
+      "hiragana": "しゅくだい",
+      "romaji": "shukudai",
+      "meaning": "bài tập về nhà",
+      "jlpt_level": 5,
+      "category": "giáo dục"
+    },
+    {
+      "word": "寒い",
+      "hiragana": "さむい",
+      "romaji": "samui",
+      "meaning": "lạnh",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "寝る",
+      "hiragana": "ねる",
+      "romaji": "neru",
+      "meaning": "đi ngủ",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "封筒",
+      "hiragana": "ふうとう",
+      "romaji": "fuutou",
+      "meaning": "phong bì",
+      "jlpt_level": 5,
+      "category": "vật dụng"
+    },
+    {
+      "word": "小さい",
+      "hiragana": "ちいさい",
+      "romaji": "chiisai",
+      "meaning": "nhỏ, bé, nhỏ xíu",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "少し",
+      "hiragana": "すこし",
+      "romaji": "sukoshi",
+      "meaning": "một lượng nhỏ, một chút",
+      "jlpt_level": 5,
+      "category": "trạng từ chỉ lượng"
+    },
+    {
+      "word": "少ない",
+      "hiragana": "すくない",
+      "romaji": "sukunai",
+      "meaning": "ít, một ít",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "山",
+      "hiragana": "やま",
+      "romaji": "yama",
+      "meaning": "núi",
+      "jlpt_level": 5,
+      "category": "địa lý"
+    },
+    {
+      "word": "川",
+      "hiragana": "かわ",
+      "romaji": "kawa",
+      "meaning": "sông, suối",
+      "jlpt_level": 5,
+      "category": "địa lý"
+    },
+    {
+      "word": "左",
+      "hiragana": "ひだり",
+      "romaji": "hidari",
+      "meaning": "bên trái, phía tay trái",
+      "jlpt_level": 5,
+      "category": "phương hướng"
+    },
+    {
+      "word": "帰る",
+      "hiragana": "かえる",
+      "romaji": "kaeru",
+      "meaning": "trở về, về nhà",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "帽子",
+      "hiragana": "ぼうし",
+      "romaji": "boushi",
+      "meaning": "mũ, nón",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "年",
+      "hiragana": "とし",
+      "romaji": "toshi",
+      "meaning": "năm, tuổi",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "幾つ",
+      "hiragana": "いくつ",
+      "romaji": "ikutsu",
+      "meaning": "bao nhiêu, bao nhiêu tuổi",
+      "jlpt_level": 5,
+      "category": "từ để hỏi"
+    },
+    {
+      "word": "幾ら",
+      "hiragana": "いくら",
+      "romaji": "ikura",
+      "meaning": "bao nhiêu",
+      "jlpt_level": 5,
+      "category": "từ để hỏi"
+    },
+    {
+      "word": "広い",
+      "hiragana": "ひろい",
+      "romaji": "hiroi",
+      "meaning": "rộng rãi, bao la, rộng",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "店",
+      "hiragana": "みせ",
+      "romaji": "mise",
+      "meaning": "cửa hàng",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "座る",
+      "hiragana": "すわる",
+      "romaji": "suwaru",
+      "meaning": "ngồi",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "庭",
+      "hiragana": "にわ",
+      "romaji": "niwa",
+      "meaning": "vườn, sân",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "廊下",
+      "hiragana": "ろうか",
+      "romaji": "rouka",
+      "meaning": "hành lang, lối đi",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "建物",
+      "hiragana": "たてもの",
+      "romaji": "tatemono",
+      "meaning": "tòa nhà",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "引く",
+      "hiragana": "ひく",
+      "romaji": "hiku",
+      "meaning": "kéo, vẽ",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "弟",
+      "hiragana": "おとうと",
+      "romaji": "otouto",
+      "meaning": "em trai",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "弱い",
+      "hiragana": "よわい",
+      "romaji": "yowai",
+      "meaning": "yếu, mỏng manh, tinh tế",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "強い",
+      "hiragana": "つよい",
+      "romaji": "tsuyoi",
+      "meaning": "mạnh mẽ, mạnh",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "弾く",
+      "hiragana": "ひく",
+      "romaji": "hiku",
+      "meaning": "chơi (nhạc cụ)",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "待つ",
+      "hiragana": "まつ",
+      "romaji": "matsu",
+      "meaning": "đợi, mong chờ",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "後",
+      "hiragana": "あと",
+      "romaji": "ato",
+      "meaning": "phía sau, sau đó",
+      "jlpt_level": 5,
+      "category": "thời gian, vị trí"
+    },
+    {
+      "word": "後ろ",
+      "hiragana": "うしろ",
+      "romaji": "ushiro",
+      "meaning": "phía sau, đằng sau, phía hậu",
+      "jlpt_level": 5,
+      "category": "phương hướng"
+    },
+    {
+      "word": "忘れる",
+      "hiragana": "わすれる",
+      "romaji": "wasureru",
+      "meaning": "quên",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "忙しい",
+      "hiragana": "いそがしい",
+      "romaji": "isogashii",
+      "meaning": "bận rộn, bận việc",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "悪い",
+      "hiragana": "わるい",
+      "romaji": "warui",
+      "meaning": "xấu, kém, thấp kém",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "意味",
+      "hiragana": "いみ",
+      "romaji": "imi",
+      "meaning": "ý nghĩa, tầm quan trọng",
+      "jlpt_level": 5,
+      "category": "trừu tượng"
+    },
+    {
+      "word": "戸",
+      "hiragana": "と",
+      "romaji": "to",
+      "meaning": "cửa",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "所",
+      "hiragana": "ところ",
+      "romaji": "tokoro",
+      "meaning": "nơi chốn, địa điểm, cảnh",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "手",
+      "hiragana": "て",
+      "romaji": "te",
+      "meaning": "tay",
+      "jlpt_level": 5,
+      "category": "cơ thể"
+    },
+    {
+      "word": "手紙",
+      "hiragana": "てがみ",
+      "romaji": "tegami",
+      "meaning": "lá thư",
+      "jlpt_level": 5,
+      "category": "vật dụng"
+    },
+    {
+      "word": "押す",
+      "hiragana": "おす",
+      "romaji": "osu",
+      "meaning": "đẩy, nhấn",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "持つ",
+      "hiragana": "もつ",
+      "romaji": "motsu",
+      "meaning": "cầm, nắm giữ",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "掃除",
+      "hiragana": "そうじ",
+      "romaji": "souji",
+      "meaning": "dọn dẹp, quét dọn",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "授業",
+      "hiragana": "じゅぎょう",
+      "romaji": "jugyou",
+      "meaning": "bài học, công việc trong lớp",
+      "jlpt_level": 5,
+      "category": "giáo dục"
+    },
+    {
+      "word": "撮る",
+      "hiragana": "とる",
+      "romaji": "toru",
+      "meaning": "chụp, lấy",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "教える",
+      "hiragana": "おしえる",
+      "romaji": "oshieru",
+      "meaning": "dạy, hướng dẫn",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "教室",
+      "hiragana": "きょうしつ",
+      "romaji": "kyoushitsu",
+      "meaning": "lớp học, phòng học",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "散歩",
+      "hiragana": "さんぽ",
+      "romaji": "sanpo",
+      "meaning": "đi dạo, đi bộ",
+      "jlpt_level": 5,
+      "category": "hoạt động"
+    },
+    {
+      "word": "料理",
+      "hiragana": "りょうり",
+      "romaji": "ryouri",
+      "meaning": "nấu ăn, ẩm thực",
+      "jlpt_level": 5,
+      "category": "hoạt động, thực phẩm"
+    },
+    {
+      "word": "新しい",
+      "hiragana": "あたらしい",
+      "romaji": "atarashii",
+      "meaning": "mới, tươi",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "新聞",
+      "hiragana": "しんぶん",
+      "romaji": "shinbun",
+      "meaning": "báo",
+      "jlpt_level": 5,
+      "category": "vật dụng"
+    },
+    {
+      "word": "方",
+      "hiragana": "ほう",
+      "romaji": "hou",
+      "meaning": "hướng, cách, phía",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "旅行",
+      "hiragana": "りょこう",
+      "romaji": "ryokou",
+      "meaning": "du lịch, chuyến đi",
+      "jlpt_level": 5,
+      "category": "hoạt động"
+    },
+    {
+      "word": "日",
+      "hiragana": "ひ",
+      "romaji": "hi",
+      "meaning": "ngày, mặt trời",
+      "jlpt_level": 5,
+      "category": "thời gian, thiên nhiên"
+    },
+    {
+      "word": "日曜日",
+      "hiragana": "にちようび",
+      "romaji": "nichiyoubi",
+      "meaning": "Chủ Nhật",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "早い",
+      "hiragana": "はやい",
+      "romaji": "hayai",
+      "meaning": "sớm",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "早く",
+      "hiragana": "はやく",
+      "romaji": "hayaku",
+      "meaning": "sớm, nhanh chóng",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "明るい",
+      "hiragana": "あかるい",
+      "romaji": "akarui",
+      "meaning": "sáng, tươi sáng",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "明後日",
+      "hiragana": "あさって",
+      "romaji": "asatte",
+      "meaning": "ngày kia",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "明日",
+      "hiragana": "あした",
+      "romaji": "ashita",
+      "meaning": "ngày mai",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "映画",
+      "hiragana": "えいが",
+      "romaji": "eiga",
+      "meaning": "phim, phim ảnh",
+      "jlpt_level": 5,
+      "category": "giải trí"
+    },
+    {
+      "word": "映画館",
+      "hiragana": "えいがかん",
+      "romaji": "eigakan",
+      "meaning": "rạp chiếu phim, rạp chiếu phim",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "春",
+      "hiragana": "はる",
+      "romaji": "haru",
+      "meaning": "mùa xuân",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "昨日",
+      "hiragana": "きのう",
+      "romaji": "kinou",
+      "meaning": "hôm qua",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "昼",
+      "hiragana": "ひる",
+      "romaji": "hiru",
+      "meaning": "buổi trưa",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "昼ご飯",
+      "hiragana": "ひるごはん",
+      "romaji": "hirugohan",
+      "meaning": "bữa trưa, bữa ăn trưa",
+      "jlpt_level": 5,
+      "category": "thức ăn"
+    },
+    {
+      "word": "時々",
+      "hiragana": "ときどき",
+      "romaji": "tokidoki",
+      "meaning": "thỉnh thoảng, đôi khi",
+      "jlpt_level": 5,
+      "category": "trạng từ chỉ tần suất"
+    },
+    {
+      "word": "時計",
+      "hiragana": "とけい",
+      "romaji": "tokei",
+      "meaning": "đồng hồ",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "時間",
+      "hiragana": "じかん",
+      "romaji": "jikan",
+      "meaning": "thời gian",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "晩ご飯",
+      "hiragana": "ばんごはん",
+      "romaji": "bangohan",
+      "meaning": "bữa tối",
+      "jlpt_level": 5,
+      "category": "thức ăn"
+    },
+    {
+      "word": "晴れる",
+      "hiragana": "はれる",
+      "romaji": "hareru",
+      "meaning": "quang đãng",
+      "jlpt_level": 5,
+      "category": "thời tiết"
+    },
+    {
+      "word": "暇",
+      "hiragana": "ひま",
+      "romaji": "hima",
+      "meaning": "thời gian rảnh, thời gian rỗi",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "暑い",
+      "hiragana": "あつい",
+      "romaji": "atsui",
+      "meaning": "nóng",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "暖かい",
+      "hiragana": "あたたかい",
+      "romaji": "atatakai",
+      "meaning": "ấm áp, ôn hòa",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "暗い",
+      "hiragana": "くらい",
+      "romaji": "kurai",
+      "meaning": "tối, ảm đạm",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "曇り",
+      "hiragana": "くもり",
+      "romaji": "kumori",
+      "meaning": "trời nhiều mây, thời tiết nhiều mây",
+      "jlpt_level": 5,
+      "category": "thời tiết"
+    },
+    {
+      "word": "曲がる",
+      "hiragana": "まがる",
+      "romaji": "magaru",
+      "meaning": "cong, uốn cong",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "書く",
+      "hiragana": "かく",
+      "romaji": "kaku",
+      "meaning": "viết, soạn",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "月曜日",
+      "hiragana": "げつようび",
+      "romaji": "getsuyoubi",
+      "meaning": "Thứ Hai",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "有る",
+      "hiragana": "ある",
+      "romaji": "aru",
+      "meaning": "có, tồn tại",
+      "jlpt_level": 5,
+      "category": "trạng thái"
+    },
+    {
+      "word": "有名",
+      "hiragana": "ゆうめい",
+      "romaji": "yuumei",
+      "meaning": "nổi tiếng",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "服",
+      "hiragana": "ふく",
+      "romaji": "fuku",
+      "meaning": "quần áo",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "朝",
+      "hiragana": "あさ",
+      "romaji": "asa",
+      "meaning": "buổi sáng",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "朝ご飯",
+      "hiragana": "あさごはん",
+      "romaji": "asagohan",
+      "meaning": "bữa sáng",
+      "jlpt_level": 5,
+      "category": "thức ăn"
+    },
+    {
+      "word": "木",
+      "hiragana": "き",
+      "romaji": "ki",
+      "meaning": "cây",
+      "jlpt_level": 5,
+      "category": "thiên nhiên"
+    },
+    {
+      "word": "木曜日",
+      "hiragana": "もくようび",
+      "romaji": "mokuyoubi",
+      "meaning": "thứ năm",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "本",
+      "hiragana": "ほん",
+      "romaji": "hon",
+      "meaning": "sách",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "本当",
+      "hiragana": "ほんとう",
+      "romaji": "hontou",
+      "meaning": "sự thật, thực tế",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "本棚",
+      "hiragana": "ほんだな",
+      "romaji": "hondana",
+      "meaning": "kệ sách, tủ sách",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "机",
+      "hiragana": "つくえ",
+      "romaji": "tsukue",
+      "meaning": "cái bàn",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "村",
+      "hiragana": "むら",
+      "romaji": "mura",
+      "meaning": "làng",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "来る",
+      "hiragana": "くる",
+      "romaji": "kuru",
+      "meaning": "đến",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "来年",
+      "hiragana": "らいねん",
+      "romaji": "rainen",
+      "meaning": "năm sau",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "来月",
+      "hiragana": "らいげつ",
+      "romaji": "raigetsu",
+      "meaning": "tháng sau",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "来週",
+      "hiragana": "らいしゅう",
+      "romaji": "raishuu",
+      "meaning": "tuần tới",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "東",
+      "hiragana": "ひがし",
+      "romaji": "higashi",
+      "meaning": "đông",
+      "jlpt_level": 5,
+      "category": "phương hướng"
+    },
+    {
+      "word": "果物",
+      "hiragana": "くだもの",
+      "romaji": "kudamono",
+      "meaning": "trái cây",
+      "jlpt_level": 5,
+      "category": "thực phẩm"
+    },
+    {
+      "word": "椅子",
+      "hiragana": "いす",
+      "romaji": "isu",
+      "meaning": "cái ghế",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "楽しい",
+      "hiragana": "たのしい",
+      "romaji": "tanoshii",
+      "meaning": "thú vị, vui vẻ",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "横",
+      "hiragana": "よこ",
+      "romaji": "yoko",
+      "meaning": "ngang, bên cạnh",
+      "jlpt_level": 5,
+      "category": "trạng từ"
+    },
+    {
+      "word": "橋",
+      "hiragana": "はし",
+      "romaji": "hashi",
+      "meaning": "cây cầu",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "次",
+      "hiragana": "つぎ",
+      "romaji": "tsugi",
+      "meaning": "tiếp theo, kế tiếp",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "歌",
+      "hiragana": "うた",
+      "romaji": "uta",
+      "meaning": "bài hát",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "歌う",
+      "hiragana": "うたう",
+      "romaji": "utau",
+      "meaning": "hát",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "止まる",
+      "hiragana": "とまる",
+      "romaji": "tomaru",
+      "meaning": "dừng lại",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "歩く",
+      "hiragana": "あるく",
+      "romaji": "aruku",
+      "meaning": "đi bộ",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "歯",
+      "hiragana": "は",
+      "romaji": "ha",
+      "meaning": "răng",
+      "jlpt_level": 5,
+      "category": "cơ thể"
+    },
+    {
+      "word": "歳",
+      "hiragana": "さい",
+      "romaji": "sai",
+      "meaning": "tuổi",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "死ぬ",
+      "hiragana": "しぬ",
+      "romaji": "shinu",
+      "meaning": "chết, qua đời",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "段々",
+      "hiragana": "だんだん",
+      "romaji": "dandan",
+      "meaning": "dần dần, từng chút một",
+      "jlpt_level": 5,
+      "category": "phó từ"
+    },
+    {
+      "word": "母",
+      "hiragana": "はは",
+      "romaji": "haha",
+      "meaning": "mẹ",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "毎年",
+      "hiragana": "まいとし",
+      "romaji": "maitoshi",
+      "meaning": "hàng năm",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "毎日",
+      "hiragana": "まいにち",
+      "romaji": "mainichi",
+      "meaning": "mỗi ngày",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "毎晩",
+      "hiragana": "まいばん",
+      "romaji": "maiban",
+      "meaning": "mỗi tối",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "毎月",
+      "hiragana": "まいつき",
+      "romaji": "maitsuki",
+      "meaning": "hàng tháng",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "毎朝",
+      "hiragana": "まいあさ",
+      "romaji": "maiasa",
+      "meaning": "mỗi buổi sáng",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "毎週",
+      "hiragana": "まいしゅう",
+      "romaji": "maishuu",
+      "meaning": "mỗi tuần",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "水",
+      "hiragana": "みず",
+      "romaji": "mizu",
+      "meaning": "nước",
+      "jlpt_level": 5,
+      "category": "thiên nhiên"
+    },
+    {
+      "word": "水曜日",
+      "hiragana": "すいようび",
+      "romaji": "suiyoubi",
+      "meaning": "Thứ Tư",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "汚い",
+      "hiragana": "きたない",
+      "romaji": "kitanai",
+      "meaning": "bẩn, nhớp nhúa",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "池",
+      "hiragana": "いけ",
+      "romaji": "ike",
+      "meaning": "cái ao",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "沢山",
+      "hiragana": "たくさん",
+      "romaji": "takusan",
+      "meaning": "nhiều, rất nhiều, một đống",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "泳ぐ",
+      "hiragana": "およぐ",
+      "romaji": "oyogu",
+      "meaning": "bơi",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "洋服",
+      "hiragana": "ようふく",
+      "romaji": "youfuku",
+      "meaning": "quần áo kiểu phương Tây",
+      "jlpt_level": 5,
+      "category": "trang phục"
+    },
+    {
+      "word": "洗う",
+      "hiragana": "あらう",
+      "romaji": "arau",
+      "meaning": "rửa",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "洗濯",
+      "hiragana": "せんたく",
+      "romaji": "sentaku",
+      "meaning": "giặt giũ, quần áo giặt",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "浴びる",
+      "hiragana": "あびる",
+      "romaji": "abiru",
+      "meaning": "tắm vòi sen",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "海",
+      "hiragana": "うみ",
+      "romaji": "umi",
+      "meaning": "biển, đại dương",
+      "jlpt_level": 5,
+      "category": "thiên nhiên"
+    },
+    {
+      "word": "消える",
+      "hiragana": "きえる",
+      "romaji": "kieru",
+      "meaning": "tắt, biến mất",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "消す",
+      "hiragana": "けす",
+      "romaji": "kesu",
+      "meaning": "xóa, xóa bỏ",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "涼しい",
+      "hiragana": "すずしい",
+      "romaji": "suzushii",
+      "meaning": "mát mẻ, sảng khoái",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "渡す",
+      "hiragana": "わたす",
+      "romaji": "watasu",
+      "meaning": "trao, nộp",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "渡る",
+      "hiragana": "わたる",
+      "romaji": "wataru",
+      "meaning": "băng qua",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "漢字",
+      "hiragana": "かんじ",
+      "romaji": "kanji",
+      "meaning": "chữ Hán",
+      "jlpt_level": 5,
+      "category": "ngôn ngữ"
+    },
+    {
+      "word": "火",
+      "hiragana": "ひ",
+      "romaji": "hi",
+      "meaning": "lửa, ngọn lửa",
+      "jlpt_level": 5,
+      "category": "thiên nhiên"
+    },
+    {
+      "word": "灰皿",
+      "hiragana": "はいざら",
+      "romaji": "haizara",
+      "meaning": "cái gạt tàn",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "無くす",
+      "hiragana": "なくす",
+      "romaji": "nakusu",
+      "meaning": "mất cái gì đó",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "煙草",
+      "hiragana": "たばこ",
+      "romaji": "tabako",
+      "meaning": "thuốc lá",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "煩い",
+      "hiragana": "うるさい",
+      "romaji": "urusai",
+      "meaning": "ồn ào, ầm ĩ",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "熱い",
+      "hiragana": "あつい",
+      "romaji": "atsui",
+      "meaning": "nóng",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "父",
+      "hiragana": "ちち",
+      "romaji": "chichi",
+      "meaning": "cha",
+      "jlpt_level": 5,
+      "category": "gia đình"
+    },
+    {
+      "word": "牛乳",
+      "hiragana": "ぎゅうにゅう",
+      "romaji": "gyuunyuu",
+      "meaning": "sữa",
+      "jlpt_level": 5,
+      "category": "đồ uống"
+    },
+    {
+      "word": "牛肉",
+      "hiragana": "ぎゅうにく",
+      "romaji": "gyuuniku",
+      "meaning": "thịt bò",
+      "jlpt_level": 5,
+      "category": "thực phẩm"
+    },
+    {
+      "word": "犬",
+      "hiragana": "いぬ",
+      "romaji": "inu",
+      "meaning": "chó",
+      "jlpt_level": 5,
+      "category": "động vật"
+    },
+    {
+      "word": "狭い",
+      "hiragana": "せまい",
+      "romaji": "semai",
+      "meaning": "hẹp, chật hẹp",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "猫",
+      "hiragana": "ねこ",
+      "romaji": "neko",
+      "meaning": "con mèo",
+      "jlpt_level": 5,
+      "category": "động vật"
+    },
+    {
+      "word": "玄関",
+      "hiragana": "げんかん",
+      "romaji": "genkan",
+      "meaning": "cửa vào, sảnh vào",
+      "jlpt_level": 5,
+      "category": "kiến trúc"
+    },
+    {
+      "word": "甘い",
+      "hiragana": "あまい",
+      "romaji": "amai",
+      "meaning": "ngọt",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "生まれる",
+      "hiragana": "うまれる",
+      "romaji": "umareru",
+      "meaning": "được sinh ra",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "生徒",
+      "hiragana": "せいと",
+      "romaji": "seito",
+      "meaning": "học sinh",
+      "jlpt_level": 5,
+      "category": "con người"
+    },
+    {
+      "word": "男",
+      "hiragana": "おとこ",
+      "romaji": "otoko",
+      "meaning": "đàn ông, nam giới",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "男の子",
+      "hiragana": "おとこのこ",
+      "romaji": "otokonoko",
+      "meaning": "bé trai",
+      "jlpt_level": 5,
+      "category": "con người"
+    },
+    {
+      "word": "町",
+      "hiragana": "まち",
+      "romaji": "machi",
+      "meaning": "thị trấn, khu phố",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "留学生",
+      "hiragana": "りゅうがくせい",
+      "romaji": "ryuugakusei",
+      "meaning": "du học sinh",
+      "jlpt_level": 5,
+      "category": "con người"
+    },
+    {
+      "word": "番号",
+      "hiragana": "ばんごう",
+      "romaji": "bangou",
+      "meaning": "số",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "疲れる",
+      "hiragana": "つかれる",
+      "romaji": "tsukareru",
+      "meaning": "mệt mỏi",
+      "jlpt_level": 5,
+      "category": "trạng thái"
+    },
+    {
+      "word": "病気",
+      "hiragana": "びょうき",
+      "romaji": "byouki",
+      "meaning": "bệnh tật, bệnh",
+      "jlpt_level": 5,
+      "category": "sức khỏe"
+    },
+    {
+      "word": "病院",
+      "hiragana": "びょういん",
+      "romaji": "byouin",
+      "meaning": "bệnh viện",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "痛い",
+      "hiragana": "いたい",
+      "romaji": "itai",
+      "meaning": "đau, đau đớn",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "登る",
+      "hiragana": "のぼる",
+      "romaji": "noboru",
+      "meaning": "lên, đi lên",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "白い",
+      "hiragana": "しろい",
+      "romaji": "shiroi",
+      "meaning": "màu trắng",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "百",
+      "hiragana": "ひゃく",
+      "romaji": "hyaku",
+      "meaning": "trăm",
+      "jlpt_level": 5,
+      "category": "số đếm"
+    },
+    {
+      "word": "皆",
+      "hiragana": "みんな",
+      "romaji": "minna",
+      "meaning": "tất cả, mọi người",
+      "jlpt_level": 5,
+      "category": "đại từ"
+    },
+    {
+      "word": "目",
+      "hiragana": "め",
+      "romaji": "me",
+      "meaning": "mắt, nhãn cầu",
+      "jlpt_level": 5,
+      "category": "cơ thể"
+    },
+    {
+      "word": "眼鏡",
+      "hiragana": "めがね",
+      "romaji": "megane",
+      "meaning": "kính mắt",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "着く",
+      "hiragana": "つく",
+      "romaji": "tsuku",
+      "meaning": "đến, tới",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "着る",
+      "hiragana": "きる",
+      "romaji": "kiru",
+      "meaning": "mặc, mặc vào",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "知る",
+      "hiragana": "しる",
+      "romaji": "shiru",
+      "meaning": "biết, nhận thức",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "短い",
+      "hiragana": "みじかい",
+      "romaji": "mijikai",
+      "meaning": "ngắn",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "石鹸",
+      "hiragana": "せっけん",
+      "romaji": "sekken",
+      "meaning": "xà phòng",
+      "jlpt_level": 5,
+      "category": "đồ dùng hàng ngày"
+    },
+    {
+      "word": "砂糖",
+      "hiragana": "さとう",
+      "romaji": "satou",
+      "meaning": "đường",
+      "jlpt_level": 5,
+      "category": "thực phẩm"
+    },
+    {
+      "word": "磨く",
+      "hiragana": "みがく",
+      "romaji": "migaku",
+      "meaning": "đánh bóng, làm sáng",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "私",
+      "hiragana": "わたし",
+      "romaji": "watashi",
+      "meaning": "tôi, ta, tao",
+      "jlpt_level": 5,
+      "category": "đại từ"
+    },
+    {
+      "word": "秋",
+      "hiragana": "あき",
+      "romaji": "aki",
+      "meaning": "mùa thu",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "空",
+      "hiragana": "そら",
+      "romaji": "sora",
+      "meaning": "sự trống rỗng, chân không, khoảng trống",
+      "jlpt_level": 5,
+      "category": "trạng thái"
+    },
+    {
+      "word": "窓",
+      "hiragana": "まど",
+      "romaji": "mado",
+      "meaning": "cửa sổ",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "立つ",
+      "hiragana": "たつ",
+      "romaji": "tatsu",
+      "meaning": "đứng, mọc lên",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "答える",
+      "hiragana": "こたえる",
+      "romaji": "kotaeru",
+      "meaning": "trả lời",
+      "jlpt_level": 5,
+      "category": "giao tiếp"
+    },
+    {
+      "word": "箱",
+      "hiragana": "はこ",
+      "romaji": "hako",
+      "meaning": "hộp, rương",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "箸",
+      "hiragana": "はし",
+      "romaji": "hashi",
+      "meaning": "đũa",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "紅茶",
+      "hiragana": "こうちゃ",
+      "romaji": "koucha",
+      "meaning": "trà đen",
+      "jlpt_level": 5,
+      "category": "đồ uống"
+    },
+    {
+      "word": "紙",
+      "hiragana": "かみ",
+      "romaji": "kami",
+      "meaning": "giấy",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "終わる",
+      "hiragana": "おわる",
+      "romaji": "owaru",
+      "meaning": "kết thúc, hoàn thành",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "結婚",
+      "hiragana": "けっこん",
+      "romaji": "kekkon",
+      "meaning": "kết hôn",
+      "jlpt_level": 5,
+      "category": "sự kiện"
+    },
+    {
+      "word": "結構",
+      "hiragana": "けっこう",
+      "romaji": "kekkou",
+      "meaning": "tuyệt, đẹp, ổn",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "絵",
+      "hiragana": "え",
+      "romaji": "e",
+      "meaning": "bức tranh, bức vẽ",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "緑",
+      "hiragana": "みどり",
+      "romaji": "midori",
+      "meaning": "màu xanh lá cây",
+      "jlpt_level": 5,
+      "category": "màu sắc"
+    },
+    {
+      "word": "締める",
+      "hiragana": "しめる",
+      "romaji": "shimeru",
+      "meaning": "thắt, cột chặt, siết chặt",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "練習",
+      "hiragana": "れんしゅう",
+      "romaji": "renshuu",
+      "meaning": "luyện tập",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "置く",
+      "hiragana": "おく",
+      "romaji": "oku",
+      "meaning": "đặt, để",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "美味しい",
+      "hiragana": "おいしい",
+      "romaji": "oishii",
+      "meaning": "ngon, đẹp vị",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "習う",
+      "hiragana": "ならう",
+      "romaji": "narau",
+      "meaning": "được dạy, học",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "耳",
+      "hiragana": "みみ",
+      "romaji": "mimi",
+      "meaning": "tai",
+      "jlpt_level": 5,
+      "category": "cơ thể"
+    },
+    {
+      "word": "聞く",
+      "hiragana": "きく",
+      "romaji": "kiku",
+      "meaning": "nghe, lắng nghe",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "肉",
+      "hiragana": "にく",
+      "romaji": "niku",
+      "meaning": "thịt",
+      "jlpt_level": 5,
+      "category": "thực phẩm"
+    },
+    {
+      "word": "背",
+      "hiragana": "せ",
+      "romaji": "se",
+      "meaning": "chiều cao, tầm vóc",
+      "jlpt_level": 5,
+      "category": "đặc điểm vật lý"
+    },
+    {
+      "word": "背広",
+      "hiragana": "せびろ",
+      "romaji": "sebiro",
+      "meaning": "bộ comple",
+      "jlpt_level": 5,
+      "category": "trang phục"
+    },
+    {
+      "word": "脱ぐ",
+      "hiragana": "ぬぐ",
+      "romaji": "nugu",
+      "meaning": "cởi",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "自分",
+      "hiragana": "じぶん",
+      "romaji": "jibun",
+      "meaning": "bản thân, chính mình",
+      "jlpt_level": 5,
+      "category": "đại từ"
+    },
+    {
+      "word": "自動車",
+      "hiragana": "じどうしゃ",
+      "romaji": "jidousha",
+      "meaning": "ô tô",
+      "jlpt_level": 5,
+      "category": "phương tiện"
+    },
+    {
+      "word": "自転車",
+      "hiragana": "じてんしゃ",
+      "romaji": "jitensha",
+      "meaning": "xe đạp",
+      "jlpt_level": 5,
+      "category": "phương tiện"
+    },
+    {
+      "word": "色",
+      "hiragana": "いろ",
+      "romaji": "iro",
+      "meaning": "màu sắc, nước da",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "色々",
+      "hiragana": "いろいろ",
+      "romaji": "iroiro",
+      "meaning": "nhiều loại",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "花",
+      "hiragana": "はな",
+      "romaji": "hana",
+      "meaning": "hoa, bông hoa",
+      "jlpt_level": 5,
+      "category": "thiên nhiên"
+    },
+    {
+      "word": "若い",
+      "hiragana": "わかい",
+      "romaji": "wakai",
+      "meaning": "trẻ, trẻ trung",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "英語",
+      "hiragana": "えいご",
+      "romaji": "eigo",
+      "meaning": "Tiếng Anh",
+      "jlpt_level": 5,
+      "category": "ngôn ngữ"
+    },
+    {
+      "word": "茶碗",
+      "hiragana": "ちゃわん",
+      "romaji": "chawan",
+      "meaning": "bát cơm, tách trà",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "茶色",
+      "hiragana": "ちゃいろ",
+      "romaji": "chairo",
+      "meaning": "màu nâu nhạt",
+      "jlpt_level": 5,
+      "category": "màu sắc"
+    },
+    {
+      "word": "荷物",
+      "hiragana": "にもつ",
+      "romaji": "nimotsu",
+      "meaning": "hành lý",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "葉書",
+      "hiragana": "はがき",
+      "romaji": "hagaki",
+      "meaning": "bưu thiếp",
+      "jlpt_level": 5,
+      "category": "vật dụng"
+    },
+    {
+      "word": "薄い",
+      "hiragana": "うすい",
+      "romaji": "usui",
+      "meaning": "mỏng, nhạt, nhẹ",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "薬",
+      "hiragana": "くすり",
+      "romaji": "kusuri",
+      "meaning": "thuốc",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "行く",
+      "hiragana": "いく",
+      "romaji": "iku",
+      "meaning": "đi",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "西",
+      "hiragana": "にし",
+      "romaji": "nishi",
+      "meaning": "phương tây",
+      "jlpt_level": 5,
+      "category": "phương hướng"
+    },
+    {
+      "word": "要る",
+      "hiragana": "いる",
+      "romaji": "iru",
+      "meaning": "cần, muốn",
+      "jlpt_level": 5,
+      "category": "trạng thái"
+    },
+    {
+      "word": "見せる",
+      "hiragana": "みせる",
+      "romaji": "miseru",
+      "meaning": "cho xem, trưng bày",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "見る",
+      "hiragana": "みる",
+      "romaji": "miru",
+      "meaning": "nhìn, xem, quan sát",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "覚える",
+      "hiragana": "おぼえる",
+      "romaji": "oboeru",
+      "meaning": "ghi nhớ, nhớ",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "角",
+      "hiragana": "かど",
+      "romaji": "kado",
+      "meaning": "sừng",
+      "jlpt_level": 5,
+      "category": "động vật"
+    },
+    {
+      "word": "言う",
+      "hiragana": "いう",
+      "romaji": "iu",
+      "meaning": "nói, phát ngôn",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "言葉",
+      "hiragana": "ことば",
+      "romaji": "kotoba",
+      "meaning": "ngôn ngữ, phương ngữ",
+      "jlpt_level": 5,
+      "category": "ngôn ngữ"
+    },
+    {
+      "word": "詰まらない",
+      "hiragana": "つまらない",
+      "romaji": "tsumaranai",
+      "meaning": "nhàm chán, không thú vị",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "話",
+      "hiragana": "はなし",
+      "romaji": "hanashi",
+      "meaning": "câu chuyện, bài nói, trò chuyện",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "話す",
+      "hiragana": "はなす",
+      "romaji": "hanasu",
+      "meaning": "nói, nói chuyện",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "誕生日",
+      "hiragana": "たんじょうび",
+      "romaji": "tanjoubi",
+      "meaning": "sinh nhật",
+      "jlpt_level": 5,
+      "category": "sự kiện"
+    },
+    {
+      "word": "読む",
+      "hiragana": "よむ",
+      "romaji": "yomu",
+      "meaning": "đọc",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "誰",
+      "hiragana": "だれ",
+      "romaji": "dare",
+      "meaning": "ai",
+      "jlpt_level": 5,
+      "category": "đại từ"
+    },
+    {
+      "word": "誰か",
+      "hiragana": "だれか",
+      "romaji": "dareka",
+      "meaning": "ai đó, một người nào đó",
+      "jlpt_level": 5,
+      "category": "đại từ"
+    },
+    {
+      "word": "警官",
+      "hiragana": "けいかん",
+      "romaji": "keikan",
+      "meaning": "cảnh sát, viên cảnh sát",
+      "jlpt_level": 5,
+      "category": "nghề nghiệp"
+    },
+    {
+      "word": "豚肉",
+      "hiragana": "ぶたにく",
+      "romaji": "butaniku",
+      "meaning": "thịt lợn",
+      "jlpt_level": 5,
+      "category": "thực phẩm"
+    },
+    {
+      "word": "財布",
+      "hiragana": "さいふ",
+      "romaji": "saifu",
+      "meaning": "ví, ví tiền",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "買う",
+      "hiragana": "かう",
+      "romaji": "kau",
+      "meaning": "mua, mua sắm",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "買物",
+      "hiragana": "かいもの",
+      "romaji": "kaimono",
+      "meaning": "mua sắm",
+      "jlpt_level": 5,
+      "category": "hoạt động"
+    },
+    {
+      "word": "貸す",
+      "hiragana": "かす",
+      "romaji": "kasu",
+      "meaning": "cho mượn, cho vay",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "貼る",
+      "hiragana": "はる",
+      "romaji": "haru",
+      "meaning": "dán, gắn",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "賑やか",
+      "hiragana": "にぎやか",
+      "romaji": "nigiyaka",
+      "meaning": "nhộn nhịp, bận rộn, sôi động",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "質問",
+      "hiragana": "しつもん",
+      "romaji": "shitsumon",
+      "meaning": "câu hỏi, sự hỏi han",
+      "jlpt_level": 5,
+      "category": "danh từ"
+    },
+    {
+      "word": "赤い",
+      "hiragana": "あかい",
+      "romaji": "akai",
+      "meaning": "màu đỏ",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "走る",
+      "hiragana": "はしる",
+      "romaji": "hashiru",
+      "meaning": "chạy",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "起きる",
+      "hiragana": "おきる",
+      "romaji": "okiru",
+      "meaning": "thức dậy, đứng dậy",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "足",
+      "hiragana": "あし",
+      "romaji": "ashi",
+      "meaning": "chân",
+      "jlpt_level": 5,
+      "category": "cơ thể"
+    },
+    {
+      "word": "車",
+      "hiragana": "くるま",
+      "romaji": "kuruma",
+      "meaning": "xe hơi, ô tô",
+      "jlpt_level": 5,
+      "category": "phương tiện"
+    },
+    {
+      "word": "軽い",
+      "hiragana": "かるい",
+      "romaji": "karui",
+      "meaning": "nhẹ",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "辛い",
+      "hiragana": "からい",
+      "romaji": "karai",
+      "meaning": "đau đớn, cay đắng",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "辞書",
+      "hiragana": "じしょ",
+      "romaji": "jisho",
+      "meaning": "từ điển",
+      "jlpt_level": 5,
+      "category": "đồ vật"
+    },
+    {
+      "word": "辺",
+      "hiragana": "へん",
+      "romaji": "hen",
+      "meaning": "khu vực, vùng lân cận",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "近い",
+      "hiragana": "ちかい",
+      "romaji": "chikai",
+      "meaning": "gần",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "近く",
+      "hiragana": "ちかく",
+      "romaji": "chikaku",
+      "meaning": "gần, khu vực lân cận",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "返す",
+      "hiragana": "かえす",
+      "romaji": "kaesu",
+      "meaning": "trả lại",
+      "jlpt_level": 5,
+      "category": "động từ"
+    },
+    {
+      "word": "速い",
+      "hiragana": "はやい",
+      "romaji": "hayai",
+      "meaning": "nhanh, nhanh chóng",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "遅い",
+      "hiragana": "おそい",
+      "romaji": "osoi",
+      "meaning": "chậm, muộn",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "遊ぶ",
+      "hiragana": "あそぶ",
+      "romaji": "asobu",
+      "meaning": "chơi",
+      "jlpt_level": 5,
+      "category": "hành động"
+    },
+    {
+      "word": "道",
+      "hiragana": "みち",
+      "romaji": "michi",
+      "meaning": "đường, phố, lối",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "違う",
+      "hiragana": "ちがう",
+      "romaji": "chigau",
+      "meaning": "khác nhau",
+      "jlpt_level": 5,
+      "category": "trạng thái"
+    },
+    {
+      "word": "遠い",
+      "hiragana": "とおい",
+      "romaji": "tooi",
+      "meaning": "xa, xa xôi",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "部屋",
+      "hiragana": "へや",
+      "romaji": "heya",
+      "meaning": "phòng, buồng",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "郵便局",
+      "hiragana": "ゆうびんきょく",
+      "romaji": "yuubinkyoku",
+      "meaning": "bưu điện",
+      "jlpt_level": 5,
+      "category": "địa điểm"
+    },
+    {
+      "word": "酒",
+      "hiragana": "さけ",
+      "romaji": "sake",
+      "meaning": "rượu, rượu sake",
+      "jlpt_level": 5,
+      "category": "đồ uống"
+    },
+    {
+      "word": "醤油",
+      "hiragana": "しょうゆ",
+      "romaji": "shouyu",
+      "meaning": "nước tương",
+      "jlpt_level": 5,
+      "category": "thực phẩm"
+    },
+    {
+      "word": "重い",
+      "hiragana": "おもい",
+      "romaji": "omoi",
+      "meaning": "nặng",
+      "jlpt_level": 5,
+      "category": "tính từ"
+    },
+    {
+      "word": "野菜",
+      "hiragana": "やさい",
+      "romaji": "yasai",
+      "meaning": "rau",
+      "jlpt_level": 5,
+      "category": "thực phẩm"
+    },
+    {
+      "word": "金曜日",
+      "hiragana": "きんようび",
+      "romaji": "kinyoubi",
+      "meaning": "Thứ Sáu",
+      "jlpt_level": 5,
+      "category": "thời gian"
+    },
+    {
+      "word": "鉛筆",
+      "hiragana": "えんぴつ",
+      "romaji": "enpitsu",
+      "meaning": "bút chì",
+      "jlpt_level": 5,
+      "category": "đồ dùng học tập"
+    }
+  ],
+  "level": "JLPT N5",
+  "count": 599
+}

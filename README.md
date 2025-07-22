@@ -1,222 +1,350 @@
-# Discord Game & Utility Bot
+# 🤖 Discord Multi-Feature Bot
 
-A feature-rich Discord bot built with discord.py that offers a variety of board games, language learning tools, voice channel management, and AI chat capabilities.
+Một Discord bot đa chức năng với hệ thống học ngôn ngữ tiên tiến, trò chơi, AI chat, và quản lý voice channels.
 
-![Discord Bot](https://i.imgur.com/JOKsECQ.png)
+## ✨ Tính Năng Chính
 
-## Features
+### 📚 Hệ Thống Học Ngôn Ngữ (Language Learning V2)
+- **🔄 Sequential Learning**: Học từ vựng theo trình tự, không random
+- **🏗️ Auto Channel Creation**: Tự động tạo categories, channels và roles
+- **📊 Progress Tracking**: Theo dõi tiến độ học tập cá nhân
+- **🎯 Quiz System**: Hệ thống quiz tương tác với điểm số
+- **🏆 Leaderboard & Gamification**: Bảng xếp hạng và streak system
+- **🌐 Đa ngôn ngữ**: Chinese (HSK 1-4), English (Beginner-Advanced), Japanese (JLPT N5-N1)
 
-### Board Games
-The bot includes several classic board games that can be played directly in Discord:
+### 🎮 Trò Chơi
+- **♟️ Cờ Tướng (Chinese Chess)**: Chơi cờ tướng với AI hoặc người khác
+- **⚫ Cờ Vây (Go)**: Trò chơi cờ vây với nhiều kích thước bàn cờ
+- **🎲 Cờ Cá Ngựa (Ludo)**: Trò chơi ludo 2-4 người chơi
 
-- **Cờ Cá Ngựa (Ludo)** - A classic race board game where players roll dice to move their pieces.
-- **Cờ Tướng (Chinese Chess)** - Traditional Chinese chess with all the proper rules and piece movements.
-- **Cờ Vây (Go)** - Ancient strategy board game where players aim to surround more territory.
+### 🤖 AI Chat Integration
+- **💬 Gemini AI**: Chat với Google Gemini AI model mới nhất
+- **🧠 Context Memory**: Nhớ ngữ cảnh cuộc trò chuyện
+- **⚡ Fast Response**: Phản hồi nhanh với typing indicators
 
-### Voice Management
-Advanced voice channel management system:
+### 🔊 Voice Channel Management
+- **📞 Auto Voice Rooms**: Tự động tạo phòng voice riêng tư
+- **🔧 Voice Controls**: Quản lý quyền hạn và cài đặt
+- **📝 Activity Logging**: Ghi log hoạt động voice
 
-- **Auto Channel Creation** - Joining the "tạo phòng" voice channel automatically creates a custom voice channel.
-- **Channel Ownership** - Full control over your created voice channels.
-- **Permissions Management** - Control who can join, speak, and manage your voice channels.
-- **Voice Activity Logging** - Track user activity in voice channels.
+### 🎪 Fun Commands
+- **🌈 Gay Meter**: Command vui nhộn (có thể tắt)
+- **🎲 Random Games**: Các mini-game giải trí
 
-### Language Learning
-Language learning tools to help users practice new languages:
+## 🚀 Cài Đặt
 
-- **Daily Vocabulary** - Receive daily vocabulary words in your chosen language and level.
-- **Multiple Languages** - Currently supports Chinese and English.
-- **Difficulty Levels** - Various proficiency levels (beginner, intermediate, advanced, HSK levels).
-- **Custom Examples** - Example sentences and pronunciations for better comprehension.
+### Yêu Cầu Hệ Thống
+- Python 3.8+
+- discord.py 2.0+
+- SQLite3
+- Google Generative AI SDK
 
-### AI Integration
-Interact with AI models through the bot:
+### Cài Đặt Dependencies
 
-- **Gemini AI Chat** - Chat with Google's Gemini AI directly in Discord.
-- **Context-Aware Conversations** - The bot remembers conversation context for more natural interactions.
-
-### Fun Commands
-Entertaining commands for server engagement:
-
-- **Gay Meter** - A humorous command to measure someone's "gayness" on a scale.
-
-### Tactical Game
-A tactical RPG-style battle system:
-
-- **Weapon Management** - Create, upgrade and manage weapons for battles.
-- **Battle System** - Engage in tactical turn-based battles.
-- **Inventory System** - Manage items and equipment.
-- **Unit Management** - Create and upgrade battle units.
-
-## Technologies Used
-
-- **Python 3.10+** - Core programming language.
-- **discord.py** - Python library for Discord API integration.
-- **Google Gemini API** - For AI chat capabilities.
-- **asyncio** - For asynchronous operations and event loops.
-- **JSON** - For data storage and configuration.
-- **Logging** - Comprehensive logging system for monitoring bot activities.
-
-## Installation and Setup
-
-### Prerequisites
-- Python 3.10 or higher
-- Discord Bot Token
-- Google Gemini API Key (for AI chat functionality)
-
-### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/botdiscord.git
-cd botdiscord
+pip install discord.py
+pip install google-generativeai
+pip install sqlite3  # Thường có sẵn với Python
 ```
 
-### Step 2: Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+### Cấu Hình
 
-### Step 3: Configure the Bot
-Create a `config.json` file based on the provided template:
+1. **Copy config template:**
 ```bash
 cp config.template.json config.json
 ```
 
-Then edit the `config.json` file with your own API keys and tokens:
+2. **Điền thông tin vào config.json:**
 ```json
 {
+  "token": "YOUR_BOT_TOKEN_HERE",
   "prefix": "!",
-  "token": "YOUR_DISCORD_BOT_TOKEN",
-  "clientId": "YOUR_DISCORD_CLIENT_ID",
-  "spotifyClientId": "YOUR_SPOTIFY_CLIENT_ID",
-  "spotifyClientSecret": "YOUR_SPOTIFY_CLIENT_SECRET",
-  "geminiApiKey": "YOUR_GEMINI_API_KEY"
+  "gemini_api_key": "YOUR_GEMINI_API_KEY_HERE",
+  
+  "language_learning": {
+    "enabled": true,
+    "daily_send_time": 8,
+    "words_per_day": 20,
+    "auto_create_channels": true,
+    "sequential_learning": true,
+    "progress_tracking": true,
+    "gamification": true
+  },
+  
+  "voice_manager": {
+    "enabled": true,
+    "create_channel_name": "tạo phòng",
+    "auto_cleanup": true,
+    "cleanup_delay_seconds": 5
+  },
+  
+  "games": {
+    "cotuong_enabled": true,
+    "covay_enabled": true, 
+    "cangua_enabled": true
+  },
+  
+  "fun_commands": {
+    "enabled": true,
+    "gay_meter_enabled": true
+  },
+  
+  "features": {
+    "gemini_chat": true,
+    "auto_reactions": false,
+    "welcome_messages": false
+  }
 }
 ```
 
-> **Note**: The `config.json` file contains sensitive information and is already in the `.gitignore` file. Make sure not to commit this file to any public repository.
-
-### Step 4: Set Up Resources
-Ensure the following directories exist:
-- `logs/` - For activity logs
-- `resources/vocabulary/` - For language learning vocabulary
-- `resources/language_learners.json` - For language learning user data
-
-### Step 5: Run the Bot
+3. **Chạy bot:**
 ```bash
 python main.py
 ```
 
-## Bot Commands
+## 📋 Commands - Language Learning
 
-### Game Commands
-- `/cangua_play @player1 @player2 [@player3] [@player4]` - Start a Ludo game
-- `/cangua_roll` - Roll the dice in Ludo
-- `/cangua_move [piece]` - Move a piece in Ludo
-- `/cangua_resign` - Resign from the current Ludo game
-- `/cangua_status` - Show the status of the current Ludo game
+### 🎓 Đăng Ký & Quản Lý
+- `/lang_register <language> <level>` - Đăng ký học ngôn ngữ
+- `/lang_unregister <language> <level>` - Hủy đăng ký
+- `/lang_list` - Xem danh sách đăng ký của bạn
+- `/lang_progress` - Kiểm tra tiến độ học tập
 
-- `/cotuong_play @player1 @player2` - Start a Chinese Chess game
-- `/cotuong_move [piece] [from_x] [from_y] [to_x] [to_y]` - Move a piece in Chinese Chess
-- `/cotuong_resign` - Resign from the current Chinese Chess game
+### 🎯 Học Tập & Kiểm Tra
+- `/lang_quiz <language> <level> [count]` - Làm quiz từ vựng
+- `/lang_leaderboard [language] [level]` - Xem bảng xếp hạng
 
-- `/covay_play @player1 @player2 [size]` - Start a Go game (size can be 9, 13, or 19)
-- `/covay_move [x] [y]` - Place a stone in Go
-- `/covay_pass` - Pass your turn in Go
-- `/covay_resign` - Resign from the current Go game
+### 👨‍💼 Admin Commands
+- `/lang_send_now` - Gửi từ vựng ngay lập tức (Admin only)
 
-### Tactical Game Commands
-- `/tactic_weapon create [name] [type] [rarity]` - Create a new weapon
-- `/tactic_weapon list` - List all your weapons
-- `/tactic_weapon info [weapon_id]` - Show detailed information about a weapon
-- `/tactic_weapon upgrade [weapon_id]` - Upgrade a weapon
-- `/tactic_weapon rename [weapon_id] [new_name]` - Rename a weapon
-- `/tactic_weapon delete [weapon_id]` - Delete a weapon
+### 🌐 Ngôn Ngữ Được Hỗ Trợ
 
-- `/tactic_battle start @opponent` - Start a battle with another player
-- `/tactic_battle attack [skill_id]` - Use an attack skill in battle
-- `/tactic_battle defend [skill_id]` - Use a defensive skill in battle
-- `/tactic_battle special [skill_id]` - Use a special skill in battle
-- `/tactic_battle surrender` - Surrender the current battle
-- `/tactic_battle status` - Show the current battle status
+**Chinese (中文):**
+- `hsk1` - HSK Level 1 (150 từ cơ bản)
+- `hsk2` - HSK Level 2 (300 từ)
+- `hsk3` - HSK Level 3 (600 từ)
+- `hsk4` - HSK Level 4 (1200 từ)
 
-- `/tactic_inventory` - Show your inventory
-- `/tactic_inventory use [item_id]` - Use an item from your inventory
-- `/tactic_equip [weapon_id]` - Equip a weapon
+**English:**
+- `beginner` - Tiếng Anh cơ bản
+- `intermediate` - Tiếng Anh trung cấp
+- `advanced` - Tiếng Anh nâng cao
 
-### Voice Commands
-- `/voice_kick @user` - Kick a user from your voice channel
-- `/voice_limit [number]` - Set a user limit for your voice channel
-- `/voice_hide` - Hide your voice channel from the server
-- `/voice_show` - Make your voice channel visible to everyone
-- `/voice_public` - Make your voice channel open to everyone
-- `/voice_private` - Make your voice channel private
-- `/voice_rename [name]` - Rename your voice channel
-- `/voice_addowner @user` - Add a co-owner to your voice channel
-- `/voice_removeowner @user` - Remove a co-owner from your voice channel
-- `/voice_lock` - Lock your voice channel to prevent new users from joining
-- `/voice_unlock` - Unlock your voice channel to allow users to join
-- `/voice_transfer @user` - Transfer ownership of your voice channel
-- `/voice_muteall` - Mute all users in your voice channel except you and co-owners
-- `/voice_unmuteall` - Unmute all users in your voice channel
-- `/voice_claim` - Claim ownership of a voice channel if the owner has left
-- `/voice_info` - Show information about the current voice channel
+**Japanese (日本語):**
+- `jlpt_n5` - JLPT N5 (800 từ cơ bản)
+- `jlpt_n4` - JLPT N4 (1500 từ)
+- `jlpt_n3` - JLPT N3 (3700 từ)
+- `jlpt_n2` - JLPT N2 (6000 từ)
+- `jlpt_n1` - JLPT N1 (10000 từ)
 
-### Language Learning Commands
-- `/lang_register [language] [level]` - Register for daily language learning vocabulary
-- `/lang_unregister [language] [level]` - Unregister from daily language learning vocabulary
-- `/lang_list` - List your language learning registrations
-- `/lang_send_now` - Send vocabulary immediately (admin only)
+## 🎮 Game Commands
 
-### AI Chat Commands
-- `/chatai_clear` - Clear your chat history with the AI
-- `/chatai_help` - Get help with using the Gemini AI chat feature
+### ♟️ Cờ Tướng (Chinese Chess)
+- `/cotuong_play @player1 @player2` - Bắt đầu game
+- `/cotuong_move <piece> <from_x> <from_y> <to_x> <to_y>` - Di chuyển quân
 
-You can also interact with the AI by:
-- Mentioning the bot: `@BotName your question here`
-- Replying to the bot's messages
+### ⚫ Cờ Vây (Go)  
+- `/covay_play @player1 @player2 <size>` - Bắt đầu game (size: 9, 13, 19)
+- `/covay_move <x> <y>` - Đặt quân
+- `/pass` - Pass lượt
+- `/resign_covay` - Đầu hàng
 
-### Fun Commands
-- `/fun_isgay @user` - Check a user's "gayness" level
+### 🎲 Cờ Cá Ngựa (Ludo)
+- `/cangua_play @player1 @player2 [@player3] [@player4]` - Bắt đầu game (2-4 người)
 
-## Project Structure
+## 💬 AI Chat Commands
+
+- `@BotMention <message>` - Chat với AI bằng cách mention
+- Reply vào tin nhắn của bot - Tiếp tục cuộc trò chuyện
+- `/chatai_clear` - Xóa lịch sử chat
+- `/chatai_help` - Hướng dẫn sử dụng AI chat
+
+## 🔊 Voice Features
+
+- Tham gia channel **"tạo phòng"** để tạo voice room riêng
+- Voice channels tự động dọn dẹp khi trống
+- Chủ phòng có thể quản lý quyền hạn
+
+## 🎪 Fun Commands
+
+- `/fun_isgay @user` - Kiểm tra "gay meter" (for fun)
+
+## 🛠️ Tính Năng Tiên Tiến
+
+### 📊 Progress Tracking System
+- **Sequential Learning**: Học từ vựng theo thứ tự, không ngẫu nhiên
+- **Personal Progress**: Mỗi người có tiến độ riêng
+- **Streak System**: Hệ thống streak days để tạo động lực
+- **Points & Rewards**: Hệ thống điểm và phần thưởng
+
+### 🏗️ Auto Channel Management
+- Tự động tạo categories cho từng ngôn ngữ
+- Tạo channels riêng cho từng level
+- Tự động tạo và phân quyền roles
+- Chỉ người có role mới thấy được channel tương ứng
+
+### 🎯 Interactive Quiz System
+- Quiz đa lựa chọn tương tác
+- Điểm số dựa trên performance
+- Bonus points cho kết quả cao
+- Timeout handling và quit option
+
+### 🏆 Gamification Features
+- Leaderboard server-wide và theo ngôn ngữ
+- Streak system với rewards
+- Points system khuyến khích học tập
+- Achievement system (planned)
+
+## 📁 Cấu Trúc Dự Án
 
 ```
-botdiscord/
-├── config.json             # Configuration file
-├── main.py                 # Main bot entry point
-├── functions/              # Bot commands and features
-│   ├── ca_ngua.py          # Ludo game implementation
-│   ├── cotuong.py          # Chinese Chess implementation
-│   ├── covay.py            # Go game implementation
-│   ├── fun.py              # Fun commands
-│   ├── gemini_chat.py      # AI chat integration
-│   ├── language_learning.py  # Language learning features
-│   ├── voice_activity_logger.py  # Voice activity logging
-│   └── voice_manager.py    # Voice channel management
-├── game_data/              # Game data storage
-│   ├── inventories.json
-│   ├── units.json
-│   └── weapons.json
-├── game_tactic/            # Tactical game implementations
-│   ├── tactic_battle.py
-│   └── tactic_weapons.py
-├── logs/                   # Log files
-│   └── voice_activity_*.log
-└── resources/              # Resources for features
-    ├── language_learners.json
-    └── vocabulary/         # Vocabulary data for language learning
+discordbot/
+├── main.py                 # Entry point chính
+├── config.json            # Cấu hình bot
+├── config.template.json   # Template cấu hình
+├── functions/             # Các chức năng chính
+│   ├── language_learning_v2.py  # Hệ thống học ngôn ngữ v2
+│   ├── gemini_chat.py     # AI chat integration
+│   ├── voice_manager.py   # Quản lý voice channels
+│   ├── cotuong.py         # Trò chơi cờ tướng
+│   ├── covay.py           # Trò chơi cờ vây
+│   ├── ca_ngua.py         # Trò chơi cờ cá ngựa
+│   └── fun.py             # Commands giải trí
+├── game_tactic/           # Game mechanics
+├── resources/             # Dữ liệu và resources
+│   ├── vocabulary/        # Từ vựng các ngôn ngữ
+│   ├── progress.db        # Database tiến độ học tập
+│   └── language_learners.json  # Data người học
+└── logs/                  # Log files
 ```
 
-## Contributing
+## 🔧 Cấu Hình Chi Tiết
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+### Language Learning Settings
 
-## License
+```json
+"language_learning": {
+  "enabled": true,                    // Bật/tắt chức năng
+  "daily_send_time": 8,              // Giờ gửi từ vựng (24h format)
+  "words_per_day": 20,               // Số từ vựng mỗi ngày
+  "auto_create_channels": true,       // Tự động tạo channels
+  "sequential_learning": true,        // Học tuần tự (không random)
+  "progress_tracking": true,          // Theo dõi tiến độ
+  "gamification": true               // Hệ thống điểm và rewards
+}
+```
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Voice Manager Settings
 
-## Acknowledgements
+```json
+"voice_manager": {
+  "enabled": true,                    // Bật/tắt voice manager
+  "create_channel_name": "tạo phòng", // Tên channel để tạo phòng
+  "auto_cleanup": true,               // Tự động dọn dẹp
+  "cleanup_delay_seconds": 5          // Thời gian chờ trước khi xóa
+}
+```
 
-- Discord.py for the amazing Discord API wrapper
-- Google for the Gemini AI API
-- Contributors and testers who helped refine the features 
+### Games Settings
+
+```json
+"games": {
+  "cotuong_enabled": true,           // Bật/tắt cờ tướng
+  "covay_enabled": true,             // Bật/tắt cờ vây  
+  "cangua_enabled": true             // Bật/tắt cờ cá ngựa
+}
+```
+
+## 📊 Database Schema
+
+Bot sử dụng SQLite để lưu trữ dữ liệu:
+
+### user_progress
+- Tiến độ học tập cá nhân
+- Current word index, words learned
+- Streak days, total points
+
+### word_reviews  
+- Lịch sử ôn tập từ vựng
+- Spaced repetition data
+- Retention strength
+
+### daily_stats
+- Thống kê hằng ngày
+- Words studied, quizzes completed
+- Points earned per day
+
+## 🔍 Troubleshooting
+
+### Bot không phản hồi
+1. Kiểm tra token trong config.json
+2. Đảm bảo bot có quyền trong server
+3. Kiểm tra logs trong folder logs/
+
+### AI Chat không hoạt động
+1. Kiểm tra Gemini API key
+2. Đảm bảo `gemini_chat: true` trong config
+3. Kiểm tra quota API key
+
+### Language Learning không hoạt động
+1. Kiểm tra `language_learning.enabled: true`
+2. Đảm bảo bot có quyền tạo channels/roles
+3. Kiểm tra file vocabulary trong resources/
+
+### Voice Manager không hoạt động
+1. Kiểm tra tên channel "tạo phòng" (có thể tùy chỉnh)
+2. Đảm bảo bot có quyền quản lý voice channels
+3. Kiểm tra `voice_manager.enabled: true`
+
+## 🤝 Đóng Góp
+
+1. Fork dự án
+2. Tạo feature branch: `git checkout -b feature/AmazingFeature`
+3. Commit changes: `git commit -m 'Add some AmazingFeature'`
+4. Push to branch: `git push origin feature/AmazingFeature`
+5. Tạo Pull Request
+
+## 📝 License
+
+Dự án này được phân phối dưới MIT License. Xem `LICENSE` file để biết thêm chi tiết.
+
+## 📞 Hỗ Trợ
+
+Nếu bạn gặp vấn đề hoặc có câu hỏi:
+
+1. Kiểm tra phần Troubleshooting ở trên
+2. Xem logs trong folder logs/
+3. Tạo issue trên GitHub repository
+4. Join Discord server hỗ trợ (nếu có)
+
+---
+
+## 🎯 Roadmap
+
+### Đã Hoàn Thành ✅
+- ✅ Sequential learning system
+- ✅ Auto channel/role creation  
+- ✅ Progress tracking với SQLite
+- ✅ Interactive quiz system
+- ✅ Leaderboard và gamification
+- ✅ Japanese language support
+- ✅ Advanced configuration system
+- ✅ Better error handling
+
+### Đang Phát Triển 🔄
+- 🔄 Spaced repetition algorithm
+- 🔄 Achievement system
+- 🔄 Statistics dashboard
+- 🔄 Mobile-friendly interfaces
+
+### Kế Hoạch Tương Lai 📋
+- 📋 More languages (Korean, French, German)
+- 📋 Voice pronunciation features
+- 📋 AI-powered conversation practice
+- 📋 Study groups và multiplayer learning
+- 📋 Integration với external dictionaries
+- 📋 Export progress reports
+
+---
+
+**Happy Learning! 🎓📚✨** 

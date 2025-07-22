@@ -1,8 +1,43 @@
 {
+  "token": "YOUR_BOT_TOKEN_HERE",
   "prefix": "!",
-  "token": "YOUR_DISCORD_BOT_TOKEN",
-  "clientId": "YOUR_DISCORD_CLIENT_ID",
-  "spotifyClientId": "YOUR_SPOTIFY_CLIENT_ID",
-  "spotifyClientSecret": "YOUR_SPOTIFY_CLIENT_SECRET",
-  "geminiApiKey": "YOUR_GEMINI_API_KEY"
+  "gemini_api_key": "YOUR_GEMINI_API_KEY_HERE",
+  
+  "language_learning": {
+    "enabled": true,
+    "daily_send_time": 4,
+    "words_per_day": 20,
+    "auto_create_channels": true,
+    "sequential_learning": true,
+    "progress_tracking": true,
+    "gamification": true
+  },
+  
+  "voice_manager": {
+    "enabled": true,
+    "create_channel_name": "tạo phòng",
+    "auto_cleanup": true,
+    "cleanup_delay_seconds": 5
+  },
+  
+  "games": {
+    "cotuong_enabled": true,
+    "covay_enabled": true, 
+    "cangua_enabled": true
+  },
+  
+  "fun_commands": {
+    "enabled": true,
+    "gay_meter_enabled": true
+  },
+  
+  "logging": {
+    "level": "INFO"
+  },
+  
+  "features": {
+    "gemini_chat": true,
+    "auto_reactions": false,
+    "welcome_messages": false
+  }
 } 
