@@ -1,0 +1,6214 @@
+{
+  "data": [
+    {
+      "word": "a.m./A.M./am/AM",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "sáng"
+    },
+    {
+      "word": "above",
+      "cefr_level": "A1",
+      "word_form": "preposition",
+      "meaning": "trên"
+    },
+    {
+      "word": "action",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hành động"
+    },
+    {
+      "word": "airplane/aeroplane",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "máy bay"
+    },
+    {
+      "word": "all",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "tất cả"
+    },
+    {
+      "word": "all right",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "tốt"
+    },
+    {
+      "word": "all right",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "tốt"
+    },
+    {
+      "word": "am",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "tôi là"
+    },
+    {
+      "word": "any",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "bất kỳ"
+    },
+    {
+      "word": "apple",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quả táo"
+    },
+    {
+      "word": "apron",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khuôn áo"
+    },
+    {
+      "word": "are",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "chúng tôi là"
+    },
+    {
+      "word": "article",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bài báo"
+    },
+    {
+      "word": "as",
+      "cefr_level": "A1",
+      "word_form": "preposition",
+      "meaning": "với tư cách là"
+    },
+    {
+      "word": "autumn",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thu"
+    },
+    {
+      "word": "ball",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quả bóng"
+    },
+    {
+      "word": "basketball",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bóng rổ"
+    },
+    {
+      "word": "bean",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đậu"
+    },
+    {
+      "word": "bear",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "gấu"
+    },
+    {
+      "word": "because",
+      "cefr_level": "A1",
+      "word_form": "conjunction",
+      "meaning": "vì"
+    },
+    {
+      "word": "bee",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ong"
+    },
+    {
+      "word": "below",
+      "cefr_level": "A1",
+      "word_form": "preposition",
+      "meaning": "dưới"
+    },
+    {
+      "word": "birth",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sự sinh ra"
+    },
+    {
+      "word": "biscuit",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bánh quy"
+    },
+    {
+      "word": "black",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "màu đen"
+    },
+    {
+      "word": "blue",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "màu xanh"
+    },
+    {
+      "word": "bone",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "xương"
+    },
+    {
+      "word": "both",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "cả hai"
+    },
+    {
+      "word": "breathe",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "thở"
+    },
+    {
+      "word": "bucket",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bồn"
+    },
+    {
+      "word": "burger",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bánh hamburger"
+    },
+    {
+      "word": "butter",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bơ"
+    },
+    {
+      "word": "button",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cái nút"
+    },
+    {
+      "word": "cafe/café",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quán cà phê"
+    },
+    {
+      "word": "camp",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trại"
+    },
+    {
+      "word": "can",
+      "cefr_level": "A1",
+      "word_form": "modal auxiliary",
+      "meaning": "có thể"
+    },
+    {
+      "word": "cap",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mũ nón"
+    },
+    {
+      "word": "cartoon",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "truyện tranh"
+    },
+    {
+      "word": "catch",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sự bắt"
+    },
+    {
+      "word": "CD",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đĩa CD"
+    },
+    {
+      "word": "CD player",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "máy nghe CD"
+    },
+    {
+      "word": "celebrate",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "kỷ niệm"
+    },
+    {
+      "word": "celebration",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "lễ kỷ niệm"
+    },
+    {
+      "word": "check",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sự kiểm tra"
+    },
+    {
+      "word": "circle",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hình tròn"
+    },
+    {
+      "word": "climb",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sự leo"
+    },
+    {
+      "word": "clock",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đồng hồ"
+    },
+    {
+      "word": "cloud",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mây"
+    },
+    {
+      "word": "coach",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "huấn luyện viên"
+    },
+    {
+      "word": "code",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mã"
+    },
+    {
+      "word": "coke",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "coca cola"
+    },
+    {
+      "word": "color/colour",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "màu sắc"
+    },
+    {
+      "word": "color/colour",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "sắc màu"
+    },
+    {
+      "word": "could",
+      "cefr_level": "A1",
+      "word_form": "modal auxiliary",
+      "meaning": "có thể"
+    },
+    {
+      "word": "credit card",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thẻ tín dụng"
+    },
+    {
+      "word": "daddy",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bố"
+    },
+    {
+      "word": "did",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đã làm"
+    },
+    {
+      "word": "dig",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hố"
+    },
+    {
+      "word": "dining room",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phòng ăn"
+    },
+    {
+      "word": "doctor/Dr./Dr",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bác sĩ"
+    },
+    {
+      "word": "does",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "làm"
+    },
+    {
+      "word": "doing",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đang làm"
+    },
+    {
+      "word": "each other",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "lẫn nhau"
+    },
+    {
+      "word": "email/e-mail/E-mail",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "email"
+    },
+    {
+      "word": "everyday",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "hàng ngày"
+    },
+    {
+      "word": "fairy",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tiếng cười"
+    },
+    {
+      "word": "FALSE",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "sai"
+    },
+    {
+      "word": "favorite/favourite",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "ưa thích"
+    },
+    {
+      "word": "favorite/favourite",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người yêu thích"
+    },
+    {
+      "word": "feed",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thức ăn"
+    },
+    {
+      "word": "focus",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "tập trung"
+    },
+    {
+      "word": "following",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "sau"
+    },
+    {
+      "word": "garbage",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "rác"
+    },
+    {
+      "word": "good afternoon",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "chào buổi chiều"
+    },
+    {
+      "word": "good morning",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "chào buổi sáng"
+    },
+    {
+      "word": "good night",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "chào buổi tối"
+    },
+    {
+      "word": "gray/grey",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "xám"
+    },
+    {
+      "word": "gray/grey",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "màu xám"
+    },
+    {
+      "word": "had",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đã có"
+    },
+    {
+      "word": "hamburger",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bánh hamburger"
+    },
+    {
+      "word": "has",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "có"
+    },
+    {
+      "word": "have to",
+      "cefr_level": "A1",
+      "word_form": "modal auxiliary",
+      "meaning": "phải"
+    },
+    {
+      "word": "hello",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chào"
+    },
+    {
+      "word": "hometown",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quê hương"
+    },
+    {
+      "word": "ice cream",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "kem"
+    },
+    {
+      "word": "if",
+      "cefr_level": "A1",
+      "word_form": "conjunction",
+      "meaning": "nếu"
+    },
+    {
+      "word": "Internet/internet",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mạng"
+    },
+    {
+      "word": "interviewer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người phỏng vấn"
+    },
+    {
+      "word": "is",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "là"
+    },
+    {
+      "word": "its",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "của nó"
+    },
+    {
+      "word": "jewelry/jewellery",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trang sức"
+    },
+    {
+      "word": "last name",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "họ"
+    },
+    {
+      "word": "lily",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hoa sen"
+    },
+    {
+      "word": "living room",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phòng khách"
+    },
+    {
+      "word": "lot",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "rất nhiều"
+    },
+    {
+      "word": "lot",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "rất nhiều"
+    },
+    {
+      "word": "'m",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "tôi là"
+    },
+    {
+      "word": "many",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "nhiều"
+    },
+    {
+      "word": "math/maths",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "toán học"
+    },
+    {
+      "word": "may",
+      "cefr_level": "A1",
+      "word_form": "modal auxiliary",
+      "meaning": "có thể, có thể"
+    },
+    {
+      "word": "merry",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "vui vẻ, vui tươi"
+    },
+    {
+      "word": "mobile phone",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "điện thoại di động"
+    },
+    {
+      "word": "mommy/mommie",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mẹ"
+    },
+    {
+      "word": "more",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "nhiều hơn"
+    },
+    {
+      "word": "Mr./Mr",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ông"
+    },
+    {
+      "word": "Mrs./Mrs",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bà"
+    },
+    {
+      "word": "much",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "rất nhiều"
+    },
+    {
+      "word": "must",
+      "cefr_level": "A1",
+      "word_form": "modal auxiliary",
+      "meaning": "phải, phải"
+    },
+    {
+      "word": "need",
+      "cefr_level": "A1",
+      "word_form": "modal auxiliary",
+      "meaning": "cần, cần thiết"
+    },
+    {
+      "word": "neighbor/neighbour",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "láng giềng"
+    },
+    {
+      "word": "OK/okay",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "được, được"
+    },
+    {
+      "word": "OK/okay",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "được, được"
+    },
+    {
+      "word": "Olympics",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "Olympic, Olympic"
+    },
+    {
+      "word": "p.m./P.M./pm/PM",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "chiều, chiều"
+    },
+    {
+      "word": "pardon",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sự tha thứ, sự tha thứ"
+    },
+    {
+      "word": "past",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "qua, qua"
+    },
+    {
+      "word": "please",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "vui lòng, vui lòng"
+    },
+    {
+      "word": "practice/practise",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "luyện tập, luyện tập"
+    },
+    {
+      "word": "program/programme",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chương trình, chương trình"
+    },
+    {
+      "word": "'re",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "chúng tôi là"
+    },
+    {
+      "word": "real",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "thực tế, thực tế"
+    },
+    {
+      "word": "'s",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "là"
+    },
+    {
+      "word": "same",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "tương tự, tương tự"
+    },
+    {
+      "word": "same",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "tương tự, tương tự"
+    },
+    {
+      "word": "saw",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cái cưa, cái cưa"
+    },
+    {
+      "word": "shake",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "rung"
+    },
+    {
+      "word": "short",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "ngắn"
+    },
+    {
+      "word": "should",
+      "cefr_level": "A1",
+      "word_form": "modal auxiliary",
+      "meaning": "nên"
+    },
+    {
+      "word": "smith",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thợ rèn"
+    },
+    {
+      "word": "snowy",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "có tuyết"
+    },
+    {
+      "word": "soccer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bóng đá"
+    },
+    {
+      "word": "step",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "bước"
+    },
+    {
+      "word": "surf",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sóng"
+    },
+    {
+      "word": "swimming pool",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bể bơi"
+    },
+    {
+      "word": "than",
+      "cefr_level": "A1",
+      "word_form": "conjunction",
+      "meaning": "hơn"
+    },
+    {
+      "word": "that",
+      "cefr_level": "A1",
+      "word_form": "conjunction",
+      "meaning": "đó"
+    },
+    {
+      "word": "theater/theatre",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "rạp hát"
+    },
+    {
+      "word": "these",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "những cái này"
+    },
+    {
+      "word": "those",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "những cái đó"
+    },
+    {
+      "word": "throw",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ném"
+    },
+    {
+      "word": "T-shirt/tee-shirt",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "áo thun"
+    },
+    {
+      "word": "underline",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "gạch chân"
+    },
+    {
+      "word": "wake",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tỉnh thức"
+    },
+    {
+      "word": "was",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đã là"
+    },
+    {
+      "word": "welcome",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "chào mừng"
+    },
+    {
+      "word": "were",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đã là"
+    },
+    {
+      "word": "when",
+      "cefr_level": "A1",
+      "word_form": "conjunction",
+      "meaning": "khi"
+    },
+    {
+      "word": "where",
+      "cefr_level": "A1",
+      "word_form": "conjunction",
+      "meaning": "ở đâu"
+    },
+    {
+      "word": "while",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khi"
+    },
+    {
+      "word": "will",
+      "cefr_level": "A1",
+      "word_form": "modal auxiliary",
+      "meaning": "sẽ"
+    },
+    {
+      "word": "would",
+      "cefr_level": "A1",
+      "word_form": "modal auxiliary",
+      "meaning": "sẽ"
+    },
+    {
+      "word": "yogurt/yoghurt",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sữa chua"
+    },
+    {
+      "word": "#NAME?",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "không rõ"
+    },
+    {
+      "word": "10th",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "thứ mười, thứ mười"
+    },
+    {
+      "word": "12th",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "thứ mười hai, thứ mười hai"
+    },
+    {
+      "word": "15th",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "thứ mười năm, thứ mười năm"
+    },
+    {
+      "word": "1950s",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "năm 1950, năm 1950"
+    },
+    {
+      "word": "1970s",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "năm 1970, năm 1970"
+    },
+    {
+      "word": "19th",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "thứ mười chín, thứ mười chín"
+    },
+    {
+      "word": "23rd",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "thứ hai mươi ba"
+    },
+    {
+      "word": "4x4",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "xe 4x4"
+    },
+    {
+      "word": "about",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "về, về vấn đề"
+    },
+    {
+      "word": "above",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "trên, ở trên"
+    },
+    {
+      "word": "across",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "ngang qua"
+    },
+    {
+      "word": "advertising executive",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giám đốc quảng cáo"
+    },
+    {
+      "word": "aerobics video",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "video tập thể dục"
+    },
+    {
+      "word": "after",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "sau"
+    },
+    {
+      "word": "against",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "đối với"
+    },
+    {
+      "word": "against",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đối với"
+    },
+    {
+      "word": "agitated",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "loạn động"
+    },
+    {
+      "word": "ah",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "à"
+    },
+    {
+      "word": "air conditioning",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "không khí điều hòa"
+    },
+    {
+      "word": "alive",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sống"
+    },
+    {
+      "word": "all",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "tất cả"
+    },
+    {
+      "word": "almost-new",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "gần như mới"
+    },
+    {
+      "word": "along",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "dọc theo"
+    },
+    {
+      "word": "along",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "dọc theo"
+    },
+    {
+      "word": "alright",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "được rồi"
+    },
+    {
+      "word": "american",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "Mỹ"
+    },
+    {
+      "word": "amphitheatre",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "địa điểm biểu diễn"
+    },
+    {
+      "word": "amusement park",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "công viên giải trí"
+    },
+    {
+      "word": "anybody",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "ai đó"
+    },
+    {
+      "word": "anyone",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "ai đó"
+    },
+    {
+      "word": "anything",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "cái gì đó"
+    },
+    {
+      "word": "anyway",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "bất kể như thế nào"
+    },
+    {
+      "word": "army revolver",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "súng lục quân đội"
+    },
+    {
+      "word": "around",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "vòng quanh"
+    },
+    {
+      "word": "art company",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "công ty nghệ thuật"
+    },
+    {
+      "word": "art gallery",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bảo tàng nghệ thuật"
+    },
+    {
+      "word": "art museum",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bảo tàng nghệ thuật"
+    },
+    {
+      "word": "as",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "với tư cách là"
+    },
+    {
+      "word": "as",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "với tư cách là"
+    },
+    {
+      "word": "at",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "ở"
+    },
+    {
+      "word": "at",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "ở"
+    },
+    {
+      "word": "attacker",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người tấn công"
+    },
+    {
+      "word": "attendant",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người phục vụ"
+    },
+    {
+      "word": "autograph",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chữ ký"
+    },
+    {
+      "word": "autumn color",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "màu mùa thu"
+    },
+    {
+      "word": "b",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "b"
+    },
+    {
+      "word": "bachelor",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "độc thân"
+    },
+    {
+      "word": "back",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "lưng"
+    },
+    {
+      "word": "back leg",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chân sau"
+    },
+    {
+      "word": "bar area",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khu bar"
+    },
+    {
+      "word": "baseball game",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trận bóng chày"
+    },
+    {
+      "word": "bass guitar",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đàn bass"
+    },
+    {
+      "word": "beautiful",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đẹp"
+    },
+    {
+      "word": "because",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "bởi vì"
+    },
+    {
+      "word": "bedroom door",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cửa phòng ngủ"
+    },
+    {
+      "word": "before",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "trước"
+    },
+    {
+      "word": "behind",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "phía sau"
+    },
+    {
+      "word": "below",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "dưới"
+    },
+    {
+      "word": "beside",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "bên cạnh"
+    },
+    {
+      "word": "betting",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cược"
+    },
+    {
+      "word": "betting-book",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sách cược"
+    },
+    {
+      "word": "between",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "giưa"
+    },
+    {
+      "word": "bike",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đi xe đạp"
+    },
+    {
+      "word": "blouse",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "áo sơ mi"
+    },
+    {
+      "word": "boat tour",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chuyến tham quan bằng thuyền"
+    },
+    {
+      "word": "boat trip",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chuyến đi bằng thuyền"
+    },
+    {
+      "word": "bonsai tree",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cây bonsai"
+    },
+    {
+      "word": "book sale",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bán sách"
+    },
+    {
+      "word": "both",
+      "cefr_level": "A1",
+      "word_form": "conjunction",
+      "meaning": "cả hai"
+    },
+    {
+      "word": "boutique",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cửa hàng thời trang"
+    },
+    {
+      "word": "bowling",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bóng chày"
+    },
+    {
+      "word": "box office",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quầy vé"
+    },
+    {
+      "word": "brandy",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "rượu brandy"
+    },
+    {
+      "word": "breakfast buffet",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bữa ăn sáng buffet"
+    },
+    {
+      "word": "breakfast table",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bàn ăn sáng"
+    },
+    {
+      "word": "breakfast time",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thời gian ăn sáng"
+    },
+    {
+      "word": "brim",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mép"
+    },
+    {
+      "word": "british",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "của Anh"
+    },
+    {
+      "word": "brothers",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "anh em"
+    },
+    {
+      "word": "bubble bath",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bồn tắm bọt"
+    },
+    {
+      "word": "bus station",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bến xe buýt"
+    },
+    {
+      "word": "bus tour",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chuyến tham quan bằng xe buýt"
+    },
+    {
+      "word": "business idea",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ý tưởng kinh doanh"
+    },
+    {
+      "word": "business school",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trường kinh doanh"
+    },
+    {
+      "word": "business trip",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chuyến đi kinh doanh"
+    },
+    {
+      "word": "buy",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mua"
+    },
+    {
+      "word": "by",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "bởi"
+    },
+    {
+      "word": "bye",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "tạm biệt"
+    },
+    {
+      "word": "cab driver",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "lái xe taxi"
+    },
+    {
+      "word": "cable tv",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tivi cáp"
+    },
+    {
+      "word": "cafe",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quán cà phê"
+    },
+    {
+      "word": "café",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quán cà phê"
+    },
+    {
+      "word": "calm",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "làm yên"
+    },
+    {
+      "word": "cappuccino",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cà phê sữa"
+    },
+    {
+      "word": "car park",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bãi đỗ xe"
+    },
+    {
+      "word": "carbuncle",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mụn nhọt"
+    },
+    {
+      "word": "caribbean",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "của Caribe"
+    },
+    {
+      "word": "carriage window",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cửa sổ xe"
+    },
+    {
+      "word": "cart",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "xe đẩy"
+    },
+    {
+      "word": "cd",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đĩa CD"
+    },
+    {
+      "word": "cell phone",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "điện thoại di động"
+    },
+    {
+      "word": "centimetre",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "centimet"
+    },
+    {
+      "word": "centre",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trung tâm"
+    },
+    {
+      "word": "check-in",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "kiểm tra vào"
+    },
+    {
+      "word": "check out",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "kiểm tra ra"
+    },
+    {
+      "word": "chicken dish",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "món ăn gà"
+    },
+    {
+      "word": "children",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "trẻ em"
+    },
+    {
+      "word": "chinese",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "của Trung Quốc"
+    },
+    {
+      "word": "chocolate croissant",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bánh croissant chocolate"
+    },
+    {
+      "word": "chocolate sprinkle",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bột chocolate"
+    },
+    {
+      "word": "cigar",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trứng ốc"
+    },
+    {
+      "word": "cigar ash",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tro trứng ốc"
+    },
+    {
+      "word": "city block",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khối thành phố"
+    },
+    {
+      "word": "city center",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trung tâm thành phố"
+    },
+    {
+      "word": "city centre",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trung tâm thành phố"
+    },
+    {
+      "word": "city tour",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tour thành phố"
+    },
+    {
+      "word": "clarion",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "kèn"
+    },
+    {
+      "word": "classroom language",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ngôn ngữ lớp học"
+    },
+    {
+      "word": "clean-shaven",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "sạch râu"
+    },
+    {
+      "word": "climb up",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "leo lên"
+    },
+    {
+      "word": "close",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "gần"
+    },
+    {
+      "word": "closet",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tủ"
+    },
+    {
+      "word": "co-worker",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đồng nghiệp"
+    },
+    {
+      "word": "coffee bar",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quán cà phê"
+    },
+    {
+      "word": "coffee pot",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nồi cà phê"
+    },
+    {
+      "word": "cold",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "lạnh"
+    },
+    {
+      "word": "coldly",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "lạnh lùng"
+    },
+    {
+      "word": "color",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "màu sắc"
+    },
+    {
+      "word": "colorful",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "màu sắc"
+    },
+    {
+      "word": "come on",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đến"
+    },
+    {
+      "word": "commissionaire",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người phụ trách"
+    },
+    {
+      "word": "computer company",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "công ty máy tính"
+    },
+    {
+      "word": "computer study",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nghiên cứu máy tính"
+    },
+    {
+      "word": "concert ticket",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vé buổi hòa nhạc"
+    },
+    {
+      "word": "congratulation",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chúc mừng"
+    },
+    {
+      "word": "contrary",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ngược lại"
+    },
+    {
+      "word": "convertible",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "xe convertible"
+    },
+    {
+      "word": "copper pot",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nồi đồng"
+    },
+    {
+      "word": "cotton dress",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "váy bông"
+    },
+    {
+      "word": "could",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "có thể"
+    },
+    {
+      "word": "counseling service",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "dịch vụ tư vấn"
+    },
+    {
+      "word": "country road",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đường nông thôn"
+    },
+    {
+      "word": "course",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "khóa học"
+    },
+    {
+      "word": "credit card",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thẻ tín dụng"
+    },
+    {
+      "word": "croissant",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bánh croissant"
+    },
+    {
+      "word": "cross out",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đánh dấu chéo"
+    },
+    {
+      "word": "crossword",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trò chơi chữ chéo"
+    },
+    {
+      "word": "cry out",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "la hét"
+    },
+    {
+      "word": "cuisine",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ẩm thực"
+    },
+    {
+      "word": "cut off",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "cắt đứt"
+    },
+    {
+      "word": "dance class",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "lớp học múa"
+    },
+    {
+      "word": "danger light",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đèn báo nguy hiểm"
+    },
+    {
+      "word": "dark",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tối"
+    },
+    {
+      "word": "defence",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "phòng thủ"
+    },
+    {
+      "word": "department store",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cửa hàng bách hóa"
+    },
+    {
+      "word": "design company",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "công ty thiết kế"
+    },
+    {
+      "word": "designer clothes",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quần áo thiết kế"
+    },
+    {
+      "word": "designer clothing",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quần áo thiết kế"
+    },
+    {
+      "word": "diamond necklace",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "dây chuyền kim cương"
+    },
+    {
+      "word": "diet soda",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "soda chế độ ăn uống"
+    },
+    {
+      "word": "din",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "ăn"
+    },
+    {
+      "word": "dining room",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phòng ăn"
+    },
+    {
+      "word": "dinner party",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bữa tiệc tối"
+    },
+    {
+      "word": "diving course",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khóa học lặn"
+    },
+    {
+      "word": "down",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "xuống"
+    },
+    {
+      "word": "down",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "xuống"
+    },
+    {
+      "word": "dress-maker",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người may áo"
+    },
+    {
+      "word": "dressing gown",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "áo khoác"
+    },
+    {
+      "word": "dressmaker",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người may áo"
+    },
+    {
+      "word": "dressy",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "sang trọng"
+    },
+    {
+      "word": "drinking",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "uống"
+    },
+    {
+      "word": "during",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "trong khi"
+    },
+    {
+      "word": "dutch",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "hà lan"
+    },
+    {
+      "word": "dvd",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đĩa dvd"
+    },
+    {
+      "word": "e-mail",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thư điện tử"
+    },
+    {
+      "word": "e-mail address",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "địa chỉ email"
+    },
+    {
+      "word": "email address",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "địa chỉ email"
+    },
+    {
+      "word": "ended",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "kết thúc"
+    },
+    {
+      "word": "english",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tiếng anh"
+    },
+    {
+      "word": "english class",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "lớp tiếng anh"
+    },
+    {
+      "word": "english family",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "gia đình anh"
+    },
+    {
+      "word": "english garden",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vườn anh"
+    },
+    {
+      "word": "enough",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "đủ"
+    },
+    {
+      "word": "er",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "er"
+    },
+    {
+      "word": "espresso",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cà phê espresso"
+    },
+    {
+      "word": "european",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "châu âu"
+    },
+    {
+      "word": "farmhouse",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhà trang trại"
+    },
+    {
+      "word": "fast-food place",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quán đồ ăn nhanh"
+    },
+    {
+      "word": "fatten",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "béo bở"
+    },
+    {
+      "word": "favorite",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "yêu thích nhất"
+    },
+    {
+      "word": "few",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "ít"
+    },
+    {
+      "word": "fiery",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "nóng bỏng"
+    },
+    {
+      "word": "fiesta",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "lễ hội"
+    },
+    {
+      "word": "find out",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "tìm hiểu"
+    },
+    {
+      "word": "finished",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "hoàn thành"
+    },
+    {
+      "word": "finishing line",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đường đích"
+    },
+    {
+      "word": "fishing village",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "làng đánh cá"
+    },
+    {
+      "word": "five-star hotel",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khách sạn năm sao"
+    },
+    {
+      "word": "flat-screen",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "màn hình phẳng"
+    },
+    {
+      "word": "followed",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "theo dõi"
+    },
+    {
+      "word": "football match",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trận bóng đá"
+    },
+    {
+      "word": "football match ticket",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vé trận bóng đá"
+    },
+    {
+      "word": "football team",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đội bóng đá"
+    },
+    {
+      "word": "footprint",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "dấu chân"
+    },
+    {
+      "word": "for",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "cho"
+    },
+    {
+      "word": "forceps",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "kìm"
+    },
+    {
+      "word": "foresight",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tầm nhìn xa"
+    },
+    {
+      "word": "forwards",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "tiến lên"
+    },
+    {
+      "word": "fourth",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "thứ tư"
+    },
+    {
+      "word": "french",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "pháp"
+    },
+    {
+      "word": "french",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tiếng pháp"
+    },
+    {
+      "word": "from",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "từ"
+    },
+    {
+      "word": "fruit juice",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nước ép trái cây"
+    },
+    {
+      "word": "g6",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "g6"
+    },
+    {
+      "word": "gas lighting",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đèn khí"
+    },
+    {
+      "word": "german",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "đức"
+    },
+    {
+      "word": "german",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tiếng đức"
+    },
+    {
+      "word": "get out",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "ra, rời khỏi"
+    },
+    {
+      "word": "get up",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "thức dậy, đứng lên"
+    },
+    {
+      "word": "gigantic",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "khổng lồ"
+    },
+    {
+      "word": "gladiator",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "võ sĩ"
+    },
+    {
+      "word": "go lame",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "bị tàn tật"
+    },
+    {
+      "word": "go on",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "tiếp tục"
+    },
+    {
+      "word": "good",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "tốt"
+    },
+    {
+      "word": "good-night",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chúc ngủ ngon"
+    },
+    {
+      "word": "goodbye",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "tạm biệt"
+    },
+    {
+      "word": "goodbye",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tạm biệt"
+    },
+    {
+      "word": "goose-club",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "câu lạc bộ ngỗng"
+    },
+    {
+      "word": "goose club",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "câu lạc bộ ngỗng"
+    },
+    {
+      "word": "goose salesman",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người bán ngỗng"
+    },
+    {
+      "word": "gossip magazine",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tạp chí tin tức"
+    },
+    {
+      "word": "gourmet restaurant",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhà hàng gourmet"
+    },
+    {
+      "word": "grate",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "lưới"
+    },
+    {
+      "word": "greek",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "Hy Lạp"
+    },
+    {
+      "word": "greek",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tiếng Hy Lạp"
+    },
+    {
+      "word": "grocery store",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cửa hàng tạp hóa"
+    },
+    {
+      "word": "grow up",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "lớn lên"
+    },
+    {
+      "word": "guitar lesson",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bài học guitar"
+    },
+    {
+      "word": "half-past",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nửa giờ"
+    },
+    {
+      "word": "hallucination",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ảo giác"
+    },
+    {
+      "word": "hammock",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giường treo"
+    },
+    {
+      "word": "happened",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đã xảy ra"
+    },
+    {
+      "word": "hat-securer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người bảo vệ mũ"
+    },
+    {
+      "word": "haunted",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "bị ám"
+    },
+    {
+      "word": "heart attack",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đau tim"
+    },
+    {
+      "word": "hello",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "xin chào"
+    },
+    {
+      "word": "her",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "của cô ấy"
+    },
+    {
+      "word": "high-speed internet",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "internet cao tốc"
+    },
+    {
+      "word": "high school student",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "học sinh trung học"
+    },
+    {
+      "word": "highlighter",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bút pha chì"
+    },
+    {
+      "word": "hike",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đi bộ"
+    },
+    {
+      "word": "hire",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thuê"
+    },
+    {
+      "word": "his",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "của anh ấy"
+    },
+    {
+      "word": "hispanic",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "Hispanic"
+    },
+    {
+      "word": "history website",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trang web lịch sử"
+    },
+    {
+      "word": "hm",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "hm"
+    },
+    {
+      "word": "hold up",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "cầm"
+    },
+    {
+      "word": "homework paper",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bài tập nhà"
+    },
+    {
+      "word": "horse race",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cuộc đua ngựa"
+    },
+    {
+      "word": "horseshoe",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "móng ngựa"
+    },
+    {
+      "word": "hotel card",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thẻ khách sạn"
+    },
+    {
+      "word": "hotel manager",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quản lý khách sạn"
+    },
+    {
+      "word": "hotel restaurant",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhà hàng khách sạn"
+    },
+    {
+      "word": "hotel room",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phòng khách sạn"
+    },
+    {
+      "word": "hound",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chó săn"
+    },
+    {
+      "word": "houseware",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đồ gia dụng"
+    },
+    {
+      "word": "howl",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "gào thét"
+    },
+    {
+      "word": "howl",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "gào thét"
+    },
+    {
+      "word": "howling",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "gào thét"
+    },
+    {
+      "word": "hoy",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hoy"
+    },
+    {
+      "word": "hundreds",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trăm"
+    },
+    {
+      "word": "hungarian",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "Hungary"
+    },
+    {
+      "word": "hurricane",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bão"
+    },
+    {
+      "word": "i",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "tôi"
+    },
+    {
+      "word": "ice-skating rink",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sân trượt băng"
+    },
+    {
+      "word": "ice bar",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quán bar băng"
+    },
+    {
+      "word": "ice cream",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "kem"
+    },
+    {
+      "word": "ice glass",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cốc băng"
+    },
+    {
+      "word": "if",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "nếu"
+    },
+    {
+      "word": "imaginable",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "có thể tưởng tượng"
+    },
+    {
+      "word": "in",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "trong"
+    },
+    {
+      "word": "in",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "trong"
+    },
+    {
+      "word": "in-bed",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "trong giường"
+    },
+    {
+      "word": "in-line skates",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đuôi trong dòng"
+    },
+    {
+      "word": "indian",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "Ấn Độ"
+    },
+    {
+      "word": "inn",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quán rượu"
+    },
+    {
+      "word": "inside",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "bên trong"
+    },
+    {
+      "word": "instructive",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "hướng dẫn"
+    },
+    {
+      "word": "internet",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mạng internet"
+    },
+    {
+      "word": "internet addict",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người nghiện internet"
+    },
+    {
+      "word": "lantern",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đèn lồng"
+    },
+    {
+      "word": "laptop computer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "máy tính xách tay"
+    },
+    {
+      "word": "latin",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "tiếng Latin"
+    },
+    {
+      "word": "latin",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tiếng Latin"
+    },
+    {
+      "word": "law court",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "toà án"
+    },
+    {
+      "word": "law student",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "học sinh luật"
+    },
+    {
+      "word": "law suit",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vụ kiện"
+    },
+    {
+      "word": "lead singer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ca sĩ chính"
+    },
+    {
+      "word": "leather purse",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ví da"
+    },
+    {
+      "word": "less",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "ít"
+    },
+    {
+      "word": "like",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "như"
+    },
+    {
+      "word": "lime-cream",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "kem chanh"
+    },
+    {
+      "word": "lining",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "lớp lót"
+    },
+    {
+      "word": "live",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "trực tiếp"
+    },
+    {
+      "word": "living room",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phòng khách"
+    },
+    {
+      "word": "look up",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "nhìn lên"
+    },
+    {
+      "word": "loving",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "yêu"
+    },
+    {
+      "word": "magnifying glass",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "kính lúp"
+    },
+    {
+      "word": "maid",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cô gái giúp việc"
+    },
+    {
+      "word": "malt",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bia malt"
+    },
+    {
+      "word": "mamma",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mẹ"
+    },
+    {
+      "word": "many",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "nhiều"
+    },
+    {
+      "word": "mariachi",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "mariachi"
+    },
+    {
+      "word": "math",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "toán học"
+    },
+    {
+      "word": "math exam",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bài kiểm tra toán học"
+    },
+    {
+      "word": "may",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "có thể"
+    },
+    {
+      "word": "meal time",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thời gian ăn"
+    },
+    {
+      "word": "meat curry",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cà ri thịt"
+    },
+    {
+      "word": "meat dish",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "món thịt"
+    },
+    {
+      "word": "membership fee",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phí thành viên"
+    },
+    {
+      "word": "message board",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bảng thông báo"
+    },
+    {
+      "word": "metal chain",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "dây chuỗi kim loại"
+    },
+    {
+      "word": "mexican",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "mexico"
+    },
+    {
+      "word": "microchip",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vi mạch"
+    },
+    {
+      "word": "midday newspaper",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "báo buổi trưa"
+    },
+    {
+      "word": "midnight visitor",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người đến thăm vào nửa đêm"
+    },
+    {
+      "word": "miller",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người xay"
+    },
+    {
+      "word": "millions",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "triệu"
+    },
+    {
+      "word": "mini",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "mini"
+    },
+    {
+      "word": "mire",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bùn"
+    },
+    {
+      "word": "miso soup",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "súp miso"
+    },
+    {
+      "word": "mistress",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bà"
+    },
+    {
+      "word": "mm",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mm"
+    },
+    {
+      "word": "mmm",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "mmm"
+    },
+    {
+      "word": "more",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "nhiều hơn"
+    },
+    {
+      "word": "morning newspaper",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "báo buổi sáng"
+    },
+    {
+      "word": "moroccan",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "maroc"
+    },
+    {
+      "word": "most",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "nhiều nhất"
+    },
+    {
+      "word": "motorcycle racer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người đua xe"
+    },
+    {
+      "word": "movie theater",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "rạp chiếu phim"
+    },
+    {
+      "word": "mp3 player",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "máy nghe mp3"
+    },
+    {
+      "word": "much",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "rất nhiều"
+    },
+    {
+      "word": "multinational",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "đa quốc gia"
+    },
+    {
+      "word": "music collection",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bộ sưu tập âm nhạc"
+    },
+    {
+      "word": "music magazine",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tạp chí âm nhạc"
+    },
+    {
+      "word": "music playlist",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "danh sách phát âm nhạc"
+    },
+    {
+      "word": "music system",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hệ thống âm nhạc"
+    },
+    {
+      "word": "must",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "phải"
+    },
+    {
+      "word": "naturalist",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhà tự nhiên"
+    },
+    {
+      "word": "near",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "gần"
+    },
+    {
+      "word": "neighbor",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "láng giềng"
+    },
+    {
+      "word": "neighborhood",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khu phố"
+    },
+    {
+      "word": "newspaper article",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bài báo"
+    },
+    {
+      "word": "newspaper office",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "văn phòng báo"
+    },
+    {
+      "word": "newspaper people",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người báo"
+    },
+    {
+      "word": "night-time",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "buổi đêm"
+    },
+    {
+      "word": "night sky",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bầu trời đêm"
+    },
+    {
+      "word": "no",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "không"
+    },
+    {
+      "word": "nobody",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "không ai"
+    },
+    {
+      "word": "noodle",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bún"
+    },
+    {
+      "word": "nothing",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "không có gì"
+    },
+    {
+      "word": "nothing",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "không có gì"
+    },
+    {
+      "word": "of",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "của"
+    },
+    {
+      "word": "off",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "ra, đi ra"
+    },
+    {
+      "word": "off",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "tắt, ngắt"
+    },
+    {
+      "word": "office worker",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người làm việc văn phòng"
+    },
+    {
+      "word": "oh",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "ô"
+    },
+    {
+      "word": "oil leak",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "rò rỉ dầu"
+    },
+    {
+      "word": "ok",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "được"
+    },
+    {
+      "word": "ok",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "được"
+    },
+    {
+      "word": "on",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "bật, mở"
+    },
+    {
+      "word": "on",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "trên"
+    },
+    {
+      "word": "one",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "một"
+    },
+    {
+      "word": "ones",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "một số"
+    },
+    {
+      "word": "onto",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "vào, lên"
+    },
+    {
+      "word": "oops",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "ôi"
+    },
+    {
+      "word": "opening hour",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giờ mở cửa"
+    },
+    {
+      "word": "opium",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thuốc phiện"
+    },
+    {
+      "word": "other",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "khác"
+    },
+    {
+      "word": "other",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khác"
+    },
+    {
+      "word": "our",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "của chúng tôi"
+    },
+    {
+      "word": "out",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "ra"
+    },
+    {
+      "word": "out",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "ra"
+    },
+    {
+      "word": "outside",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "ngoài"
+    },
+    {
+      "word": "over",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "quả"
+    },
+    {
+      "word": "over",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "quả"
+    },
+    {
+      "word": "p.m.",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chiều"
+    },
+    {
+      "word": "page",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "trang"
+    },
+    {
+      "word": "palinkal",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "palinkal"
+    },
+    {
+      "word": "pant",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quần short"
+    },
+    {
+      "word": "parasail",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "lướt dù"
+    },
+    {
+      "word": "paris",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "Paris"
+    },
+    {
+      "word": "past",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quá khứ"
+    },
+    {
+      "word": "past",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "quá khứ"
+    },
+    {
+      "word": "patio",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sân thượng"
+    },
+    {
+      "word": "percent",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phần trăm"
+    },
+    {
+      "word": "perspire",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "mồ hôi"
+    },
+    {
+      "word": "phone call",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cuộc gọi điện thoại"
+    },
+    {
+      "word": "phone number",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "số điện thoại"
+    },
+    {
+      "word": "photo competition",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cuộc thi ảnh"
+    },
+    {
+      "word": "piano lesson",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bài học piano"
+    },
+    {
+      "word": "pick up",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "nhặt"
+    },
+    {
+      "word": "please",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "vui lòng"
+    },
+    {
+      "word": "police report",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "báo cáo cảnh sát"
+    },
+    {
+      "word": "police station",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trạm cảnh sát"
+    },
+    {
+      "word": "polish",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "ba Lan"
+    },
+    {
+      "word": "postcode",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mã bưu chính"
+    },
+    {
+      "word": "practice",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "luyện tập"
+    },
+    {
+      "word": "prize money",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giải thưởng"
+    },
+    {
+      "word": "put out",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "tắt"
+    },
+    {
+      "word": "quite",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "rất"
+    },
+    {
+      "word": "r",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "r"
+    },
+    {
+      "word": "racegoers",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người xem đua"
+    },
+    {
+      "word": "racehorse",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ngựa đua"
+    },
+    {
+      "word": "racehorse trainer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hướng dẫn viên ngựa đua"
+    },
+    {
+      "word": "racer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người đua"
+    },
+    {
+      "word": "racing",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "đua ngựa"
+    },
+    {
+      "word": "railway line",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đường sắt"
+    },
+    {
+      "word": "reason",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "lý do"
+    },
+    {
+      "word": "red-faced",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "mặt đỏ"
+    },
+    {
+      "word": "reds",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đỏ"
+    },
+    {
+      "word": "reload",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "nạp lại"
+    },
+    {
+      "word": "review writer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người viết bài đánh giá"
+    },
+    {
+      "word": "revolver",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "súng lục"
+    },
+    {
+      "word": "riding whip",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "roi ngựa"
+    },
+    {
+      "word": "right",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "đúng, đúng rồi"
+    },
+    {
+      "word": "riverside",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bờ sông"
+    },
+    {
+      "word": "road book",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sách đường"
+    },
+    {
+      "word": "roman",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "La Mã"
+    },
+    {
+      "word": "round",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "vòng, vòng tròn"
+    },
+    {
+      "word": "rowing",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chèo thuyền"
+    },
+    {
+      "word": "running shoe",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giày chạy bộ"
+    },
+    {
+      "word": "rushing",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "vội vàng"
+    },
+    {
+      "word": "sales tax",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thuế bán hàng"
+    },
+    {
+      "word": "sandwich bar",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quán bánh mì"
+    },
+    {
+      "word": "sari",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "áo sari"
+    },
+    {
+      "word": "school library",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thư viện trường học"
+    },
+    {
+      "word": "scuba-diving course",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khóa học lặn biển"
+    },
+    {
+      "word": "signal box",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hộp tín hiệu"
+    },
+    {
+      "word": "signal light",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đèn tín hiệu"
+    },
+    {
+      "word": "signalman",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người điều khiển tín hiệu"
+    },
+    {
+      "word": "silk blouse",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "áo sơ mi lụa"
+    },
+    {
+      "word": "silver",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "bạc"
+    },
+    {
+      "word": "since",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "từ khi"
+    },
+    {
+      "word": "singer-songwriter",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhạc sĩ"
+    },
+    {
+      "word": "sit down",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "ngồi xuống"
+    },
+    {
+      "word": "sixteen",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "mười sáu"
+    },
+    {
+      "word": "sleeper",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người ngủ"
+    },
+    {
+      "word": "sleeping bag",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "túi ngủ"
+    },
+    {
+      "word": "slick",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "mượt"
+    },
+    {
+      "word": "slipper",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "dép"
+    },
+    {
+      "word": "slow-moving",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "chậm"
+    },
+    {
+      "word": "sneaker",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giày thể thao"
+    },
+    {
+      "word": "snorkel",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "lặn"
+    },
+    {
+      "word": "snowmobile",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "xe tuyết"
+    },
+    {
+      "word": "so",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "vậy"
+    },
+    {
+      "word": "software designer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người thiết kế phần mềm"
+    },
+    {
+      "word": "somebody",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "ai đó"
+    },
+    {
+      "word": "someone",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "ai đó"
+    },
+    {
+      "word": "something",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "cái gì đó"
+    },
+    {
+      "word": "sorry",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "xin lỗi"
+    },
+    {
+      "word": "souk",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chợ"
+    },
+    {
+      "word": "spanish",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "Tây Ban Nha"
+    },
+    {
+      "word": "spanish",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ngôn ngữ Tây Ban Nha"
+    },
+    {
+      "word": "sports car",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "xe thể thao"
+    },
+    {
+      "word": "sprinkle",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "rắc"
+    },
+    {
+      "word": "St",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thánh"
+    },
+    {
+      "word": "stand up",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đứng lên"
+    },
+    {
+      "word": "starter",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người bắt đầu"
+    },
+    {
+      "word": "steamboat",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tàu hơi"
+    },
+    {
+      "word": "sternly",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "nhanh chóng"
+    },
+    {
+      "word": "sting",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đốt"
+    },
+    {
+      "word": "stir",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khoắc"
+    },
+    {
+      "word": "stockbroker",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người môi giới chứng khoán"
+    },
+    {
+      "word": "stony",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "đá"
+    },
+    {
+      "word": "story competition",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cuộc thi truyện"
+    },
+    {
+      "word": "student bar",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quán bar sinh viên"
+    },
+    {
+      "word": "student restaurant",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhà hàng sinh viên"
+    },
+    {
+      "word": "subway map",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bản đồ tàu điện ngầm"
+    },
+    {
+      "word": "summer-house",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhà hè"
+    },
+    {
+      "word": "summer evening",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "buổi tối hè"
+    },
+    {
+      "word": "sunburn",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cháy nắng"
+    },
+    {
+      "word": "sunscreen",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "krem chống nắng"
+    },
+    {
+      "word": "sure",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "chắc chắn"
+    },
+    {
+      "word": "sushi",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sushi"
+    },
+    {
+      "word": "sweat stain",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vết bẩn mồ hôi"
+    },
+    {
+      "word": "swedish",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "Thụy Điển"
+    },
+    {
+      "word": "swimming pool",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bể bơi"
+    },
+    {
+      "word": "t",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "t"
+    },
+    {
+      "word": "t-shirt",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "áo thun"
+    },
+    {
+      "word": "take out",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "mang ra"
+    },
+    {
+      "word": "taxi driver",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tài xế taxi"
+    },
+    {
+      "word": "taxi service",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "dịch vụ taxi"
+    },
+    {
+      "word": "teapot",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chậu trà"
+    },
+    {
+      "word": "telegraph",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "điện báo"
+    },
+    {
+      "word": "telegraph machine",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "máy điện báo"
+    },
+    {
+      "word": "ten-pound note",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giấy bạc mười bảng"
+    },
+    {
+      "word": "tendon",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "dây chằng"
+    },
+    {
+      "word": "tennis fan",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người hâm mộ tennis"
+    },
+    {
+      "word": "tennis player",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người chơi tennis"
+    },
+    {
+      "word": "text message",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tin nhắn văn bản"
+    },
+    {
+      "word": "than",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "hơn"
+    },
+    {
+      "word": "that",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "đó"
+    },
+    {
+      "word": "that",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "đó"
+    },
+    {
+      "word": "the",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "the"
+    },
+    {
+      "word": "theatre bar",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quán bar rạp"
+    },
+    {
+      "word": "theatre review",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đánh giá rạp"
+    },
+    {
+      "word": "their",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "của họ"
+    },
+    {
+      "word": "though",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "mặc dù"
+    },
+    {
+      "word": "thousands",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ngàn"
+    },
+    {
+      "word": "through",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "qua"
+    },
+    {
+      "word": "till",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "cho đến khi"
+    },
+    {
+      "word": "to",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "đến"
+    },
+    {
+      "word": "to",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "đến"
+    },
+    {
+      "word": "tofu",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đậu phụ"
+    },
+    {
+      "word": "tomorrow night",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đêm mai"
+    },
+    {
+      "word": "tot",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "con nhỏ"
+    },
+    {
+      "word": "tourist attraction",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "điểm thu hút du khách"
+    },
+    {
+      "word": "tourist guide",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hướng dẫn viên du lịch"
+    },
+    {
+      "word": "tourist town",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thành phố du lịch"
+    },
+    {
+      "word": "towards",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "hướng"
+    },
+    {
+      "word": "train driver",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tài xế tàu"
+    },
+    {
+      "word": "train journey",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chuyến tàu"
+    },
+    {
+      "word": "training stable",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chỗ huấn luyện"
+    },
+    {
+      "word": "travel agency",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "công ty du lịch"
+    },
+    {
+      "word": "travel tip",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mẹo du lịch"
+    },
+    {
+      "word": "trip expert",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chuyên gia du lịch"
+    },
+    {
+      "word": "turkish",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "Thổ Nhĩ Kỳ"
+    },
+    {
+      "word": "turn off",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "tắt, bật"
+    },
+    {
+      "word": "tut",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giảng viên, giáo viên"
+    },
+    {
+      "word": "tv",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "truyền hình"
+    },
+    {
+      "word": "typhoon",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bão"
+    },
+    {
+      "word": "u",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "bạn, anh, chị"
+    },
+    {
+      "word": "uh",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "ừ, ừ"
+    },
+    {
+      "word": "uh-huh",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "ừ, ừ"
+    },
+    {
+      "word": "uh-oh",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "ừ ừ, ừ ừ"
+    },
+    {
+      "word": "um",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "ừ, ừ"
+    },
+    {
+      "word": "under",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "dưới, dưới"
+    },
+    {
+      "word": "underneath",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "dưới, dưới"
+    },
+    {
+      "word": "until",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "cho đến khi"
+    },
+    {
+      "word": "up",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "lên, lên"
+    },
+    {
+      "word": "up",
+      "cefr_level": "A1",
+      "word_form": "particle",
+      "meaning": "lên, lên"
+    },
+    {
+      "word": "vcr",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "máy ghi âm video"
+    },
+    {
+      "word": "video game",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trò chơi video"
+    },
+    {
+      "word": "vietnamese",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "Việt Nam"
+    },
+    {
+      "word": "village people",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người làng"
+    },
+    {
+      "word": "village shopkeeper",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người bán hàng làng"
+    },
+    {
+      "word": "wake up",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "thức dậy"
+    },
+    {
+      "word": "walking stick",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cây gậy"
+    },
+    {
+      "word": "waltz",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "waltz"
+    },
+    {
+      "word": "water bird",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chim nước"
+    },
+    {
+      "word": "wax stain",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vết bẩn sáp"
+    },
+    {
+      "word": "wedding anniversary",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "kỷ niệm hôn nhân"
+    },
+    {
+      "word": "well",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "khỏe không?"
+    },
+    {
+      "word": "what",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cái gì"
+    },
+    {
+      "word": "what",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "gì"
+    },
+    {
+      "word": "which",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "nào"
+    },
+    {
+      "word": "while",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "khi"
+    },
+    {
+      "word": "who",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ai"
+    },
+    {
+      "word": "whoever",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bất kể ai"
+    },
+    {
+      "word": "whose",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "của ai"
+    },
+    {
+      "word": "wig",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tóc giả"
+    },
+    {
+      "word": "will",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "sẽ"
+    },
+    {
+      "word": "window-shopping",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mua sắm cửa sổ"
+    },
+    {
+      "word": "winning",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sự thắng"
+    },
+    {
+      "word": "with",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "với"
+    },
+    {
+      "word": "within",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "trong"
+    },
+    {
+      "word": "without",
+      "cefr_level": "A1",
+      "word_form": "adposition",
+      "meaning": "không có"
+    },
+    {
+      "word": "wood fire",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "lửa gỗ"
+    },
+    {
+      "word": "world weather",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thời tiết thế giới"
+    },
+    {
+      "word": "would",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "sẽ"
+    },
+    {
+      "word": "wow",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "wow"
+    },
+    {
+      "word": "writing class",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "lớp viết"
+    },
+    {
+      "word": "yeah",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "đúng rồi"
+    },
+    {
+      "word": "yes",
+      "cefr_level": "A1",
+      "word_form": "interjection",
+      "meaning": "có"
+    },
+    {
+      "word": "yesterday",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hôm qua"
+    },
+    {
+      "word": "you",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "bạn"
+    },
+    {
+      "word": "your",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "của bạn"
+    },
+    {
+      "word": "yuan",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đồng nhân dân tệ"
+    },
+    {
+      "word": "afternoon",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "buổi chiều"
+    },
+    {
+      "word": "age",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tuổi"
+    },
+    {
+      "word": "April",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng Tư"
+    },
+    {
+      "word": "August",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng Tám"
+    },
+    {
+      "word": "buy",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "mua"
+    },
+    {
+      "word": "bored",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "chán"
+    },
+    {
+      "word": "better",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "tốt hơn"
+    },
+    {
+      "word": "beautiful",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "xinh đẹp"
+    },
+    {
+      "word": "boring",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "chán"
+    },
+    {
+      "word": "band",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "băng, ban nhạc"
+    },
+    {
+      "word": "best",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "tốt nhất, hay nhất"
+    },
+    {
+      "word": "blue",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "màu xanh da trời, buồn bã"
+    },
+    {
+      "word": "brown",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "màu nâu, nâu"
+    },
+    {
+      "word": "be",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "là, ở"
+    },
+    {
+      "word": "class",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "lớp học, lớp"
+    },
+    {
+      "word": "chip",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mảnh, mảnh vỡ"
+    },
+    {
+      "word": "clever",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "thông minh, khôn ngoan"
+    },
+    {
+      "word": "closed",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "đóng, đóng cửa"
+    },
+    {
+      "word": "cold",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "lạnh, lạnh lẽo"
+    },
+    {
+      "word": "also",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "cũng, cũng"
+    },
+    {
+      "word": "a.m.",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "sáng, sáng sớm"
+    },
+    {
+      "word": "dad",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bố, bố"
+    },
+    {
+      "word": "computer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "máy tính, máy tính"
+    },
+    {
+      "word": "conversation",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cuộc hội thoại, cuộc hội thoại"
+    },
+    {
+      "word": "cow",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bò, bò"
+    },
+    {
+      "word": "dog",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chó, chó"
+    },
+    {
+      "word": "ear",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tai, tai"
+    },
+    {
+      "word": "eye",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mắt, mắt"
+    },
+    {
+      "word": "face",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mặt, mặt"
+    },
+    {
+      "word": "dictionary",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "từ điển, từ điển"
+    },
+    {
+      "word": "dinner",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bữa ăn tối, bữa ăn tối"
+    },
+    {
+      "word": "egg",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trứng, trứng"
+    },
+    {
+      "word": "desk",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bàn, bàn"
+    },
+    {
+      "word": "door",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cửa, cửa"
+    },
+    {
+      "word": "farm",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trang trại, trang trại"
+    },
+    {
+      "word": "dollar",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đồng đô la, đồng đô la"
+    },
+    {
+      "word": "enjoy",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "thưởng thức, hưởng thụ"
+    },
+    {
+      "word": "daughter",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "con gái, con gái"
+    },
+    {
+      "word": "father",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cha, cha"
+    },
+    {
+      "word": "doll",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "búp bê, búp bê"
+    },
+    {
+      "word": "DVD",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "DVD, đĩa DVD"
+    },
+    {
+      "word": "driver",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người lái xe, người lái xe"
+    },
+    {
+      "word": "doctor",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bác sĩ, bác sĩ"
+    },
+    {
+      "word": "country",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quốc gia, quốc gia"
+    },
+    {
+      "word": "factory",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "xưởng, xưởng"
+    },
+    {
+      "word": "dancing",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "múa, sự múa"
+    },
+    {
+      "word": "email",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "email, email"
+    },
+    {
+      "word": "December",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng 12, tháng 12"
+    },
+    {
+      "word": "evening",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "buổi tối, buổi tối"
+    },
+    {
+      "word": "die",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "chết, chết"
+    },
+    {
+      "word": "cook",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "nấu nướng"
+    },
+    {
+      "word": "dance",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "nhảy múa"
+    },
+    {
+      "word": "draw",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "vẽ"
+    },
+    {
+      "word": "drink",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "uống"
+    },
+    {
+      "word": "drive",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "lái xe"
+    },
+    {
+      "word": "eat",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "ăn"
+    },
+    {
+      "word": "excited",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "hăng hái, hăng hái"
+    },
+    {
+      "word": "exciting",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "hấp dẫn, hấp dẫn"
+    },
+    {
+      "word": "famous",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "nổi tiếng, nổi tiếng"
+    },
+    {
+      "word": "fat",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "béo, béo phì"
+    },
+    {
+      "word": "expensive",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "đắt, đắt đỏ"
+    },
+    {
+      "word": "difficult",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "khó, khó khăn"
+    },
+    {
+      "word": "easy",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "dễ, dễ dàng"
+    },
+    {
+      "word": "fast",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "nhanh, nhanh"
+    },
+    {
+      "word": "horse",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ngựa"
+    },
+    {
+      "word": "guitar",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đàn ghi-ta"
+    },
+    {
+      "word": "hand",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bàn tay"
+    },
+    {
+      "word": "hat",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mũ"
+    },
+    {
+      "word": "glasses",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "kính mắt"
+    },
+    {
+      "word": "homework",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bài tập ở nhà"
+    },
+    {
+      "word": "glass",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cái cốc"
+    },
+    {
+      "word": "fish",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cá"
+    },
+    {
+      "word": "food",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thức ăn"
+    },
+    {
+      "word": "fruit",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trái cây"
+    },
+    {
+      "word": "flat",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "căn hộ"
+    },
+    {
+      "word": "garden",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vườn"
+    },
+    {
+      "word": "house",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhà"
+    },
+    {
+      "word": "flower",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bông hoa"
+    },
+    {
+      "word": "grass",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cỏ"
+    },
+    {
+      "word": "hear",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "nghe"
+    },
+    {
+      "word": "girl",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cô gái"
+    },
+    {
+      "word": "fun",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sự vui vẻ"
+    },
+    {
+      "word": "husband",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chồng"
+    },
+    {
+      "word": "football",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bóng đá"
+    },
+    {
+      "word": "holiday",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ngày lễ"
+    },
+    {
+      "word": "hotel",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khách sạn"
+    },
+    {
+      "word": "hour",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giờ"
+    },
+    {
+      "word": "February",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng hai"
+    },
+    {
+      "word": "Friday",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thứ sáu"
+    },
+    {
+      "word": "hospital",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bệnh viện"
+    },
+    {
+      "word": "finish",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "hoàn thành"
+    },
+    {
+      "word": "get",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "nhận được"
+    },
+    {
+      "word": "interesting",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "thú vị"
+    },
+    {
+      "word": "hungry",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "đói"
+    },
+    {
+      "word": "floor",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sàn"
+    },
+    {
+      "word": "favourite",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "ưa thích"
+    },
+    {
+      "word": "happy",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "hạnh phúc"
+    },
+    {
+      "word": "good",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "tốt"
+    },
+    {
+      "word": "hot",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "nóng"
+    },
+    {
+      "word": "group",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhóm"
+    },
+    {
+      "word": "mum",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mẹ"
+    },
+    {
+      "word": "movie",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phim"
+    },
+    {
+      "word": "music",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "âm nhạc"
+    },
+    {
+      "word": "leg",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chân"
+    },
+    {
+      "word": "mouth",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "miệng"
+    },
+    {
+      "word": "nose",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mũi"
+    },
+    {
+      "word": "jacket",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "áo sơ mi"
+    },
+    {
+      "word": "jeans",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quần jean"
+    },
+    {
+      "word": "knife",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "dao"
+    },
+    {
+      "word": "meal",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bữa ăn"
+    },
+    {
+      "word": "meat",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thịt"
+    },
+    {
+      "word": "milk",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sữa"
+    },
+    {
+      "word": "juice",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nước ép"
+    },
+    {
+      "word": "lunch",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bữa trưa"
+    },
+    {
+      "word": "orange",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cam"
+    },
+    {
+      "word": "kitchen",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bếp"
+    },
+    {
+      "word": "museum",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bảo tàng"
+    },
+    {
+      "word": "money",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tiền"
+    },
+    {
+      "word": "listen",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "lắng nghe"
+    },
+    {
+      "word": "kick",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đá"
+    },
+    {
+      "word": "like",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "thích"
+    },
+    {
+      "word": "mother",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mẹ"
+    },
+    {
+      "word": "nationality",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quốc tịch"
+    },
+    {
+      "word": "kind",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "loại"
+    },
+    {
+      "word": "minute",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phút"
+    },
+    {
+      "word": "mobile",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "điện thoại di động"
+    },
+    {
+      "word": "month",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng"
+    },
+    {
+      "word": "number",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "số"
+    },
+    {
+      "word": "January",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng một"
+    },
+    {
+      "word": "July",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng bảy"
+    },
+    {
+      "word": "June",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng sáu"
+    },
+    {
+      "word": "March",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng ba"
+    },
+    {
+      "word": "May",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng năm"
+    },
+    {
+      "word": "Monday",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thứ hai"
+    },
+    {
+      "word": "morning",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "buổi sáng"
+    },
+    {
+      "word": "night",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đêm"
+    },
+    {
+      "word": "noise",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tiếng ồn"
+    },
+    {
+      "word": "November",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng mười một"
+    },
+    {
+      "word": "October",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng mười"
+    },
+    {
+      "word": "love",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "yêu"
+    },
+    {
+      "word": "meet",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "gặp"
+    },
+    {
+      "word": "orange",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "cam"
+    },
+    {
+      "word": "old",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "cũ"
+    },
+    {
+      "word": "nice",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "đẹp"
+    },
+    {
+      "word": "long",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "dài"
+    },
+    {
+      "word": "new",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "mới"
+    },
+    {
+      "word": "only",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "chỉ"
+    },
+    {
+      "word": "Miss",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cô"
+    },
+    {
+      "word": "Mr",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ông"
+    },
+    {
+      "word": "Mrs",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bà"
+    },
+    {
+      "word": "pet",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thú cưng"
+    },
+    {
+      "word": "pig",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "con lợn"
+    },
+    {
+      "word": "photo",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "ảnh"
+    },
+    {
+      "word": "pen",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bút"
+    },
+    {
+      "word": "pencil",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bút chì"
+    },
+    {
+      "word": "picnic",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cuộc picnic"
+    },
+    {
+      "word": "plate",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đĩa"
+    },
+    {
+      "word": "sandwich",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bánh mì"
+    },
+    {
+      "word": "rice",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "gạo"
+    },
+    {
+      "word": "salt",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "muối"
+    },
+    {
+      "word": "pizza",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bánh pizza"
+    },
+    {
+      "word": "potato",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "khoai tây"
+    },
+    {
+      "word": "park",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "công viên"
+    },
+    {
+      "word": "place",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nơi"
+    },
+    {
+      "word": "plant",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cây"
+    },
+    {
+      "word": "river",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sông"
+    },
+    {
+      "word": "rain",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mưa"
+    },
+    {
+      "word": "sea",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "biển"
+    },
+    {
+      "word": "parent",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bố mẹ"
+    },
+    {
+      "word": "plane",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "máy bay"
+    },
+    {
+      "word": "road",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đường"
+    },
+    {
+      "word": "pair",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cặp"
+    },
+    {
+      "word": "part",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phần"
+    },
+    {
+      "word": "person",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người"
+    },
+    {
+      "word": "problem",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vấn đề"
+    },
+    {
+      "word": "restaurant",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhà hàng"
+    },
+    {
+      "word": "paint",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sơn"
+    },
+    {
+      "word": "phone",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "điện thoại"
+    },
+    {
+      "word": "Saturday",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thứ bảy"
+    },
+    {
+      "word": "school",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trường học"
+    },
+    {
+      "word": "September",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tháng chín"
+    },
+    {
+      "word": "people",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "người dân"
+    },
+    {
+      "word": "quarter",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quận"
+    },
+    {
+      "word": "paint",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "sơn"
+    },
+    {
+      "word": "phone",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "gọi điện thoại"
+    },
+    {
+      "word": "remember",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "nhớ"
+    },
+    {
+      "word": "ride",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "cưỡi"
+    },
+    {
+      "word": "sad",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "buồn"
+    },
+    {
+      "word": "same",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "giông nhau"
+    },
+    {
+      "word": "p.m.",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "chiều"
+    },
+    {
+      "word": "television",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tivi"
+    },
+    {
+      "word": "smoking",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "hút thuốc"
+    },
+    {
+      "word": "sheep",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cừu"
+    },
+    {
+      "word": "tooth",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "răng"
+    },
+    {
+      "word": "shirt",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "áo sơ mi"
+    },
+    {
+      "word": "shoe",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giày"
+    },
+    {
+      "word": "skirt",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "váy"
+    },
+    {
+      "word": "T-shirt",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "áo thun"
+    },
+    {
+      "word": "trousers",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quần"
+    },
+    {
+      "word": "student",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "học sinh"
+    },
+    {
+      "word": "soup",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "súp"
+    },
+    {
+      "word": "sugar",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đường"
+    },
+    {
+      "word": "tea",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trà"
+    },
+    {
+      "word": "tomato",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cà chua"
+    },
+    {
+      "word": "table",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "bàn"
+    },
+    {
+      "word": "toilet",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "nhà vệ sinh"
+    },
+    {
+      "word": "tree",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cây"
+    },
+    {
+      "word": "snow",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tuyết"
+    },
+    {
+      "word": "summer",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mùa hè"
+    },
+    {
+      "word": "shower",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vòi sen"
+    },
+    {
+      "word": "smoke",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "hút thuốc"
+    },
+    {
+      "word": "sister",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chị gái"
+    },
+    {
+      "word": "son",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "con trai"
+    },
+    {
+      "word": "sport",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thể thao"
+    },
+    {
+      "word": "tennis",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "quần vợt"
+    },
+    {
+      "word": "street",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đường phố"
+    },
+    {
+      "word": "taxi",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "xe taxi"
+    },
+    {
+      "word": "train",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tàu hỏa"
+    },
+    {
+      "word": "teacher",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "giáo viên"
+    },
+    {
+      "word": "shopping",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "sự mua sắm"
+    },
+    {
+      "word": "station",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trạm"
+    },
+    {
+      "word": "shop",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cửa hàng"
+    },
+    {
+      "word": "supermarket",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "siêu thị"
+    },
+    {
+      "word": "ticket",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vé"
+    },
+    {
+      "word": "Sunday",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "chủ nhật"
+    },
+    {
+      "word": "Thursday",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thứ năm"
+    },
+    {
+      "word": "Tuesday",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thứ ba"
+    },
+    {
+      "word": "sleep",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "ngủ"
+    },
+    {
+      "word": "sing",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "hát"
+    },
+    {
+      "word": "study",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "học"
+    },
+    {
+      "word": "swim",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "bơi"
+    },
+    {
+      "word": "teach",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "dạy"
+    },
+    {
+      "word": "travel",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "du lịch"
+    },
+    {
+      "word": "tired",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "mệt mỏi"
+    },
+    {
+      "word": "sun",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mặt trời"
+    },
+    {
+      "word": "short",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "ngắn, ngắn gọn"
+    },
+    {
+      "word": "sometimes",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "thỉnh thoảng, thỉnh thoảng"
+    },
+    {
+      "word": "tomorrow",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "ngày mai, ngày mai"
+    },
+    {
+      "word": "tonight",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "đêm nay, đêm nay"
+    },
+    {
+      "word": "too",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "quá, quá mức"
+    },
+    {
+      "word": "zoo",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vườn thú, vườn thú"
+    },
+    {
+      "word": "watch",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đồng hồ, đồng hồ"
+    },
+    {
+      "word": "word",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "từ, từ vựng"
+    },
+    {
+      "word": "university",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "đại học, đại học"
+    },
+    {
+      "word": "vegetable",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "rau, rau củ"
+    },
+    {
+      "word": "wall",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tường, tường"
+    },
+    {
+      "word": "village",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "làng, làng mạc"
+    },
+    {
+      "word": "weather",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thời tiết, thời tiết"
+    },
+    {
+      "word": "wind",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "gió, gió"
+    },
+    {
+      "word": "winter",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "mùa đông, mùa đông"
+    },
+    {
+      "word": "wash",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "rửa, rửa sạch"
+    },
+    {
+      "word": "walk",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "đi bộ, đi bộ"
+    },
+    {
+      "word": "watch",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "xem, xem"
+    },
+    {
+      "word": "woman",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "phụ nữ, phụ nữ"
+    },
+    {
+      "word": "want",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "muốn, muốn"
+    },
+    {
+      "word": "wife",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "vợ, vợ"
+    },
+    {
+      "word": "website",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "trang web, trang web"
+    },
+    {
+      "word": "wine",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "rượu vang, rượu vang"
+    },
+    {
+      "word": "waiter",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tư vấn viên, tư vấn viên"
+    },
+    {
+      "word": "waitress",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tư vấn viên, tư vấn viên"
+    },
+    {
+      "word": "week",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "tuần, tuần"
+    },
+    {
+      "word": "weekend",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "cuối tuần, cuối tuần"
+    },
+    {
+      "word": "year",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "năm, năm"
+    },
+    {
+      "word": "TV",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "truyền hình, truyền hình"
+    },
+    {
+      "word": "Wednesday",
+      "cefr_level": "A1",
+      "word_form": "noun",
+      "meaning": "thứ Ba"
+    },
+    {
+      "word": "work",
+      "cefr_level": "A1",
+      "word_form": "verb",
+      "meaning": "làm việc, làm việc"
+    },
+    {
+      "word": "well",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "khỏe, khỏe"
+    },
+    {
+      "word": "very",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "rất, rất"
+    },
+    {
+      "word": "yellow",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "vàng, vàng"
+    },
+    {
+      "word": "young",
+      "cefr_level": "A1",
+      "word_form": "adjective",
+      "meaning": "trẻ, trẻ"
+    },
+    {
+      "word": "well",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "khỏe, khỏe"
+    },
+    {
+      "word": "when",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "khi, khi"
+    },
+    {
+      "word": "where",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "ở đâu, ở đâu"
+    },
+    {
+      "word": "yesterday",
+      "cefr_level": "A1",
+      "word_form": "adverb",
+      "meaning": "hôm qua, hôm qua"
+    },
+    {
+      "word": "about",
+      "cefr_level": "A1",
+      "word_form": "preposition",
+      "meaning": "về, về"
+    },
+    {
+      "word": "any",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "bất kỳ, bất kỳ"
+    },
+    {
+      "word": "an",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "một, một"
+    },
+    {
+      "word": "both",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "cả hai, cả hai"
+    },
+    {
+      "word": "anything",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "bất kỳ điều gì, bất kỳ điều gì"
+    },
+    {
+      "word": "each",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "mỗi, mỗi"
+    },
+    {
+      "word": "each",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "mỗi, mỗi"
+    },
+    {
+      "word": "her",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "của cô ấy, của cô ấy"
+    },
+    {
+      "word": "his",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "của anh ấy, của anh ấy"
+    },
+    {
+      "word": "he",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "anh ấy, anh ấy"
+    },
+    {
+      "word": "her",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "cô ấy, cô ấy"
+    },
+    {
+      "word": "him",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "anh ấy, anh ấy"
+    },
+    {
+      "word": "I",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "tôi, tôi"
+    },
+    {
+      "word": "many",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "nhiều, nhiều"
+    },
+    {
+      "word": "more",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "nhiều hơn, nhiều hơn"
+    },
+    {
+      "word": "no",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "không, không"
+    },
+    {
+      "word": "its",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "của nó, của nó"
+    },
+    {
+      "word": "my",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "của tôi, của tôi"
+    },
+    {
+      "word": "our",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "của chúng tôi, của chúng tôi"
+    },
+    {
+      "word": "me",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "tôi, tôi"
+    },
+    {
+      "word": "some",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "một số, một số"
+    },
+    {
+      "word": "something",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "một số thứ gì đó, một số thứ gì đó"
+    },
+    {
+      "word": "that",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "đó, đó"
+    },
+    {
+      "word": "these",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "những, những"
+    },
+    {
+      "word": "this",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "này, này"
+    },
+    {
+      "word": "those",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "những, những"
+    },
+    {
+      "word": "she",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "cô ấy, cô ấy"
+    },
+    {
+      "word": "which",
+      "cefr_level": "A1",
+      "word_form": "determiner",
+      "meaning": "nào, nào"
+    },
+    {
+      "word": "us",
+      "cefr_level": "A1",
+      "word_form": "pronoun",
+      "meaning": "chúng tôi, chúng tôi"
+    }
+  ]
+}

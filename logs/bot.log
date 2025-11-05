@@ -373,3 +373,365 @@ discord.ext.commands.errors.HybridCommandError: Hybrid command raised an error: 
 2025-07-22 18:22:14,108 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: dd195d17ddc03bdc5a66135cae59b183).
 2025-07-22 18:22:16,125 - discord_bot - INFO - 🤖 Logged in successfully: GeiBot (1357041436494925824)
 2025-07-22 18:23:54,244 - discord_bot - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-07-22 21:08:49,797 - discord.client - INFO - logging in using static token
+2025-07-22 21:08:51,005 - discord_bot - INFO - ✅ Loaded function: ca_ngua
+2025-07-22 21:08:51,008 - discord_bot - INFO - ✅ Loaded function: cotuong
+2025-07-22 21:08:51,010 - discord_bot - INFO - ✅ Loaded function: covay
+2025-07-22 21:08:51,012 - discord_bot - INFO - ✅ Loaded function: fun
+2025-07-22 21:08:53,501 - discord_bot - INFO - ✅ Gemini AI initialized successfully
+2025-07-22 21:08:53,501 - discord_bot - INFO - Gemini Chat module loaded
+2025-07-22 21:08:53,501 - discord_bot - INFO - ✅ Loaded function: gemini_chat
+2025-07-22 21:08:53,575 - discord_bot - INFO - Loaded 144 words for chinese hsk1
+2025-07-22 21:08:53,577 - discord_bot - INFO - Loaded 280 words for chinese hsk2
+2025-07-22 21:08:53,577 - discord_bot - INFO - Loaded 2 words for chinese hsk3
+2025-07-22 21:08:53,578 - discord_bot - INFO - Loaded 2 words for chinese hsk4
+2025-07-22 21:08:53,578 - discord_bot - INFO - Loaded 59 words for english beginner
+2025-07-22 21:08:53,578 - discord_bot - INFO - Loaded 2 words for english intermediate
+2025-07-22 21:08:53,579 - discord_bot - INFO - Loaded 2 words for english advanced
+2025-07-22 21:08:53,581 - discord_bot - INFO - Loaded 599 words for japanese jlpt_n5
+2025-07-22 21:08:53,583 - discord_bot - INFO - Loaded 601 words for japanese jlpt_n4
+2025-07-22 21:08:53,588 - discord_bot - INFO - Loaded 1651 words for japanese jlpt_n3
+2025-07-22 21:08:53,616 - discord_bot - INFO - Loaded 1500 words for japanese jlpt_n2
+2025-07-22 21:08:53,623 - discord_bot - INFO - Loaded 2336 words for japanese jlpt_n1
+2025-07-22 21:08:53,624 - discord_bot - INFO - Language Learning V2 module loaded
+2025-07-22 21:08:53,624 - discord_bot - INFO - ✅ Loaded function: language_learning_v2
+2025-07-22 21:08:53,628 - discord_bot - INFO - ✅ Loaded function: voice_activity_logger
+2025-07-22 21:08:53,633 - discord_bot - INFO - 🔊 Voice Manager initialized - Create channel: 'tạo phòng'
+2025-07-22 21:08:53,633 - discord_bot - INFO - Voice Manager module loaded
+2025-07-22 21:08:53,633 - discord_bot - INFO - ✅ Loaded function: voice_manager
+2025-07-22 21:08:53,643 - discord_bot - INFO - Tactical Battle Game cog loaded successfully
+2025-07-22 21:08:53,644 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_battle
+2025-07-22 21:08:53,653 - discord_bot - INFO - Integrated Weapon System loaded successfully
+2025-07-22 21:08:53,653 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_weapons
+2025-07-22 21:08:54,664 - discord_bot - INFO - ✅ Slash commands synchronized!
+2025-07-22 21:08:54,664 - discord_bot - INFO - 📊 Extensions loaded: 10, Failed: 0
+2025-07-22 21:08:55,397 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 7362696cbd118ed7e3e6861e5021a650).
+2025-07-22 21:08:57,432 - discord_bot - INFO - 🤖 Logged in successfully: GeiBot (1357041436494925824)
+2025-07-22 21:09:01,268 - discord_bot.voice_logger - INFO - Voice activity logged: nowim.nhan left Phòng Học Sinh Lý
+2025-07-22 21:09:11,493 - discord_bot.voice_logger - INFO - Voice activity logged: nowim.nhan joined Phòng Học Sinh Lý
+2025-07-22 21:10:28,759 - discord_bot - ERROR - Error in vocabulary_quiz: table word_reviews has no column named guild_id
+2025-07-22 21:10:29,096 - discord_bot - ERROR - Command error in lang_quiz: Command 'lang_quiz' raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+Traceback (most recent call last):
+  File "D:\Code\discordbot\functions\language_learning_v2.py", line 974, in vocabulary_quiz
+    await self.start_quiz(ctx, language, level, selected_words)
+  File "D:\Code\discordbot\functions\language_learning_v2.py", line 1137, in start_quiz
+    await self.record_quiz_results(int(ctx.author.id), int(ctx.guild.id), language, level, quiz_results, total_points)
+  File "D:\Code\discordbot\functions\language_learning_v2.py", line 410, in record_quiz_results
+    cursor.execute('''
+    ~~~~~~~~~~~~~~^^^^
+        INSERT OR REPLACE INTO word_reviews
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<21 lines>...
+          user_id, guild_id, language, level, word_index,  # retention_strength SELECT (incorrect)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          user_id, guild_id, language, level, word_index))  # quiz_count SELECT
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table word_reviews has no column named guild_id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\discordbot\functions\language_learning_v2.py", line 978, in vocabulary_quiz
+    await prep_msg.edit(content=f"❌ An error occurred while preparing the quiz: {str(e)}")
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\webhook\async_.py", line 865, in edit
+    return await self._state._webhook.edit_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\webhook\async_.py", line 2035, in edit_message
+    data = await adapter.edit_webhook_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\hybrid.py", line 450, in _invoke_with_namespace
+    value = await self._do_call(ctx, ctx.kwargs)  # type: ignore
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'lang_quiz' raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+2025-07-22 21:19:34,077 - discord_bot - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-07-22 21:37:30,112 - discord.client - INFO - logging in using static token
+2025-07-22 21:37:31,142 - discord_bot - INFO - ✅ Loaded function: ca_ngua
+2025-07-22 21:37:31,145 - discord_bot - INFO - ✅ Loaded function: cotuong
+2025-07-22 21:37:31,147 - discord_bot - INFO - ✅ Loaded function: covay
+2025-07-22 21:37:31,148 - discord_bot - INFO - ✅ Loaded function: fun
+2025-07-22 21:37:32,713 - discord_bot - INFO - ✅ Gemini AI initialized successfully
+2025-07-22 21:37:32,713 - discord_bot - INFO - Gemini Chat module loaded
+2025-07-22 21:37:32,713 - discord_bot - INFO - ✅ Loaded function: gemini_chat
+2025-07-22 21:37:32,735 - discord_bot - INFO - Loaded 144 words for chinese hsk1
+2025-07-22 21:37:32,736 - discord_bot - INFO - Loaded 280 words for chinese hsk2
+2025-07-22 21:37:32,737 - discord_bot - INFO - Loaded 2 words for chinese hsk3
+2025-07-22 21:37:32,737 - discord_bot - INFO - Loaded 2 words for chinese hsk4
+2025-07-22 21:37:32,737 - discord_bot - INFO - Loaded 59 words for english beginner
+2025-07-22 21:37:32,738 - discord_bot - INFO - Loaded 2 words for english intermediate
+2025-07-22 21:37:32,738 - discord_bot - INFO - Loaded 2 words for english advanced
+2025-07-22 21:37:32,740 - discord_bot - INFO - Loaded 599 words for japanese jlpt_n5
+2025-07-22 21:37:32,742 - discord_bot - INFO - Loaded 601 words for japanese jlpt_n4
+2025-07-22 21:37:32,745 - discord_bot - INFO - Loaded 1651 words for japanese jlpt_n3
+2025-07-22 21:37:32,751 - discord_bot - INFO - Loaded 1500 words for japanese jlpt_n2
+2025-07-22 21:37:32,758 - discord_bot - INFO - Loaded 2336 words for japanese jlpt_n1
+2025-07-22 21:37:32,758 - discord_bot - INFO - Language Learning V2 module loaded
+2025-07-22 21:37:32,759 - discord_bot - INFO - ✅ Loaded function: language_learning_v2
+2025-07-22 21:37:32,760 - discord_bot - INFO - ✅ Loaded function: voice_activity_logger
+2025-07-22 21:37:32,764 - discord_bot - INFO - 🔊 Voice Manager initialized - Create channel: 'tạo phòng'
+2025-07-22 21:37:32,764 - discord_bot - INFO - Voice Manager module loaded
+2025-07-22 21:37:32,765 - discord_bot - INFO - ✅ Loaded function: voice_manager
+2025-07-22 21:37:32,771 - discord_bot - INFO - Tactical Battle Game cog loaded successfully
+2025-07-22 21:37:32,771 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_battle
+2025-07-22 21:37:32,777 - discord_bot - INFO - Integrated Weapon System loaded successfully
+2025-07-22 21:37:32,777 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_weapons
+2025-07-22 21:37:33,210 - discord_bot - INFO - ✅ Slash commands synchronized!
+2025-07-22 21:37:33,210 - discord_bot - INFO - 📊 Extensions loaded: 10, Failed: 0
+2025-07-22 21:37:33,910 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: b2aaf2305ed6e14a7bc61debb7d044da).
+2025-07-22 21:37:35,080 - discord_bot.voice_logger - INFO - Voice activity logged: nowim.nhan left Phòng Học Sinh Lý
+2025-07-22 21:37:36,076 - discord_bot - INFO - 🤖 Logged in successfully: GeiBot (1357041436494925824)
+2025-07-22 21:37:39,272 - discord_bot.voice_logger - INFO - Voice activity logged: nowim.nhan joined Phòng Học Sinh Lý
+2025-07-22 21:38:51,561 - discord_bot.voice_logger - INFO - Voice activity logged: nowim.nhan left Phòng Học Sinh Lý
+2025-07-22 21:40:20,727 - discord_bot.voice_logger - INFO - Voice activity logged: kiacongaumeo left Phòng Học Sinh Lý
+2025-07-22 21:40:22,612 - discord_bot.voice_logger - INFO - Voice activity logged: taiphen left Phòng Học Sinh Lý
+2025-07-22 21:40:42,054 - discord_bot - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-07-22 22:09:58,494 - discord.client - INFO - logging in using static token
+2025-07-22 22:09:59,630 - discord_bot - INFO - ✅ Loaded function: ca_ngua
+2025-07-22 22:09:59,633 - discord_bot - INFO - ✅ Loaded function: cotuong
+2025-07-22 22:09:59,636 - discord_bot - INFO - ✅ Loaded function: covay
+2025-07-22 22:09:59,637 - discord_bot - INFO - ✅ Loaded function: fun
+2025-07-22 22:10:01,108 - discord_bot - INFO - ✅ Gemini AI initialized successfully
+2025-07-22 22:10:01,109 - discord_bot - INFO - Gemini Chat module loaded
+2025-07-22 22:10:01,109 - discord_bot - INFO - ✅ Loaded function: gemini_chat
+2025-07-22 22:10:01,118 - discord_bot - INFO - Loaded 144 words for chinese hsk1
+2025-07-22 22:10:01,119 - discord_bot - INFO - Loaded 280 words for chinese hsk2
+2025-07-22 22:10:01,120 - discord_bot - INFO - Loaded 2 words for chinese hsk3
+2025-07-22 22:10:01,120 - discord_bot - INFO - Loaded 2 words for chinese hsk4
+2025-07-22 22:10:01,120 - discord_bot - INFO - Loaded 59 words for english beginner
+2025-07-22 22:10:01,121 - discord_bot - INFO - Loaded 2 words for english intermediate
+2025-07-22 22:10:01,121 - discord_bot - INFO - Loaded 2 words for english advanced
+2025-07-22 22:10:01,123 - discord_bot - INFO - Loaded 599 words for japanese jlpt_n5
+2025-07-22 22:10:01,124 - discord_bot - INFO - Loaded 601 words for japanese jlpt_n4
+2025-07-22 22:10:01,128 - discord_bot - INFO - Loaded 1651 words for japanese jlpt_n3
+2025-07-22 22:10:01,132 - discord_bot - INFO - Loaded 1500 words for japanese jlpt_n2
+2025-07-22 22:10:01,139 - discord_bot - INFO - Loaded 2336 words for japanese jlpt_n1
+2025-07-22 22:10:01,139 - discord_bot - INFO - Language Learning V2 module loaded
+2025-07-22 22:10:01,140 - discord_bot - INFO - ✅ Loaded function: language_learning_v2
+2025-07-22 22:10:01,149 - discord_bot - INFO - ✅ Loaded function: voice_activity_logger
+2025-07-22 22:10:01,153 - discord_bot - INFO - 🔊 Voice Manager initialized - Create channel: 'tạo phòng'
+2025-07-22 22:10:01,153 - discord_bot - INFO - Voice Manager module loaded
+2025-07-22 22:10:01,154 - discord_bot - INFO - ✅ Loaded function: voice_manager
+2025-07-22 22:10:01,159 - discord_bot - INFO - Tactical Battle Game cog loaded successfully
+2025-07-22 22:10:01,160 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_battle
+2025-07-22 22:10:01,166 - discord_bot - INFO - Integrated Weapon System loaded successfully
+2025-07-22 22:10:01,167 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_weapons
+2025-07-22 22:10:01,706 - discord_bot - INFO - ✅ Slash commands synchronized!
+2025-07-22 22:10:01,707 - discord_bot - INFO - 📊 Extensions loaded: 10, Failed: 0
+2025-07-22 22:10:02,540 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 66750afceea98157bdda6b416b1de44a).
+2025-07-22 22:10:04,590 - discord_bot - INFO - 🤖 Logged in successfully: GeiBot (1357041436494925824)
+2025-07-22 22:12:35,131 - discord_bot - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-07-22 22:12:39,088 - discord.client - INFO - logging in using static token
+2025-07-22 22:12:40,339 - discord_bot - INFO - ✅ Loaded function: ca_ngua
+2025-07-22 22:12:40,345 - discord_bot - INFO - ✅ Loaded function: cotuong
+2025-07-22 22:12:40,350 - discord_bot - INFO - ✅ Loaded function: covay
+2025-07-22 22:12:40,352 - discord_bot - INFO - ✅ Loaded function: fun
+2025-07-22 22:12:41,650 - discord_bot - INFO - ✅ Gemini AI initialized successfully
+2025-07-22 22:12:41,650 - discord_bot - INFO - Gemini Chat module loaded
+2025-07-22 22:12:41,650 - discord_bot - INFO - ✅ Loaded function: gemini_chat
+2025-07-22 22:12:41,680 - discord_bot - INFO - Loaded 144 words for chinese hsk1
+2025-07-22 22:12:41,681 - discord_bot - INFO - Loaded 280 words for chinese hsk2
+2025-07-22 22:12:41,682 - discord_bot - INFO - Loaded 2 words for chinese hsk3
+2025-07-22 22:12:41,682 - discord_bot - INFO - Loaded 2 words for chinese hsk4
+2025-07-22 22:12:41,683 - discord_bot - INFO - Loaded 59 words for english beginner
+2025-07-22 22:12:41,683 - discord_bot - INFO - Loaded 2 words for english intermediate
+2025-07-22 22:12:41,684 - discord_bot - INFO - Loaded 2 words for english advanced
+2025-07-22 22:12:41,685 - discord_bot - INFO - Loaded 599 words for japanese jlpt_n5
+2025-07-22 22:12:41,686 - discord_bot - INFO - Loaded 601 words for japanese jlpt_n4
+2025-07-22 22:12:41,690 - discord_bot - INFO - Loaded 1651 words for japanese jlpt_n3
+2025-07-22 22:12:41,693 - discord_bot - INFO - Loaded 1500 words for japanese jlpt_n2
+2025-07-22 22:12:41,699 - discord_bot - INFO - Loaded 2336 words for japanese jlpt_n1
+2025-07-22 22:12:41,700 - discord_bot - INFO - Language Learning V2 module loaded
+2025-07-22 22:12:41,700 - discord_bot - INFO - ✅ Loaded function: language_learning_v2
+2025-07-22 22:12:41,704 - discord_bot - INFO - ✅ Loaded function: voice_activity_logger
+2025-07-22 22:12:41,710 - discord_bot - INFO - 🔊 Voice Manager initialized - Create channel: 'tạo phòng'
+2025-07-22 22:12:41,711 - discord_bot - INFO - Voice Manager module loaded
+2025-07-22 22:12:41,711 - discord_bot - INFO - ✅ Loaded function: voice_manager
+2025-07-22 22:12:41,716 - discord_bot - INFO - Tactical Battle Game cog loaded successfully
+2025-07-22 22:12:41,716 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_battle
+2025-07-22 22:12:41,721 - discord_bot - INFO - Integrated Weapon System loaded successfully
+2025-07-22 22:12:41,722 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_weapons
+2025-07-22 22:12:42,362 - discord_bot - INFO - ✅ Slash commands synchronized!
+2025-07-22 22:12:42,362 - discord_bot - INFO - 📊 Extensions loaded: 10, Failed: 0
+2025-07-22 22:12:43,094 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: cf2cef82bb5ba4fe37e3abce830fe6d4).
+2025-07-22 22:12:45,133 - discord_bot - INFO - 🤖 Logged in successfully: GeiBot (1357041436494925824)
+2025-07-22 22:14:07,936 - discord_bot - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-07-22 22:14:15,217 - discord.client - INFO - logging in using static token
+2025-07-22 22:14:16,129 - discord_bot - INFO - ✅ Loaded function: ca_ngua
+2025-07-22 22:14:16,131 - discord_bot - INFO - ✅ Loaded function: cotuong
+2025-07-22 22:14:16,133 - discord_bot - INFO - ✅ Loaded function: covay
+2025-07-22 22:14:16,134 - discord_bot - INFO - ✅ Loaded function: fun
+2025-07-22 22:14:17,502 - discord_bot - INFO - ✅ Gemini AI initialized successfully
+2025-07-22 22:14:17,502 - discord_bot - INFO - Gemini Chat module loaded
+2025-07-22 22:14:17,503 - discord_bot - INFO - ✅ Loaded function: gemini_chat
+2025-07-22 22:14:17,552 - discord_bot - INFO - Loaded 144 words for chinese hsk1
+2025-07-22 22:14:17,553 - discord_bot - INFO - Loaded 280 words for chinese hsk2
+2025-07-22 22:14:17,553 - discord_bot - INFO - Loaded 2 words for chinese hsk3
+2025-07-22 22:14:17,554 - discord_bot - INFO - Loaded 2 words for chinese hsk4
+2025-07-22 22:14:17,554 - discord_bot - INFO - Loaded 59 words for english beginner
+2025-07-22 22:14:17,555 - discord_bot - INFO - Loaded 2 words for english intermediate
+2025-07-22 22:14:17,555 - discord_bot - INFO - Loaded 2 words for english advanced
+2025-07-22 22:14:17,557 - discord_bot - INFO - Loaded 599 words for japanese jlpt_n5
+2025-07-22 22:14:17,559 - discord_bot - INFO - Loaded 601 words for japanese jlpt_n4
+2025-07-22 22:14:17,563 - discord_bot - INFO - Loaded 1651 words for japanese jlpt_n3
+2025-07-22 22:14:17,566 - discord_bot - INFO - Loaded 1500 words for japanese jlpt_n2
+2025-07-22 22:14:17,572 - discord_bot - INFO - Loaded 2336 words for japanese jlpt_n1
+2025-07-22 22:14:17,573 - discord_bot - INFO - Language Learning V2 module loaded
+2025-07-22 22:14:17,573 - discord_bot - INFO - ✅ Loaded function: language_learning_v2
+2025-07-22 22:14:17,576 - discord_bot - INFO - ✅ Loaded function: voice_activity_logger
+2025-07-22 22:14:17,579 - discord_bot - INFO - 🔊 Voice Manager initialized - Create channel: 'tạo phòng'
+2025-07-22 22:14:17,579 - discord_bot - INFO - Voice Manager module loaded
+2025-07-22 22:14:17,580 - discord_bot - INFO - ✅ Loaded function: voice_manager
+2025-07-22 22:14:17,591 - discord_bot - INFO - Tactical Battle Game cog loaded successfully
+2025-07-22 22:14:17,591 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_battle
+2025-07-22 22:14:17,599 - discord_bot - INFO - Integrated Weapon System loaded successfully
+2025-07-22 22:14:17,600 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_weapons
+2025-07-22 22:14:18,153 - discord_bot - INFO - ✅ Slash commands synchronized!
+2025-07-22 22:14:18,153 - discord_bot - INFO - 📊 Extensions loaded: 10, Failed: 0
+2025-07-22 22:14:18,877 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 241c082240f558428eb5c04168c1f78a).
+2025-07-22 22:14:20,926 - discord_bot - INFO - 🤖 Logged in successfully: GeiBot (1357041436494925824)
+2025-07-22 22:15:08,897 - discord_bot - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-07-23 22:06:55,049 - discord.client - INFO - logging in using static token
+2025-07-23 22:06:55,998 - discord_bot - INFO - ✅ Loaded function: ca_ngua
+2025-07-23 22:06:56,000 - discord_bot - INFO - ✅ Loaded function: cotuong
+2025-07-23 22:06:56,002 - discord_bot - INFO - ✅ Loaded function: covay
+2025-07-23 22:06:56,003 - discord_bot - INFO - ✅ Loaded function: fun
+2025-07-23 22:06:56,616 - discord_bot - ERROR - ❌ Failed to load function gemini_chat: Extension 'functions.gemini_chat' raised an error: ModuleNotFoundError: No module named 'cgi'
+2025-07-23 22:06:56,633 - discord_bot - INFO - Database schema initialized/updated successfully
+2025-07-23 22:06:56,640 - discord_bot - INFO - Loaded 511 words for chinese hsk1
+2025-07-23 22:06:56,652 - discord_bot - INFO - Loaded 1266 words for chinese hsk2
+2025-07-23 22:06:56,670 - discord_bot - INFO - Loaded 2225 words for chinese hsk3
+2025-07-23 22:06:56,693 - discord_bot - INFO - Loaded 3197 words for chinese hsk4
+2025-07-23 22:06:56,726 - discord_bot - INFO - Loaded 4258 words for chinese hsk5
+2025-07-23 22:06:56,728 - discord_bot - INFO - Loaded 1035 words for english a1
+2025-07-23 22:06:56,732 - discord_bot - INFO - Loaded 1930 words for english a2
+2025-07-23 22:06:56,743 - discord_bot - INFO - Loaded 3053 words for english b1
+2025-07-23 22:06:56,752 - discord_bot - INFO - Loaded 5199 words for english b2
+2025-07-23 22:06:56,761 - discord_bot - INFO - Loaded 4760 words for english c1
+2025-07-23 22:06:56,766 - discord_bot - INFO - Loaded 2419 words for english c2
+2025-07-23 22:06:56,767 - discord_bot - INFO - Loaded 599 words for japanese jlpt_n5
+2025-07-23 22:06:56,769 - discord_bot - INFO - Loaded 601 words for japanese jlpt_n4
+2025-07-23 22:06:56,772 - discord_bot - INFO - Loaded 1651 words for japanese jlpt_n3
+2025-07-23 22:06:56,776 - discord_bot - INFO - Loaded 1500 words for japanese jlpt_n2
+2025-07-23 22:06:56,781 - discord_bot - INFO - Loaded 2336 words for japanese jlpt_n1
+2025-07-23 22:06:56,782 - discord_bot - INFO - Language Learning V2 module loaded
+2025-07-23 22:06:56,782 - discord_bot - INFO - ✅ Loaded function: language_learning_v2
+2025-07-23 22:06:56,791 - discord_bot - INFO - ✅ Loaded function: voice_activity_logger
+2025-07-23 22:06:56,794 - discord_bot - INFO - 🔊 Voice Manager initialized - Create channel: 'tạo phòng'
+2025-07-23 22:06:56,794 - discord_bot - INFO - Voice Manager module loaded
+2025-07-23 22:06:56,794 - discord_bot - INFO - ✅ Loaded function: voice_manager
+2025-07-23 22:06:56,801 - discord_bot - INFO - Tactical Battle Game cog loaded successfully
+2025-07-23 22:06:56,801 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_battle
+2025-07-23 22:06:56,806 - discord_bot - INFO - Integrated Weapon System loaded successfully
+2025-07-23 22:06:56,807 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_weapons
+2025-07-23 22:06:57,365 - discord_bot - INFO - ✅ Slash commands synchronized!
+2025-07-23 22:06:57,365 - discord_bot - INFO - 📊 Extensions loaded: 9, Failed: 1
+2025-07-23 22:06:58,068 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: e7bd39c480c266baf3028c13eb6771c8).
+2025-07-23 22:07:00,084 - discord_bot - INFO - 🤖 Logged in successfully: GeiBot (1357041436494925824)
+2025-07-23 22:08:01,001 - discord_bot - INFO - Created role: Chinese (中文) - HSK 5
+2025-07-23 22:08:01,479 - discord_bot - INFO - Created channel: 5️⃣-hsk5
+2025-07-23 22:09:20,593 - discord_bot - INFO - Created role: English - CEFR A1
+2025-07-23 22:09:21,099 - discord_bot - INFO - Created channel: 🔰-a1
+2025-07-23 22:09:21,529 - discord_bot - INFO - Created role: English - CEFR A2
+2025-07-23 22:09:22,169 - discord_bot - INFO - Created channel: 📘-a2
+2025-07-23 22:09:22,605 - discord_bot - INFO - Created role: English - CEFR B1
+2025-07-23 22:09:23,093 - discord_bot - INFO - Created channel: 📗-b1
+2025-07-23 22:09:23,534 - discord_bot - INFO - Created role: English - CEFR B2
+2025-07-23 22:09:23,939 - discord_bot - INFO - Created channel: 📙-b2
+2025-07-23 22:09:24,414 - discord_bot - INFO - Created role: English - CEFR C1
+2025-07-23 22:09:24,880 - discord_bot - INFO - Created channel: 📕-c1
+2025-07-23 22:09:25,269 - discord_bot - INFO - Created role: English - CEFR C2
+2025-07-23 22:09:25,720 - discord_bot - INFO - Created channel: ⭐-c2
+2025-07-23 22:10:50,696 - discord_bot - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-07-23 22:43:50,278 - discord.client - INFO - logging in using static token
+2025-07-23 22:43:51,453 - discord_bot - INFO - ✅ Loaded function: ca_ngua
+2025-07-23 22:43:51,455 - discord_bot - INFO - ✅ Loaded function: cotuong
+2025-07-23 22:43:51,457 - discord_bot - INFO - ✅ Loaded function: covay
+2025-07-23 22:43:51,458 - discord_bot - INFO - ✅ Loaded function: fun
+2025-07-23 22:43:52,010 - discord_bot - ERROR - ❌ Failed to load function gemini_chat: Extension 'functions.gemini_chat' raised an error: ModuleNotFoundError: No module named 'cgi'
+2025-07-23 22:43:52,051 - discord_bot - INFO - Database schema initialized/updated successfully
+2025-07-23 22:43:52,058 - discord_bot - INFO - Loaded 511 words for chinese hsk1
+2025-07-23 22:43:52,069 - discord_bot - INFO - Loaded 1266 words for chinese hsk2
+2025-07-23 22:43:52,088 - discord_bot - INFO - Loaded 2225 words for chinese hsk3
+2025-07-23 22:43:52,114 - discord_bot - INFO - Loaded 3197 words for chinese hsk4
+2025-07-23 22:43:52,148 - discord_bot - INFO - Loaded 4258 words for chinese hsk5
+2025-07-23 22:43:52,151 - discord_bot - INFO - Loaded 1035 words for english a1
+2025-07-23 22:43:52,154 - discord_bot - INFO - Loaded 1930 words for english a2
+2025-07-23 22:43:52,162 - discord_bot - INFO - Loaded 3053 words for english b1
+2025-07-23 22:43:52,171 - discord_bot - INFO - Loaded 5199 words for english b2
+2025-07-23 22:43:52,180 - discord_bot - INFO - Loaded 4760 words for english c1
+2025-07-23 22:43:52,184 - discord_bot - INFO - Loaded 2419 words for english c2
+2025-07-23 22:43:52,186 - discord_bot - INFO - Loaded 599 words for japanese jlpt_n5
+2025-07-23 22:43:52,188 - discord_bot - INFO - Loaded 601 words for japanese jlpt_n4
+2025-07-23 22:43:52,191 - discord_bot - INFO - Loaded 1651 words for japanese jlpt_n3
+2025-07-23 22:43:52,194 - discord_bot - INFO - Loaded 1500 words for japanese jlpt_n2
+2025-07-23 22:43:52,200 - discord_bot - INFO - Loaded 2336 words for japanese jlpt_n1
+2025-07-23 22:43:52,200 - discord_bot - INFO - Language Learning V2 module loaded
+2025-07-23 22:43:52,201 - discord_bot - INFO - ✅ Loaded function: language_learning_v2
+2025-07-23 22:43:52,210 - discord_bot - INFO - ✅ Loaded function: voice_activity_logger
+2025-07-23 22:43:52,213 - discord_bot - INFO - 🔊 Voice Manager initialized - Create channel: 'tạo phòng'
+2025-07-23 22:43:52,213 - discord_bot - INFO - Voice Manager module loaded
+2025-07-23 22:43:52,213 - discord_bot - INFO - ✅ Loaded function: voice_manager
+2025-07-23 22:43:52,218 - discord_bot - INFO - Tactical Battle Game cog loaded successfully
+2025-07-23 22:43:52,218 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_battle
+2025-07-23 22:43:52,223 - discord_bot - INFO - Integrated Weapon System loaded successfully
+2025-07-23 22:43:52,224 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_weapons
+2025-07-23 22:43:52,718 - discord_bot - INFO - ✅ Slash commands synchronized!
+2025-07-23 22:43:52,719 - discord_bot - INFO - 📊 Extensions loaded: 9, Failed: 1
+2025-07-23 22:43:53,566 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 6d144a7f69c589729706e440e767dd27).
+2025-07-23 22:43:55,583 - discord_bot - INFO - 🤖 Logged in successfully: GeiBot (1357041436494925824)
+2025-07-23 22:47:33,520 - discord_bot - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-07-23 22:51:12,155 - discord.client - INFO - logging in using static token
+2025-07-23 22:51:13,024 - discord_bot - INFO - ✅ Loaded function: ca_ngua
+2025-07-23 22:51:13,025 - discord_bot - INFO - ✅ Loaded function: cotuong
+2025-07-23 22:51:13,027 - discord_bot - INFO - ✅ Loaded function: covay
+2025-07-23 22:51:13,029 - discord_bot - INFO - ✅ Loaded function: fun
+2025-07-23 22:51:13,420 - discord_bot - ERROR - ❌ Failed to load function gemini_chat: Extension 'functions.gemini_chat' raised an error: ModuleNotFoundError: No module named 'cgi'
+2025-07-23 22:51:13,445 - discord_bot - INFO - Database schema initialized/updated successfully
+2025-07-23 22:51:13,450 - discord_bot - INFO - Loaded 511 words for chinese hsk1
+2025-07-23 22:51:13,460 - discord_bot - INFO - Loaded 1266 words for chinese hsk2
+2025-07-23 22:51:13,477 - discord_bot - INFO - Loaded 2225 words for chinese hsk3
+2025-07-23 22:51:13,501 - discord_bot - INFO - Loaded 3197 words for chinese hsk4
+2025-07-23 22:51:13,536 - discord_bot - INFO - Loaded 4258 words for chinese hsk5
+2025-07-23 22:51:13,538 - discord_bot - INFO - Loaded 1035 words for english a1
+2025-07-23 22:51:13,541 - discord_bot - INFO - Loaded 1930 words for english a2
+2025-07-23 22:51:13,549 - discord_bot - INFO - Loaded 3053 words for english b1
+2025-07-23 22:51:13,558 - discord_bot - INFO - Loaded 5199 words for english b2
+2025-07-23 22:51:13,565 - discord_bot - INFO - Loaded 4760 words for english c1
+2025-07-23 22:51:13,569 - discord_bot - INFO - Loaded 2419 words for english c2
+2025-07-23 22:51:13,572 - discord_bot - INFO - Loaded 599 words for japanese jlpt_n5
+2025-07-23 22:51:13,573 - discord_bot - INFO - Loaded 601 words for japanese jlpt_n4
+2025-07-23 22:51:13,576 - discord_bot - INFO - Loaded 1651 words for japanese jlpt_n3
+2025-07-23 22:51:13,580 - discord_bot - INFO - Loaded 1500 words for japanese jlpt_n2
+2025-07-23 22:51:13,585 - discord_bot - INFO - Loaded 2336 words for japanese jlpt_n1
+2025-07-23 22:51:13,586 - discord_bot - INFO - Language Learning V2 module loaded
+2025-07-23 22:51:13,586 - discord_bot - INFO - ✅ Loaded function: language_learning_v2
+2025-07-23 22:51:13,587 - discord_bot - INFO - ✅ Loaded function: voice_activity_logger
+2025-07-23 22:51:13,589 - discord_bot - INFO - 🔊 Voice Manager initialized - Create channel: 'tạo phòng'
+2025-07-23 22:51:13,590 - discord_bot - INFO - Voice Manager module loaded
+2025-07-23 22:51:13,590 - discord_bot - INFO - ✅ Loaded function: voice_manager
+2025-07-23 22:51:13,595 - discord_bot - INFO - Tactical Battle Game cog loaded successfully
+2025-07-23 22:51:13,595 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_battle
+2025-07-23 22:51:13,600 - discord_bot - INFO - Integrated Weapon System loaded successfully
+2025-07-23 22:51:13,600 - discord_bot - INFO - ✅ Loaded game_tactic extension: tactic_weapons
+2025-07-23 22:51:14,134 - discord_bot - INFO - ✅ Slash commands synchronized!
+2025-07-23 22:51:14,135 - discord_bot - INFO - 📊 Extensions loaded: 9, Failed: 1
+2025-07-23 22:51:14,899 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 8cb396bd8092651fbc510fa3e7ac7581).
+2025-07-23 22:51:16,912 - discord_bot - INFO - 🤖 Logged in successfully: GeiBot (1357041436494925824)
+2025-07-23 22:54:17,357 - discord_bot - INFO - 🛑 Shutdown signal received, cleaning up...

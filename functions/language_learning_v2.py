@@ -7,6 +7,7 @@ import datetime
 from typing import Dict, List, Optional, Tuple
 import sqlite3
 import asyncio
+import random
 
 logger = logging.getLogger('discord_bot')
 
@@ -25,10 +26,11 @@ LANGUAGES = {
         "color": 0xED1C24,
         "thumbnail": "https://i.imgur.com/Q6ZX2Mw.png",
         "levels": {
-            "hsk1": {"name": "HSK 1", "emoji": "1️⃣", "description": "Beginner level"},
-            "hsk2": {"name": "HSK 2", "emoji": "2️⃣", "description": "Elementary level"},
-            "hsk3": {"name": "HSK 3", "emoji": "3️⃣", "description": "Intermediate level"},
-            "hsk4": {"name": "HSK 4", "emoji": "4️⃣", "description": "Upper intermediate"}
+            "hsk1": {"name": "HSK 1", "emoji": "1️⃣", "description": "Beginner level - 150 basic words"},
+            "hsk2": {"name": "HSK 2", "emoji": "2️⃣", "description": "Elementary level - 300 words total"},
+            "hsk3": {"name": "HSK 3", "emoji": "3️⃣", "description": "Intermediate level - 600 words total"},
+            "hsk4": {"name": "HSK 4", "emoji": "4️⃣", "description": "Upper intermediate - 1200 words total"},
+            "hsk5": {"name": "HSK 5", "emoji": "5️⃣", "description": "Advanced level - 2500 words total"}
         }
     },
     "english": {
@@ -37,9 +39,12 @@ LANGUAGES = {
         "color": 0x00247D,
         "thumbnail": "https://i.imgur.com/JOKsECQ.png",
         "levels": {
-            "beginner": {"name": "Beginner", "emoji": "🔰", "description": "Basic English vocabulary"},
-            "intermediate": {"name": "Intermediate", "emoji": "🔷", "description": "Everyday English"},
-            "advanced": {"name": "Advanced", "emoji": "⭐", "description": "Advanced vocabulary"}
+            "a1": {"name": "CEFR A1", "emoji": "🔰", "description": "Beginner - Basic vocabulary"},
+            "a2": {"name": "CEFR A2", "emoji": "📘", "description": "Elementary - Pre-intermediate"},
+            "b1": {"name": "CEFR B1", "emoji": "📗", "description": "Intermediate - Independent user"},
+            "b2": {"name": "CEFR B2", "emoji": "📙", "description": "Upper-intermediate - Independent user"},
+            "c1": {"name": "CEFR C1", "emoji": "📕", "description": "Advanced - Proficient user"},
+            "c2": {"name": "CEFR C2", "emoji": "⭐", "description": "Mastery - Proficient user"}
         }
     },
     "japanese": {
@@ -48,11 +53,11 @@ LANGUAGES = {
         "color": 0xBC002D,
         "thumbnail": "https://i.imgur.com/XYZ.png",
         "levels": {
-            "jlpt_n5": {"name": "JLPT N5", "emoji": "5️⃣", "description": "Basic Japanese "},
-            "jlpt_n4": {"name": "JLPT N4", "emoji": "4️⃣", "description": "Elementary Japanese "},
-            "jlpt_n3": {"name": "JLPT N3", "emoji": "3️⃣", "description": "Intermediate Japanese "},
-            "jlpt_n2": {"name": "JLPT N2", "emoji": "2️⃣", "description": "Advanced Japanese "},
-            "jlpt_n1": {"name": "JLPT N1", "emoji": "1️⃣", "description": "Proficient Japanese "}
+            "jlpt_n5": {"name": "JLPT N5", "emoji": "5️⃣", "description": "Basic Japanese - 800 words"},
+            "jlpt_n4": {"name": "JLPT N4", "emoji": "4️⃣", "description": "Elementary Japanese - 1500 words"},
+            "jlpt_n3": {"name": "JLPT N3", "emoji": "3️⃣", "description": "Intermediate Japanese - 3750 words"},
+            "jlpt_n2": {"name": "JLPT N2", "emoji": "2️⃣", "description": "Advanced Japanese - 6000 words"},
+            "jlpt_n1": {"name": "JLPT N1", "emoji": "1️⃣", "description": "Proficient Japanese - 10000 words"}
         }
     }
 }
@@ -67,6 +72,7 @@ class ProgressTracker:
         """Initialize SQLite database for progress tracking"""
         os.makedirs(os.path.dirname(PROGRESS_DB), exist_ok=True)
         with sqlite3.connect(PROGRESS_DB) as conn:
+            # Create user_progress table
             conn.execute('''
                 CREATE TABLE IF NOT EXISTS user_progress (
                     user_id INTEGER,
@@ -82,9 +88,11 @@ class ProgressTracker:
                 )
             ''')
             
+            # Create word_reviews table with all required columns
             conn.execute('''
                 CREATE TABLE IF NOT EXISTS word_reviews (
                     user_id INTEGER,
+                    guild_id INTEGER,
                     language TEXT,
                     level TEXT,
                     word_index INTEGER,
@@ -93,10 +101,12 @@ class ProgressTracker:
                     last_reviewed DATE,
                     next_review_date DATE,
                     retention_strength REAL DEFAULT 1.0,
-                    PRIMARY KEY (user_id, language, level, word_index)
+                    quiz_count INTEGER DEFAULT 0,
+                    PRIMARY KEY (user_id, guild_id, language, level, word_index)
                 )
             ''')
             
+            # Create daily_stats table
             conn.execute('''
                 CREATE TABLE IF NOT EXISTS daily_stats (
                     user_id INTEGER,
@@ -108,6 +118,94 @@ class ProgressTracker:
                     PRIMARY KEY (user_id, guild_id, date)
                 )
             ''')
+            
+            # Create quiz_history table
+            conn.execute('''
+                CREATE TABLE IF NOT EXISTS quiz_history (
+                    user_id INTEGER,
+                    guild_id INTEGER,
+                    language TEXT,
+                    level TEXT,
+                    word_index INTEGER,
+                    quiz_date DATE,
+                    is_correct INTEGER,
+                    PRIMARY KEY (user_id, guild_id, language, level, word_index, quiz_date)
+                )
+            ''')
+            
+            # Migration: Add missing columns to existing tables if they don't exist
+            try:
+                # Check and add guild_id to word_reviews if missing
+                cursor = conn.cursor()
+                cursor.execute("PRAGMA table_info(word_reviews)")
+                columns = [column[1] for column in cursor.fetchall()]
+                
+                if 'guild_id' not in columns:
+                    conn.execute('ALTER TABLE word_reviews ADD COLUMN guild_id INTEGER')
+                    logger.info("Added guild_id column to word_reviews table")
+                
+                if 'quiz_count' not in columns:
+                    conn.execute('ALTER TABLE word_reviews ADD COLUMN quiz_count INTEGER DEFAULT 0')
+                    logger.info("Added quiz_count column to word_reviews table")
+                    
+                # Update NULL values to default values
+                conn.execute('UPDATE word_reviews SET guild_id = 0 WHERE guild_id IS NULL')
+                conn.execute('UPDATE word_reviews SET quiz_count = 0 WHERE quiz_count IS NULL')
+                
+            except Exception as e:
+                logger.error(f"Migration error (this is usually normal for first run): {e}")
+                
+                # If migration fails, try to recreate word_reviews table with correct schema
+                try:
+                    # Backup existing data
+                    cursor.execute('SELECT * FROM word_reviews')
+                    existing_data = cursor.fetchall()
+                    
+                    # Drop and recreate table
+                    conn.execute('DROP TABLE IF EXISTS word_reviews')
+                    conn.execute('''
+                        CREATE TABLE word_reviews (
+                            user_id INTEGER,
+                            guild_id INTEGER DEFAULT 0,
+                            language TEXT,
+                            level TEXT,
+                            word_index INTEGER,
+                            correct_count INTEGER DEFAULT 0,
+                            incorrect_count INTEGER DEFAULT 0,
+                            last_reviewed DATE,
+                            next_review_date DATE,
+                            retention_strength REAL DEFAULT 1.0,
+                            quiz_count INTEGER DEFAULT 0,
+                            PRIMARY KEY (user_id, guild_id, language, level, word_index)
+                        )
+                    ''')
+                    
+                    logger.info("Recreated word_reviews table with proper schema")
+                    
+                    # Restore data if possible (with default guild_id=0)
+                    if existing_data:
+                        for row in existing_data:
+                            try:
+                                # Insert with guild_id=0 if old data doesn't have it
+                                if len(row) < 11:  # Old schema
+                                    conn.execute('''
+                                        INSERT INTO word_reviews 
+                                        (user_id, guild_id, language, level, word_index, correct_count, 
+                                         incorrect_count, last_reviewed, next_review_date, retention_strength, quiz_count)
+                                        VALUES (?, 0, ?, ?, ?, ?, ?, ?, ?, ?, 0)
+                                    ''', row[:9])
+                                else:  # New schema
+                                    conn.execute('''
+                                        INSERT INTO word_reviews VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                                    ''', row)
+                            except Exception as restore_error:
+                                logger.warning(f"Could not restore row {row}: {restore_error}")
+                                
+                except Exception as recreate_error:
+                    logger.error(f"Could not recreate word_reviews table: {recreate_error}")
+            
+            conn.commit()
+            logger.info("Database schema initialized/updated successfully")
 
 class LanguageLearningV2Cog(commands.Cog):
     """Advanced Language Learning System with auto-management"""
@@ -143,7 +241,22 @@ class LanguageLearningV2Cog(commands.Cog):
         
         for lang_code in LANGUAGES.keys():
             for level_code in LANGUAGES[lang_code]["levels"].keys():
+                # Map level codes to actual file names
                 file_mapping = {
+                    # Chinese HSK files
+                    "hsk1": "vi_cn_hsk1",
+                    "hsk2": "vi_cn_hsk2", 
+                    "hsk3": "vi_cn_hsk3",
+                    "hsk4": "vi_cn_hsk4",
+                    "hsk5": "vi_cn_hsk5",
+                    # English CEFR files
+                    "a1": "eng_cerf_vocab_A1",
+                    "a2": "eng_cerf_vocab_A2",
+                    "b1": "eng_cerf_vocab_B1",
+                    "b2": "eng_cerf_vocab_B2",
+                    "c1": "eng_cerf_vocab_C1",
+                    "c2": "eng_cerf_vocab_C2",
+                    # Japanese JLPT files
                     "jlpt_n5": "japan_jlpt_n5",
                     "jlpt_n4": "japan_jlpt_n4", 
                     "jlpt_n3": "japan_jlpt_n3",
@@ -159,8 +272,45 @@ class LanguageLearningV2Cog(commands.Cog):
                         with open(vocab_file, 'r', encoding='utf-8') as f:
                             vocab_data = json.load(f)
                             
-                            if lang_code == "japanese" and isinstance(vocab_data, dict) and "data" in vocab_data:
-                                vocab_data = vocab_data["data"]
+                            # Handle different JSON structures
+                            if lang_code == "chinese":
+                                # Chinese files are arrays directly
+                                if isinstance(vocab_data, list):
+                                    processed_data = []
+                                    for item in vocab_data:
+                                        if item.get('forms') and len(item['forms']) > 0:
+                                            form = item['forms'][0]  # Use first form
+                                            processed_item = {
+                                                'word': item.get('simplified', ''),
+                                                'traditional': form.get('traditional', ''),
+                                                'pinyin': form.get('transcriptions', {}).get('pinyin', ''),
+                                                'meanings': form.get('meanings', []),
+                                                'meaning': '; '.join(form.get('meanings', [])) if form.get('meanings') else '',
+                                                'pos': ', '.join(item.get('pos', [])) if item.get('pos') else '',
+                                                'frequency': item.get('frequency', 0)
+                                            }
+                                            processed_data.append(processed_item)
+                                    vocab_data = processed_data
+                                    
+                            elif lang_code in ["english", "japanese"]:
+                                # English and Japanese files have "data" wrapper
+                                if isinstance(vocab_data, dict) and "data" in vocab_data:
+                                    vocab_data = vocab_data["data"]
+                                
+                                # Process English data to standardize field names
+                                if lang_code == "english":
+                                    processed_data = []
+                                    for item in vocab_data:
+                                        processed_item = {
+                                            'word': item.get('word', ''),
+                                            'meaning': item.get('meaning', ''),
+                                            'word_form': item.get('word_form', ''),
+                                            'cefr_level': item.get('cefr_level', ''),
+                                            'part_of_speech': item.get('word_form', ''),  # Alias
+                                            'pronunciation': ''  # Will be added if available
+                                        }
+                                        processed_data.append(processed_item)
+                                    vocab_data = processed_data
                                 
                             self.vocabulary[f"{lang_code}_{level_code}"] = vocab_data
                             logger.info(f"Loaded {len(vocab_data)} words for {lang_code} {level_code}")
@@ -272,12 +422,223 @@ class LanguageLearningV2Cog(commands.Cog):
         words = []
         for i in range(count):
             word_index = (current_index + i) % len(vocab_list)
-            words.append(vocab_list[word_index])
+            word_data = vocab_list[word_index].copy()
+            word_data['word_index'] = word_index  # Add index for tracking
+            words.append(word_data)
         
         return words
-    
+
+    async def get_quiz_words(self, user_id: int, guild_id: int, language: str, level: str, count: int = 10) -> List[dict]:
+        """Get words for quiz with intelligent selection avoiding recent repeats"""
+        vocab_key = f"{language}_{level}"
+        if vocab_key not in self.vocabulary:
+            return []
+        
+        vocab_list = self.vocabulary[vocab_key]
+        if not vocab_list:
+            return []
+        
+        with sqlite3.connect(PROGRESS_DB) as conn:
+            cursor = conn.cursor()
+            
+            # Get user's current progress
+            cursor.execute('''
+                SELECT current_word_index FROM user_progress 
+                WHERE user_id = ? AND guild_id = ? AND language = ? AND level = ?
+            ''', (user_id, guild_id, language, level))
+            
+            result = cursor.fetchone()
+            current_index = result[0] if result else 0
+            
+            # Get words that were quizzed in the last 7 days
+            one_week_ago = (datetime.date.today() - datetime.timedelta(days=7)).isoformat()
+            cursor.execute('''
+                SELECT DISTINCT word_index FROM quiz_history 
+                WHERE user_id = ? AND guild_id = ? AND language = ? AND level = ? 
+                AND quiz_date > ?
+            ''', (user_id, guild_id, language, level, one_week_ago))
+            
+            recent_quiz_indices = {row[0] for row in cursor.fetchall()}
+        
+        # Create word pool for selection
+        total_words = len(vocab_list)
+        
+        # Priority 1: Words around current progress (not quizzed recently)
+        priority_range = 100  # words around current position
+        start_index = max(0, current_index - priority_range // 2)
+        end_index = min(total_words, current_index + priority_range // 2)
+        
+        priority_words = []
+        secondary_words = []
+        fallback_words = []
+        
+        for i in range(start_index, end_index):
+            word_data = vocab_list[i].copy()
+            word_data['word_index'] = i
+            
+            if i not in recent_quiz_indices:
+                priority_words.append(word_data)
+            else:
+                secondary_words.append(word_data)
+        
+        # If not enough priority words, expand range
+        if len(priority_words) < count:
+            for i in range(total_words):
+                if i < start_index or i >= end_index:
+                    word_data = vocab_list[i].copy()
+                    word_data['word_index'] = i
+                    
+                    if i not in recent_quiz_indices:
+                        fallback_words.append(word_data)
+        
+        # Select words intelligently
+        selected_words = []
+        
+        # First, try to get from priority words
+        available_priority = min(count, len(priority_words))
+        if available_priority > 0:
+            selected_words.extend(random.sample(priority_words, available_priority))
+        
+        # Fill remaining with secondary words if needed
+        remaining_count = count - len(selected_words)
+        if remaining_count > 0 and secondary_words:
+            available_secondary = min(remaining_count, len(secondary_words))
+            selected_words.extend(random.sample(secondary_words, available_secondary))
+        
+        # Fill remaining with fallback words if still needed
+        remaining_count = count - len(selected_words)
+        if remaining_count > 0 and fallback_words:
+            available_fallback = min(remaining_count, len(fallback_words))
+            selected_words.extend(random.sample(fallback_words, available_fallback))
+        
+        # If still not enough, use any available words
+        if len(selected_words) < count:
+            all_words = [vocab_list[i] for i in range(total_words)]
+            for i, word in enumerate(all_words):
+                word_copy = word.copy()
+                word_copy['word_index'] = i
+                if word_copy not in selected_words:
+                    selected_words.append(word_copy)
+                    if len(selected_words) >= count:
+                        break
+        
+        return selected_words[:count]
+
+    async def record_quiz_results(self, user_id: int, guild_id: int, language: str, level: str, 
+                                quiz_results: List[Tuple[int, bool]], total_points: int):
+        """Record quiz results and update user progress"""
+        today = datetime.date.today().isoformat()
+        
+        with sqlite3.connect(PROGRESS_DB) as conn:
+            cursor = conn.cursor()
+            
+            # Record each word's quiz result
+            for word_index, is_correct in quiz_results:
+                # Update quiz history
+                cursor.execute('''
+                    INSERT OR REPLACE INTO quiz_history 
+                    (user_id, guild_id, language, level, word_index, quiz_date, is_correct)
+                    VALUES (?, ?, ?, ?, ?, ?, ?)
+                ''', (user_id, guild_id, language, level, word_index, today, int(is_correct)))
+                
+                # Get existing word review data
+                cursor.execute('''
+                    SELECT correct_count, incorrect_count, retention_strength, quiz_count
+                    FROM word_reviews 
+                    WHERE user_id = ? AND guild_id = ? AND language = ? AND level = ? AND word_index = ?
+                ''', (user_id, guild_id, language, level, word_index))
+                
+                existing = cursor.fetchone()
+                if existing:
+                    old_correct, old_incorrect, old_strength, old_quiz_count = existing
+                else:
+                    old_correct, old_incorrect, old_strength, old_quiz_count = 0, 0, 1.0, 0
+                
+                # Calculate new values
+                new_correct = old_correct + (1 if is_correct else 0)
+                new_incorrect = old_incorrect + (0 if is_correct else 1)
+                new_strength = old_strength * 1.2 if is_correct else old_strength * 0.8
+                new_quiz_count = old_quiz_count + 1
+                
+                # Update or insert word review
+                cursor.execute('''
+                    INSERT OR REPLACE INTO word_reviews 
+                    (user_id, guild_id, language, level, word_index, correct_count, incorrect_count, 
+                     last_reviewed, next_review_date, retention_strength, quiz_count)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, date('now', '+3 days'), ?, ?)
+                ''', (user_id, guild_id, language, level, word_index, new_correct, new_incorrect,
+                      today, new_strength, new_quiz_count))
+            
+            # Update user progress - advance current_word_index for correctly answered words
+            correct_words = [word_index for word_index, is_correct in quiz_results if is_correct]
+            if correct_words:
+                # Get current progress
+                cursor.execute('''
+                    SELECT current_word_index, words_learned, streak_days, last_study_date, total_points
+                    FROM user_progress 
+                    WHERE user_id = ? AND guild_id = ? AND language = ? AND level = ?
+                ''', (user_id, guild_id, language, level))
+                
+                result = cursor.fetchone()
+                if result:
+                    current_index, learned, streak, last_date, points = result
+                    
+                    # Calculate new position based on highest correct word index
+                    max_correct_index = max(correct_words)
+                    new_index = max(current_index, max_correct_index + 1)
+                    
+                    # Calculate new streak
+                    yesterday = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+                    if last_date == yesterday:
+                        new_streak = streak + 1
+                    elif last_date == today:
+                        new_streak = streak
+                    else:
+                        new_streak = 1
+                    
+                    # Update progress
+                    cursor.execute('''
+                        UPDATE user_progress 
+                        SET current_word_index = ?, words_learned = ?, 
+                            streak_days = ?, last_study_date = ?, total_points = ?
+                        WHERE user_id = ? AND guild_id = ? AND language = ? AND level = ?
+                    ''', (new_index, learned + len(correct_words), new_streak, today, 
+                          points + total_points, user_id, guild_id, language, level))
+                else:
+                    # Create new progress record
+                    max_correct_index = max(correct_words)
+                    cursor.execute('''
+                        INSERT INTO user_progress 
+                        (user_id, guild_id, language, level, current_word_index, words_learned, 
+                         streak_days, last_study_date, total_points)
+                        VALUES (?, ?, ?, ?, ?, ?, 1, ?, ?)
+                    ''', (user_id, guild_id, language, level, max_correct_index + 1, 
+                          len(correct_words), today, total_points))
+            
+            # Update daily stats  
+            cursor.execute('''
+                SELECT words_studied, quizzes_completed, points_earned 
+                FROM daily_stats 
+                WHERE user_id = ? AND guild_id = ? AND date = ?
+            ''', (user_id, guild_id, today))
+            
+            daily_result = cursor.fetchone()
+            if daily_result:
+                current_words, current_quizzes, current_points = daily_result
+                cursor.execute('''
+                    UPDATE daily_stats 
+                    SET words_studied = ?, quizzes_completed = ?, points_earned = ?
+                    WHERE user_id = ? AND guild_id = ? AND date = ?
+                ''', (current_words + len(correct_words), current_quizzes + 1, 
+                      current_points + total_points, user_id, guild_id, today))
+            else:
+                cursor.execute('''
+                    INSERT INTO daily_stats (user_id, guild_id, date, words_studied, quizzes_completed, points_earned)
+                    VALUES (?, ?, ?, ?, 1, ?)
+                ''', (user_id, guild_id, today, len(correct_words), total_points))
+
     async def update_progress(self, user_id: int, guild_id: int, language: str, level: str, words_studied: int):
-        """Update user learning progress"""
+        """Update user learning progress for daily vocabulary"""
         today = datetime.date.today().isoformat()
         
         with sqlite3.connect(PROGRESS_DB) as conn:
@@ -437,50 +798,58 @@ class LanguageLearningV2Cog(commands.Cog):
         # Format words based on language
         for i, word_data in enumerate(words, 1):
             if language == "chinese":
-                word_header = f"**{i}. {word_data.get('word', 'N/A')}**"
+                word = word_data.get('word', 'N/A')  # Simplified
+                traditional = word_data.get('traditional', '')
+                
+                # Always show both simplified and traditional
+                if traditional and traditional != word:
+                    word_header = f"**{i}. {word}** ({traditional})"
+                else:
+                    word_header = f"**{i}. {word}**"
+                
+                # Format meanings with line breaks
+                meanings = word_data.get('meanings', [])
+                if meanings:
+                    meanings_text = '\n'.join([f"• {meaning}" for meaning in meanings])
+                else:
+                    meanings_text = word_data.get('meaning', 'N/A')
+                
                 value_parts = [
                     f"🔊 **Pinyin:** {word_data.get('pinyin', 'N/A')}",
-                    f"🏷️ **Từ loại:** {word_data.get('tuloai', 'N/A')}",
-                    f"🔤 **Nghĩa:** {word_data.get('meaning', 'N/A')}",
+                    f"🏷️ **Từ loại:** {word_data.get('pos', 'N/A')}",
+                    f"🔤 **Nghĩa:**\n{meanings_text}",
                     ""
                 ]
-                
-                if word_data.get('vidu'):
-                    value_parts.append("📝 **Ví dụ:**")
-                    value_parts.append(f"```{word_data['vidu']}```")
-                    if word_data.get('phienam'):
-                        value_parts.append(f"🔉 **Phiên âm:** {word_data['phienam']}")
-                    if word_data.get('dich'):
-                        value_parts.append(f"🔄 **Dịch:** {word_data['dich']}")
                 
             elif language == "english":
                 word_header = f"**{i}. {word_data.get('word', 'N/A')}**"
                 value_parts = [
-                    f"🔊 **Phát âm:** {word_data.get('pronunciation', 'N/A')}",
-                    f"🏷️ **Từ loại:** {word_data.get('part_of_speech', 'N/A')}",
+                    f"🏷️ **Từ loại:** {word_data.get('word_form', 'N/A')}",
                     f"🔤 **Nghĩa:** {word_data.get('meaning', 'N/A')}",
+                    f"📊 **CEFR Level:** {word_data.get('cefr_level', 'N/A')}",
                     ""
                 ]
                 
-                if word_data.get('example'):
-                    value_parts.append("📝 **Ví dụ:**")
-                    value_parts.append(f"```{word_data['example']}```")
-                    if word_data.get('example_pronunciation'):
-                        value_parts.append(f"🔉 **Phiên âm ví dụ:** {word_data['example_pronunciation']}")
-                    if word_data.get('example_translation'):
-                        value_parts.append(f"🔄 **Dịch:** {word_data['example_translation']}")
+                # Add pronunciation if available
+                pronunciation = word_data.get('pronunciation', '')
+                if pronunciation:
+                    value_parts.insert(0, f"🔊 **Phát âm:** {pronunciation}")
             
             elif language == "japanese":
                 word = word_data.get('word', 'N/A')
                 hiragana = word_data.get('hiragana', '')
+                
+                # Show hiragana if different from word
                 if word != hiragana and hiragana:
                     word_header = f"**{i}. {word}** ({hiragana})"
                 else:
                     word_header = f"**{i}. {word}**"
+                
                 value_parts = [
                     f"🔊 **Romaji:** {word_data.get('romaji', 'N/A')}",
                     f"🏷️ **Loại từ:** {word_data.get('category', 'N/A')}",
                     f"🔤 **Nghĩa:** {word_data.get('meaning', 'N/A')}",
+                    f"📊 **JLPT Level:** N{word_data.get('jlpt_level', 'N/A')}",
                     ""
                 ]
             
@@ -730,45 +1099,90 @@ class LanguageLearningV2Cog(commands.Cog):
         if vocab_key not in self.vocabulary or not self.vocabulary[vocab_key]:
             return await ctx.send(f"❌ No vocabulary available for {language} {level}")
         
-        prep_msg = await ctx.send("🎯 Preparing your vocabulary quiz...")
+        prep_msg = await ctx.send("🎯 Preparing your personalized vocabulary quiz...")
         
         try:
             question_count = min(question_count, 20)
             question_count = max(question_count, 5)
             
-            with sqlite3.connect(PROGRESS_DB) as conn:
-                cursor = conn.cursor()
-                cursor.execute('''
-                    SELECT current_word_index FROM user_progress 
-                    WHERE user_id = ? AND guild_id = ? AND language = ? AND level = ?
-                ''', (int(user_id), int(guild_id), language, level))
-                
-                result = cursor.fetchone()
-                current_index = result[0] if result else 0
+            # Use intelligent word selection
+            selected_words = await self.get_quiz_words(int(user_id), int(guild_id), language, level, question_count)
             
-            vocab_list = self.vocabulary[vocab_key]
+            if not selected_words:
+                try:
+                    await prep_msg.edit(content="❌ No words available for quiz. Please try again later.")
+                except discord.NotFound:
+                    await ctx.send("❌ No words available for quiz. Please try again later.")
+                return
             
-            max_index = min(current_index + 20, len(vocab_list))
-            min_index = max(0, current_index - 50)
+            try:
+                await prep_msg.edit(content="✨ Quiz prepared with smart word selection - avoiding recent repeats!")
+                await asyncio.sleep(1)  # Brief pause to show the message
+                await prep_msg.delete()
+            except discord.NotFound:
+                # Message was already deleted, just continue
+                pass
             
-            if max_index <= min_index:
-                available_words = vocab_list[:question_count]
-            else:
-                available_words = vocab_list[min_index:max_index]
-            
-            if len(available_words) < question_count:
-                question_count = len(available_words)
-            
-            import random
-            selected_words = random.sample(available_words, question_count)
-            
-            await prep_msg.delete()
             await self.start_quiz(ctx, language, level, selected_words)
             
         except Exception as e:
             logger.error(f"Error in vocabulary_quiz: {e}")
-            await prep_msg.edit(content=f"❌ An error occurred while preparing the quiz: {str(e)}")
+            try:
+                await prep_msg.edit(content=f"❌ An error occurred while preparing the quiz: {str(e)}")
+            except discord.NotFound:
+                try:
+                    await ctx.send(f"❌ An error occurred while preparing the quiz: {str(e)}")
+                except:
+                    pass
     
+    def select_mixed_wrong_answers(self, all_options: List[dict], current_word_type: str, count: int) -> List[str]:
+        """Select wrong answers with mixed word types to avoid pattern recognition"""
+        if not all_options:
+            return ["Unknown option"] * count
+        
+        # Group options by word type
+        same_type = []
+        different_type = []
+        
+        for option in all_options:
+            if option['word_type'] == current_word_type:
+                same_type.append(option['meaning'])
+            else:
+                different_type.append(option['meaning'])
+        
+        wrong_answers = []
+        
+        # Strategy: Mix word types intelligently
+        if len(different_type) >= count:
+            # If we have enough different types, use mostly different types with maybe 1 same type
+            if len(same_type) > 0 and count >= 2:
+                # Add 1 same type and rest different types
+                wrong_answers.append(random.choice(same_type))
+                wrong_answers.extend(random.sample(different_type, count - 1))
+            else:
+                # All different types
+                wrong_answers = random.sample(different_type, count)
+        elif len(same_type) >= count:
+            # If we only have same types, add some different types if available
+            if len(different_type) > 0:
+                # Mix: 1-2 different types, rest same type
+                different_count = min(len(different_type), count // 2)
+                wrong_answers.extend(random.sample(different_type, different_count))
+                wrong_answers.extend(random.sample(same_type, count - different_count))
+            else:
+                # All same type (fallback)
+                wrong_answers = random.sample(same_type, count)
+        else:
+            # Mix whatever we have
+            available_meanings = [opt['meaning'] for opt in all_options]
+            wrong_answers = random.sample(available_meanings, min(count, len(available_meanings)))
+        
+        # Fill up if we don't have enough
+        while len(wrong_answers) < count:
+            wrong_answers.append("Unknown option")
+            
+        return wrong_answers[:count]
+
     async def start_quiz(self, ctx: commands.Context, language: str, level: str, words: List[dict]):
         """Start an interactive vocabulary quiz"""
         lang_config = LANGUAGES[language]
@@ -784,42 +1198,109 @@ class LanguageLearningV2Cog(commands.Cog):
         quiz_embed.set_footer(text=f"Quiz for {ctx.author.display_name} | Type 'quit' to exit")
         
         correct_answers = 0
+        quiz_results = []  # Track results: [(word_index, is_correct), ...]
         
         for i, word_data in enumerate(words, 1):
             # Create multiple choice question
-            correct_answer = word_data.get('meaning', 'Unknown')
+            word_index = word_data.get('word_index', 0)  # Get the word index for tracking
             
-            # Get other wrong answers from the same vocabulary set
+            # For Chinese, get the first meaning if multiple meanings exist
+            if language == "chinese":
+                meanings = word_data.get('meanings', [])
+                if meanings:
+                    correct_answer = meanings[0]  # Take first meaning only
+                else:
+                    correct_answer = word_data.get('meaning', 'Unknown')
+            else:
+                correct_answer = word_data.get('meaning', 'Unknown')
+            
+            # Get other wrong answers from the same vocabulary set with mixed word types
             vocab_key = f"{language}_{level}"
-            all_meanings = [w.get('meaning', 'Unknown') for w in self.vocabulary[vocab_key] if w != word_data]
             
-            import random
-            wrong_answers = random.sample(all_meanings, min(3, len(all_meanings)))
+            # Get current word type for mixing strategy
+            if language == "english":
+                current_word_form = word_data.get('word_form', '')
+            elif language == "chinese":
+                current_pos = word_data.get('pos', '')
+            elif language == "japanese":
+                current_category = word_data.get('category', '')
+            else:
+                current_word_form = ''
             
-            # Ensure we have 4 choices
-            while len(wrong_answers) < 3:
-                wrong_answers.append("Unknown option")
+            # Collect wrong answers with word type info
+            all_options = []
+            for w in self.vocabulary[vocab_key]:
+                if w != word_data:
+                    if language == "chinese":
+                        w_meanings = w.get('meanings', [])
+                        meaning = w_meanings[0] if w_meanings else w.get('meaning', 'Unknown')
+                        all_options.append({
+                            'meaning': meaning,
+                            'word_type': w.get('pos', ''),
+                            'word': w.get('word', '')
+                        })
+                    elif language == "english":
+                        all_options.append({
+                            'meaning': w.get('meaning', 'Unknown'),
+                            'word_type': w.get('word_form', ''),
+                            'word': w.get('word', '')
+                        })
+                    elif language == "japanese":
+                        all_options.append({
+                            'meaning': w.get('meaning', 'Unknown'),
+                            'word_type': w.get('category', ''),
+                            'word': w.get('word', '')
+                        })
             
-            choices = [correct_answer] + wrong_answers[:3]
+            # Smart selection: mix word types to avoid pattern recognition
+            wrong_answers = self.select_mixed_wrong_answers(all_options, current_word_form if language == "english" else current_pos if language == "chinese" else current_category if language == "japanese" else '', 3)
+            
+            # Ensure we have 4 choices total (1 correct + 3 wrong)
+            choices = [correct_answer] + wrong_answers
             random.shuffle(choices)
             correct_index = choices.index(correct_answer) + 1
             
-            # Create question embed
+            # Create question embed with better styling
             question_embed = discord.Embed(
-                title=f"Question {i}/{len(words)}",
+                title=f"🎯 Question {i}/{len(words)}",
+                description=f"💡 **{lang_config['name']} Quiz** • {level_config['name']}",
                 color=lang_config["color"]
             )
             
             if language == "chinese":
+                word = word_data.get('word', 'N/A')  # Simplified
+                traditional = word_data.get('traditional', '')
+                
+                # Always show both simplified and traditional  
+                if traditional and traditional != word:
+                    word_text = f"**{word}** ({traditional})"
+                else:
+                    word_text = f"**{word}**"
+                
+                # Don't show meanings in question - only word info for quiz
+                # Create elegant display for Chinese - just essential info
+                display_value = f"🔤 {word_text}\n📝 *{word_data.get('pinyin', 'N/A')}* • *{word_data.get('pos', 'N/A')}*"
+                
                 question_embed.add_field(
-                    name="Word",
-                    value=f"**{word_data.get('word', 'N/A')}**\n🔊 **Pinyin:** {word_data.get('pinyin', 'N/A')}",
+                    name="📚 词汇 (Vocabulary)",
+                    value=display_value,
                     inline=False
                 )
             elif language == "english":
+                word_text = word_data.get('word', 'N/A')
+                word_form = word_data.get('word_form', '')
+                cefr_level = word_data.get('cefr_level', '')
+                
+                # Create a more elegant display
+                display_parts = [f"🔤 **{word_text}**"]
+                if word_form:
+                    display_parts.append(f"📝 *{word_form}*")
+                if cefr_level:
+                    display_parts.append(f"📊 *Level {cefr_level.upper()}*")
+                
                 question_embed.add_field(
-                    name="Word",
-                    value=f"**{word_data.get('word', 'N/A')}**\n🔊 **Pronunciation:** {word_data.get('pronunciation', 'N/A')}",
+                    name="📚 Vocabulary",
+                    value=" • ".join(display_parts),
                     inline=False
                 )
             elif language == "japanese":
@@ -829,20 +1310,41 @@ class LanguageLearningV2Cog(commands.Cog):
                     word_text = f"**{word_display}** ({hiragana_display})"
                 else:
                     word_text = f"**{word_display}**"
+                # Create elegant display for Japanese
+                romaji = word_data.get('romaji', 'N/A')
+                category = word_data.get('category', 'N/A')
+                jlpt_level = word_data.get('jlpt_level', 'N/A')
+                
+                display_parts = [f"🔤 {word_text}"]
+                display_parts.append(f"📝 *{romaji}*")
+                if category != 'N/A':
+                    display_parts.append(f"*{category}*")
+                if jlpt_level != 'N/A':
+                    display_parts.append(f"📊 *N{jlpt_level}*")
+                
                 question_embed.add_field(
-                    name="Word", 
-                    value=f"{word_text}\n🔊 **Romaji:** {word_data.get('romaji', 'N/A')}",
+                    name="📚 語彙 (Vocabulary)", 
+                    value=" • ".join(display_parts),
                     inline=False
                 )
             
+            # Create choices display (no emojis for cleaner look)
             choices_text = "\n".join([f"**{j}.** {choice}" for j, choice in enumerate(choices, 1)])
+            
+            # Customize question text based on language
+            question_text = "❓ What does this word mean?"
+            
             question_embed.add_field(
-                name="What does this word mean?",
+                name=question_text,
                 value=choices_text,
                 inline=False
             )
             
-            question_embed.set_footer(text=f"Score: {correct_answers}/{i-1} | Type 1-4 or 'quit'")
+            # Add footer with instruction
+            question_embed.set_footer(
+                text=f"⌨️ Type 1-4 or 'quit' to exit • Score: {correct_answers}/{i-1}",
+                icon_url=ctx.author.display_avatar.url
+            )
             
             await ctx.send(embed=question_embed)
             
@@ -850,17 +1352,24 @@ class LanguageLearningV2Cog(commands.Cog):
             def check(m):
                 return m.author == ctx.author and m.channel == ctx.channel
             
+            is_correct = False
             try:
                 answer_msg = await self.bot.wait_for('message', check=check, timeout=30.0)
                 
                 if answer_msg.content.lower() == 'quit':
                     await ctx.send("🚪 Quiz ended early. Thanks for playing!")
+                    # Still record partial results if quiz was quit
+                    if quiz_results:
+                        total_points = sum([5 for _, correct in quiz_results if correct])
+                        await self.record_quiz_results(int(ctx.author.id), int(ctx.guild.id), 
+                                                     language, level, quiz_results, total_points)
                     return
                 
                 try:
                     user_choice = int(answer_msg.content)
                     if user_choice == correct_index:
                         correct_answers += 1
+                        is_correct = True
                         await answer_msg.add_reaction("✅")
                     else:
                         await answer_msg.add_reaction("❌")
@@ -872,14 +1381,39 @@ class LanguageLearningV2Cog(commands.Cog):
                     
             except asyncio.TimeoutError:
                 await ctx.send("⏰ Quiz timed out. Moving to next question...")
+            
+            # Record this question's result
+            quiz_results.append((word_index, is_correct))
         
         # Quiz finished - show results
         score_percentage = (correct_answers / len(words)) * 100
         
+        # Determine result emoji and color based on performance
+        if score_percentage >= 90:
+            result_emoji = "🏆"
+            result_color = discord.Color.gold()
+            performance_text = "Perfect! Outstanding performance!"
+        elif score_percentage >= 80:
+            result_emoji = "🎯"
+            result_color = discord.Color.green()
+            performance_text = "Excellent! Great job!"
+        elif score_percentage >= 70:
+            result_emoji = "👍"
+            result_color = discord.Color.blue()
+            performance_text = "Good work! Keep it up!"
+        elif score_percentage >= 50:
+            result_emoji = "📈"
+            result_color = discord.Color.orange()
+            performance_text = "Not bad! Keep practicing!"
+        else:
+            result_emoji = "💪"
+            result_color = discord.Color.red()
+            performance_text = "Keep studying! You'll improve!"
+        
         result_embed = discord.Embed(
-            title="🎉 Quiz Complete!",
-            description=f"**Final Score: {correct_answers}/{len(words)} ({score_percentage:.1f}%)**",
-            color=discord.Color.green() if score_percentage >= 80 else discord.Color.orange() if score_percentage >= 60 else discord.Color.red()
+            title=f"{result_emoji} Quiz Complete!",
+            description=f"**{ctx.author.display_name}** • {lang_config['name']} {level_config['name']}\n\n🎯 **Final Score: {correct_answers}/{len(words)} ({score_percentage:.1f}%)**\n💭 *{performance_text}*",
+            color=result_color
         )
         
         # Award points based on performance
@@ -888,56 +1422,45 @@ class LanguageLearningV2Cog(commands.Cog):
         
         if score_percentage >= 90:
             bonus_points = 20
-            result_embed.add_field(name="🏆 Perfect!", value="+20 bonus points", inline=False)
         elif score_percentage >= 80:
             bonus_points = 10
-            result_embed.add_field(name="🎯 Excellent!", value="+10 bonus points", inline=False)
         elif score_percentage >= 70:
             bonus_points = 5
-            result_embed.add_field(name="👍 Good job!", value="+5 bonus points", inline=False)
         
         total_points = base_points + bonus_points
         
+        # Create points display
+        points_display = f"💰 **Base Points:** {base_points} ({correct_answers} correct × 5)\n"
+        if bonus_points > 0:
+            points_display += f"🎁 **Bonus Points:** +{bonus_points}\n"
+        points_display += f"⭐ **Total Earned:** **{total_points} points**"
+        
         result_embed.add_field(
-            name="Points Earned",
-            value=f"**{base_points}** (base) + **{bonus_points}** (bonus) = **{total_points}** total",
+            name="🏅 Points Breakdown",
+            value=points_display,
             inline=False
         )
         
-        # Update user stats
-        await self.update_quiz_stats(int(ctx.author.id), int(ctx.guild.id), language, level, correct_answers, len(words), total_points)
+        # Add progress update info
+        correct_word_indices = [idx for idx, correct in quiz_results if correct]
+        if correct_word_indices:
+            result_embed.add_field(
+                name="📈 Progress Update",
+                value=f"✅ {len(correct_word_indices)} words mastered - your learning progress has been updated!",
+                inline=False
+            )
         
-        result_embed.set_footer(text="Keep practicing with /lang_quiz to improve your score!")
+        # Record quiz results using new system
+        await self.record_quiz_results(int(ctx.author.id), int(ctx.guild.id), language, level, quiz_results, total_points)
+        
+        # Add thumbnail and footer
+        result_embed.set_thumbnail(url=lang_config["thumbnail"])
+        result_embed.set_footer(
+            text=f"🚀 Keep practicing with /lang_quiz to improve! • {lang_config['name']} Learning",
+            icon_url=ctx.author.display_avatar.url
+        )
         
         await ctx.send(embed=result_embed)
-    
-    async def update_quiz_stats(self, user_id: int, guild_id: int, language: str, level: str, correct: int, total: int, points_earned: int):
-        """Update quiz statistics"""
-        today = datetime.date.today().isoformat()
-        
-        with sqlite3.connect(PROGRESS_DB) as conn:
-            cursor = conn.cursor()
-            
-            # Update user progress with quiz points
-            cursor.execute('''
-                UPDATE user_progress 
-                SET total_points = total_points + ?
-                WHERE user_id = ? AND guild_id = ? AND language = ? AND level = ?
-            ''', (points_earned, user_id, guild_id, language, level))
-            
-            # Update daily stats
-            cursor.execute('''
-                UPDATE daily_stats 
-                SET quizzes_completed = quizzes_completed + 1, points_earned = points_earned + ?
-                WHERE user_id = ? AND guild_id = ? AND date = ?
-            ''', (points_earned, user_id, guild_id, today))
-            
-            # If no daily stats exist, create them
-            if cursor.rowcount == 0:
-                cursor.execute('''
-                    INSERT INTO daily_stats (user_id, guild_id, date, quizzes_completed, points_earned)
-                    VALUES (?, ?, ?, 1, ?)
-                ''', (user_id, guild_id, today, points_earned))
 
     @commands.hybrid_command(name="lang_leaderboard", description="Show the server leaderboard for language learning") 
     @discord.app_commands.autocomplete(language=language_autocomplete, level=level_autocomplete)
